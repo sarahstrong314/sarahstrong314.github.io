@@ -1,3 +1,3 @@
-name: Your New Jekyll Site
+name: Sarah's Cubing Site
 markdown: redcarpet
-pygments: true
+permalink: /:title/
