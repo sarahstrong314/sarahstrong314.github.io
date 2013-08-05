@@ -20,6 +20,8 @@ h1 a {
 
 #container {
   margin: 3em;
+  height: auto !important;
+  height: 97%;
 }
 
 #sidebar {
@@ -65,18 +67,41 @@ h1 a {
   display: none;
 }
 
-#active-alg .details-container {
-  text-align: center;
-}
-
 #content ul li .details {
   display: inline;
 }
 
+#active-alg {
+  display: none;
+  margin: 3em;
+}
+
 #active-alg .details {
-  text-align: center;
+  display: block;
+  float: left;
+  margin-left: 5em;
+}
+
+#active-alg .details a {
   display: block;
 }
-#footer {
-  margin-top: 5%;
+
+#footer, .push {
+  float: right;
+  margin-right: 4.5em;
+  margin-bottom: 2em;
+}
+
+.width-100px .overview {
+  width: 100px;
+}
+
+.height-100px #active-alg {
+  height: 100px;
+}
+
+.overview {
+  text-align: center;
+  display: inline-block;
+  float: left;
 }
