@@ -6,23 +6,17 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
     </head>
     <body>
 
-        <div class="container">
-            <div class="header">
+        <div id="container">
+            <div id="header">
               <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
             </div>
 
-            <div class="nav">
-              <ul class="fw-nav-level-0">
+            <div id="sidebar">
+              <ul id="nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/ollalgs">OLL Algs</a></li>
                 <li><a href="/pllalgs">PLL Algs</a></li>
@@ -41,9 +35,11 @@
               </ul>
             </div>
 
+            <div id="content">
                 {{ content }}
+            </div>
 
-            <div class="footer">
+            <div id="footer">
               &copy; 2013 Sarah Strong
             </div>
           </div>
