@@ -52,6 +52,31 @@ h1 a {
   min-width: 32em;
 }
 
+#content ul {
+  list-style-type: none;
+}
+
+#content ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+#content ul li .alg-nickname, #content ul li a {
+  display: none;
+}
+
+#active-alg .details-container {
+  text-align: center;
+}
+
+#content ul li .details {
+  display: inline;
+}
+
+#active-alg .details {
+  text-align: center;
+  display: block;
+}
 #footer {
   margin-top: 5%;
 }
