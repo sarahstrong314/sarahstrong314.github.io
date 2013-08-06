@@ -122,3 +122,8 @@ h3 small {
   float: left;
   padding: 5px 5px 15px 5px;
 }
+
+/* Guestbook */
+#guestbook {
+  width: 37em;
+}
