@@ -46,6 +46,7 @@ h3 small {
 }
 
 #nav li.copyright {
+  font-size: smaller;
   margin-top: 2em;
 }
 
@@ -64,6 +65,7 @@ h3 small {
   min-width: 32em;
   position: absolute;
   left: 260px;
+  margin-right: 3em;
 }
 
 #content ul {
@@ -100,6 +102,10 @@ h3 small {
 
 #active-alg .details a {
   display: block;
+}
+
+#pllalgs #active-alg {
+  min-width: 565px;
 }
 
 .width-100px .overview {
