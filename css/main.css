@@ -31,6 +31,8 @@ h3 small {
 #sidebar {
   float: left;
   margin-right: 3em;
+  position: absolute;
+  width: 230px;
 }
 
 #nav {
@@ -41,6 +43,10 @@ h3 small {
 
 #nav li {
   line-height: 30px;
+}
+
+#nav li.copyright {
+  margin-top: 2em;
 }
 
 #nav li a {
@@ -56,6 +62,8 @@ h3 small {
 #content {
   padding: 1.5em;
   min-width: 32em;
+  position: absolute;
+  left: 260px;
 }
 
 #content ul {
@@ -75,6 +83,10 @@ h3 small {
   display: inline;
 }
 
+.alg-list {
+  padding: 0;
+}
+
 #active-alg {
   display: none;
   margin: 3em;
@@ -88,12 +100,6 @@ h3 small {
 
 #active-alg .details a {
   display: block;
-}
-
-#footer, .push {
-  float: right;
-  margin-right: 4.5em;
-  margin-bottom: 2em;
 }
 
 .width-100px .overview {
