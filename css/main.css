@@ -69,6 +69,21 @@ h3 small {
   background-color: #F8F8F8; /* beige */
 }
 
+.tabs li {
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #a3efa1;
+}
+
+.tabs li.active {
+  background-color: #e0fddc;
+}
+
 #content {
   padding: 1.5em;
   min-width: 32em;
@@ -97,6 +112,10 @@ h3 small {
 
 .alg-list {
   padding: 0;
+}
+
+.collapsible .alg-list {
+  display: none;
 }
 
 #active-alg {
@@ -133,6 +152,10 @@ h3 small {
   display: inline-block;
   float: left;
   padding: 5px 5px 15px 5px;
+}
+
+.inactive {
+  opacity: 0.66;
 }
 
 /* Homepage */

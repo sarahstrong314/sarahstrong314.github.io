@@ -3,7 +3,7 @@ layout: default
 title: CLS Algorithms
 ---
 
-<div id="clsalgs">
+<div id="clsalgs" class="collapsible">
   <h2>Corner step of the Last Slot</h2>
   <p>
     CLS is part of the MGLS method. It involves placing the corner of the last slot while orienting the corners of the last layer when the edges of the last layer are oriented and the edge of the last slot is in place. It can also be used as a forced OLL skip technique if you get an ELS skip in a CFOP solve (the probability of this happening is 1 in 80). There are a lot of cases and recognizing the cases is tricky at first, but all of the cases can be done &lt;R,U&gt; style, so the easy cases are worth learning. The algorithms are from <a href="http://cube.garron.us/MGLS/" target="_blank">Lucas Garron's site</a>.
@@ -11,10 +11,17 @@ title: CLS Algorithms
 
   <!-- TODO: pdf link -->
 
+  <ul class="tabs">
+    <li id="minus-cases">- cases</li>
+    <li id="plus-cases">+ cases</li>
+    <li id="o-cases">O cases</li>
+    <li id="i-cases">I cases</li>
+    <li id="im-cases">Im cases</li>
+  </ul>
+
   <div id="active-alg"></div>
 
-  <h3>- cases</h3>
-  <ul class="alg-list">
+  <ul class="alg-list" id="minus-cases">
     <li>
       <div class="overview">
         <img src="/images/cls/-1.png" />
@@ -286,8 +293,7 @@ title: CLS Algorithms
     </li>
   </ul>
 
-  <h3>+ cases</h3>
-  <ul class="alg-list">
+  <ul class="alg-list" id="plus-cases">
     <li>
       <div class="overview">
         <img src="/images/cls/+1.png" />
@@ -559,8 +565,7 @@ title: CLS Algorithms
     </li>
   </ul>
 
-  <h3>O cases</h3>
-  <ul class="alg-list">
+  <ul class="alg-list" id="o-cases">
     <li>
       <div class="overview">
         <img src="/images/cls/O1.png" />
@@ -832,8 +837,7 @@ title: CLS Algorithms
     </li>
   </ul>
 
-  <h3>I cases</h3>
-  <ul class="alg-list">
+  <ul class="alg-list" id="i-cases">
     <li>
       <div class="overview">
         <img src="/images/cls/I1.png" />
@@ -915,8 +919,7 @@ title: CLS Algorithms
     </li>
   </ul>
 
-  <h3>Im cases</h3>
-  <ul class="alg-list">
+  <ul class="alg-list" id="im-cases">
     <li>
       <div class="overview">
         <img src="/images/cls/Im1.png" />
