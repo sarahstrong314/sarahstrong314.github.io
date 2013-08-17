@@ -4,9 +4,144 @@ title: OELLCP Algorithms
 ---
 
 <div id="oellcpalgs">
-  <h2></h2>
-  <ul>
+  <h2>Orientation of the Edges of the Last Layer and Corner Permutation</h2>
+  <p>
+    OELLCP is an add-on to CFOP. When you're on the OLL step and you have an OELL case (OLL # 20, 28 or 57), which is an OLL case where the corners are oriented but either 2 or 4 edges are ' flipped', you can use a OELLCP alg. This would orient the edges, completing the OLL, while permuting the corners. This would leave you with an EPLL (U, Z or H perm) or a solved last layer. OELLCP is a subset of OLLCP, just like COLL. It is useful because EPLLs are among the easiest PLLs, for both recognition and execution speed. The chance of getting a PLL skip is 1 in 12 when you have an EOLL case and you use a OELLCP to solve it. There are only 13 cases for this, so I'd say it's worth learning.
+  </p>
+
+  <!-- TODO: pdf link -->
+
+  <div id="active-alg"></div>
+
+  <ul class="alg-list">
     <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP1.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=M-_U_M_U2_M-_U_M&animtype=solve&scheme=gorbwy">M' U M U2 M' U M</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP2.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=l-_U_R-_U2_L_U-_L-_U2_R2_x&animtype=solve&scheme=ogbryw">L'w U R' U2 L U' L' U2 R2 x'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP3.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=x_R2_U2_L_U_L-_U2_R_U-_l&animtype=solve&scheme=brogwy">x R2 U2 L U L' U2 R U' Lw</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP4.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=r_U-_L_U2_R-_U_R_U2_L2_x-&animtype=solve&scheme=gorbwy">Rw U' L U2 R' U R U2 L2 x'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP5.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=x_L2_U2_R-_U-_R_U2_L-_U_r-&animtype=solve&scheme=brogwy">x L2 U2 R' U' R U2 L' U R'w</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP6.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U_R_U_y_R2_D_L-_B-_L_D-_R2&animtype=solve&scheme=obgrwy">R' U R U y R2 D L' B' L D' R2</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP7.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U-_M-_U_R_U-_r-&animtype=solve&scheme=gorbwy">R U R' U' M' U R U' R'w</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP8.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=L-_R_U_R-_U-_L_R-_F2_L2_F-_R_F_L2_F2&animtype=solve&scheme=gorbwy">x' M' U' R U M U2 L2 U R' U' L2 U2 x U</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP9.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U-_R-_F-_U_F_R_x-_U-_R_U_R2_x&animtype=solve&scheme=obgrwy">R U' R' F' U F R x' U' R U R'2 x</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP10.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U-_R-2_F_R_F-_R_U-_x-_U_F2_U-_R-_x&animtype=solve&scheme=gorbwy">R U' R'2 F R F' R U' x' U F2 U' R' x</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP11.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=r_U_R-_U-_M2_U_R_U-_R-_U-_M-_&animtype=solve&scheme=rgbowy">Rw U R' U' M'2 U R U' R' U' M'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP12.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=x-_U_L-_U_L2_x_U_L-_U-_x-_U2_F-_R_U-_R-_U_x&animtype=solve&scheme=obgrwy">x' U L' U L2 x U L' U' x' U2 F' R U' R' U x</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/oellcp/OELLCP13.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=x-_U_R-_F2_U2_R-_U_R2_U-_R_U2_F2_R_U-_x&animtype=solve&scheme=gorbwy">x' U R' F2 U2 R' U R2 U' R U2 F2 R U' x</a>
+      </div>
     </li>
   </ul>
 </div>
