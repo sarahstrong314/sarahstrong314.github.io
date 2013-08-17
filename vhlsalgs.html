@@ -4,9 +4,332 @@ title: VHLS Algorithms
 ---
 
 <div id="vhlsalgs">
-  <h2></h2>
-  <ul>
+  <h2>Vanderbergh-Harris Last Slot</h2>
+  <p>
+    VHLS is used to force the orientation of the last layer edges during the last F2L slot pair. There are 4 cases, all of which are subsets of ZBLS. Two of the cases are where the corner and edge are paired, and the other two are when the corner and edge can be paired with RUR' or F'U'F. It's not always good to use it for 3x3x3 solves, but it's useful for big cubes, especially when combined with COLL. I only know algs for the ones that have the pair paired, it's really all you need for full EO control. These algs are from <a href="http://jmbaum.110mb.com/zbf2l.htm" target="_blank">Jasom Baum's site</a>&nbsp;and the pictures are made from <a href="http://cube.crider.co.uk/visualcube.php" target="_blank">Visualcube</a>.
+  </p>
+
+  <div id="active-alg"></div>
+
+  <ul class="alg-list">
     <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS1.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U_R_U-_R-&animtype=solve&scheme=gorbwy&stage=OLL">U R U' R'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS2.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_F_R_F-&animtype=solve&scheme=gorbwy&stage=OLL">R' F R F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS3.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U_F-_L-_U-_L_F&animtype=solve&scheme=gorbwy&stage=OLL">U F' L' U' L F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS4.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U_R_y_R_U-_R-_F-&animtype=solve&scheme=gorbwy&stage=OLL">U R y R U' R' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS5.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U2_R_U-_y_R_U-_R-_F-&animtype=solve&scheme=gorbwy&stage=OLL">U2 R U' y R U' R' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS6.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_F_R2_U_R-_U-_F-&animtype=solve&scheme=gorbwy&stage=OLL">R' F R2 U R' U' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS7.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U-_F_U_R2_U-_R-_F-&animtype=solve&scheme=gorbwy&stage=OLL">R' U' F U R2 U' R' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS8.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=y_R-_F-_R_U2_M-_U-_M&animtype=solve&scheme=gorbwy&stage=OLL">y R' F' R U2 M' U' M</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS9.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U-_F-_U_F&animtype=solve&scheme=gorbwy&stage=OLL">U' F' U F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS10.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R-_F-_R%0A&animtype=solve&scheme=gorbwy&stage=OLL">F R' F' R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS11.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U-_R_y_R_U_R-_F-&animtype=solve&scheme=gorbwy&stage=OLL">U' R y R U R' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS12.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U-_F-_L-_U_L_F&animtype=solve&scheme=gorbwy&stage=OLL">U' F' L' U L F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS13.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U2_F-_U_L-_U_L_F&animtype=solve&scheme=gorbwy&stage=OLL">U2 F' U L' U L F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS14.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R-_F2_U-_F_U_R&animtype=solve&scheme=gorbwy&stage=OLL">F R' F2 U' F U R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS15.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_U_R_U-_F2_U_F_R&animtype=solve&scheme=gorbwy&stage=OLL">F U R' U' F2 U F R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS16.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_U_R_U-_F2_U_F_R&animtype=solve&scheme=gorbwy&stage=OLL">L F L' U2 M' U M</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS17.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-%0A&animtype=solve&scheme=gorbwy&stage=OLL">R U R'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS18.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U-_R-_U2_R-_F_R_F-%0A&animtype=solve&scheme=gorbwy&stage=OLL">R U' R' U2 R' F R F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS19.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_y_R_U-_R-_F-&animtype=solve&scheme=gorbwy&stage=OLL">R U2 y R U' R' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS20.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_y_R_U_R-_U-_F-&animtype=solve&scheme=gorbwy&stage=OLL">R U y R U R' U' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS21.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U2_R_U_y_R_U-_R-_U-_F-&animtype=solve&scheme=gorbwy&stage=OLL">U2 R U y R U' R' U' F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS22.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U-_F-_U2_F_U_R_U-_R-&animtype=solve&scheme=gorbwy&stage=OLL">U' F' U2 F U R U' R'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS23.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U-_F-_U2_F_R-_F_R_F-&animtype=solve&scheme=gorbwy&stage=OLL">U' F' U2 F R' F R F'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS24.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_D-_L_F_L-_D_R2_U_R-&animtype=solve&scheme=gorbwy&stage=OLL">R' D' L F L' D R2 U R'</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS25.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F-_U-_F&animtype=solve&scheme=gorbwy&stage=OLL">F' U' F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS26.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U2_y_R-_F_R_U_R-_F-_R&animtype=solve&scheme=gorbwy&stage=OLL">U2 y R' F R U R' F' R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS27.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F-_U2_L-_U_L_F&animtype=solve&scheme=gorbwy&stage=OLL">F' U2 L' U L F</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS28.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=y-_R-_U-_F-_U-_F_U_R&animtype=solve&scheme=gorbwy&stage=OLL">y' R' U' F' U' F U R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS29.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U2_y-_R-_U-_F-_U_F_U_R&animtype=solve&scheme=gorbwy&stage=OLL">U2 y' R' U' F' U F U R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS30.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U_R_U2_R-_U-_y-_R-_U_R&animtype=solve&scheme=gorbwy&stage=OLL">U R U2 R' U' y' R' U R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS31.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=U_R_U2_R-_F_R-_F-_R&animtype=solve&scheme=gorbwy&stage=OLL">U R U2 R' F R' F' R</a>
+      </div>
+    </li>
+
+    <li>
+      <div class="overview">
+        <img src="/images/vhls/VHLS32.png" />
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=y_F_D_y_R-_F-_R_D-_L2_U-_L&animtype=solve&scheme=gorbwy&stage=OLL">y F D y R' F' R D' L2 U' L</a>
+      </div>
     </li>
   </ul>
 </div>
