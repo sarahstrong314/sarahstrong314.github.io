@@ -70,6 +70,7 @@ h3 small {
 
 #content ul {
   list-style-type: none;
+  float: left;
 }
 
 #content ul li {
@@ -77,7 +78,7 @@ h3 small {
   cursor: pointer;
 }
 
-#content ul li .alg-nickname, #content ul li a {
+#content ul li .alg-nickname, #content ul li .alg {
   display: none;
 }
 
@@ -100,7 +101,7 @@ h3 small {
   margin-left: 5em;
 }
 
-#active-alg .details a {
+#active-alg .details .alg {
   display: block;
 }
 

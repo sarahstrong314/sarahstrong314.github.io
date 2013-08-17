@@ -7,8 +7,10 @@ $(document).ready(function() {
     $alg.find(".overview").css({opacity: 1.0})
     $alg = $alg.clone();
 
-    $alg.find(".details h3").prepend($alg.find(".alg-name").text() + ": ")
-    $alg.find(".alg-name").remove()
+    if ($alg.find(".alg-name").length > 0) {
+      $alg.find(".details h3").prepend($alg.find(".alg-name").text() + ": ")
+      $alg.find(".alg-name").remove()
+    }
 
     if ($("#active-alg").is(":visible")) {
       $("#active-alg").fadeOut('fast', function() {
