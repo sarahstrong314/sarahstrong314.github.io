@@ -124,6 +124,12 @@ h3 small {
   padding: 5px 5px 15px 5px;
 }
 
+/* Homepage */
+#home img {
+  float: right;
+  padding: 0 15px 15px 15px;
+}
+
 /* Guestbook */
 #guestbook {
   width: 37em;
