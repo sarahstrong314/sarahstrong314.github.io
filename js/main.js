@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $("#content").addClass($("#content > div").attr('id'));
+
   // Focussing on one particular algorithm.
   $(".alg-list li").click(function(ev) {
     var $alg = $(ev.target).closest("li");

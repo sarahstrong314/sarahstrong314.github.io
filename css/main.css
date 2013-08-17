@@ -86,7 +86,6 @@ h3 small {
 
 #content {
   padding: 1.5em;
-  min-width: 32em;
   position: absolute;
   left: 260px;
   margin-right: 3em;
@@ -159,9 +158,19 @@ h3 small {
 }
 
 /* Homepage */
+#home {
+  min-width: 804px;
+  max-width: 1300px;
+}
+
 #home img {
   float: right;
   padding: 0 15px 15px 15px;
+  margin-right: 300px;
+}
+
+#content.home {
+  width: 100%;
 }
 
 /* Guestbook */
