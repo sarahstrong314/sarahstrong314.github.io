@@ -31,7 +31,7 @@ $(document).ready(function() {
       $('body').animate({scrollTop: activeAlgPosition}, 500);
     }
 
-    document.location.hash = "#alg-" + $alg.attr('id');
+    document.location.hash = "#alg/" + $alg.attr('id');
   });
 
   // Switching sub-views of algorithms.
@@ -61,7 +61,7 @@ $(document).ready(function() {
       $(".tabs li").removeClass('active');
       $li.addClass('active');
 
-      window.location.hash = $li.attr('id');
+      window.location.hash = "section/" + $li.attr('id');
     }
   });
 
@@ -83,12 +83,12 @@ $(document).ready(function() {
     var tab, $algLi;
 
     // Activate this particular algorithm.
-    if (document.location.hash.indexOf('alg-') === 1) {
+    if (document.location.hash.indexOf('alg/') === 1) {
       $algLi = $(".alg-list li#" + document.location.hash.substr(5));
 
       tab = $algLi.closest('ul').attr('id');
     } else {
-      tab = document.location.hash.substr(1);
+      tab = document.location.hash.substr("#section/".length);
     }
 
     // Activate this tab, if this page supports tabs.
