@@ -88,7 +88,7 @@ h3 small {
   background-color: #F8F8F8; /* beige */
 }
 
-.tabs li {
+.tabs li, a.button {
   padding: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -97,10 +97,22 @@ h3 small {
   font-weight: bold;
   border: 1px solid #ccc;
   background-color: #a3efa1;
+  color: #3c7139;
+  text-decoration: none;
 }
 
 .tabs li.active {
   background-color: #e0fddc;
+}
+
+a.button {
+  margin: auto auto 10px 10px;
+  color: #3764c8;
+  background-color: #fbfbfb;
+}
+
+a.button:hover {
+  color: #78d968;
 }
 
 #content {
@@ -195,6 +207,10 @@ h3 small {
 
 .red {
   color: red;
+}
+
+.right {
+  float: right;
 }
 
 /* Homepage */
