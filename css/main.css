@@ -165,6 +165,10 @@ h3 small {
   height: 100px;
 }
 
+.width-75px .overview {
+  width: 75px;
+}
+
 .overview {
   text-align: center;
   display: inline-block;
@@ -172,8 +176,20 @@ h3 small {
   padding: 5px 5px 15px 5px;
 }
 
+.tall-images .overview {
+  padding: 5px 5px 25px 5px;
+}
+
+#active-alg .overview {
+  padding: 5px 5px 15px 5px;
+}
+
 .inactive {
   opacity: 0.66;
+}
+
+.red {
+  color: red;
 }
 
 /* Homepage */

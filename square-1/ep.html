@@ -3,10 +3,1217 @@ layout: default
 title: Square-1 &mdash; EP Algorithms
 ---
 
-<div id="square-1-ep">
-  <h2></h2>
-  <ul>
-    <li>
+<div id="square-1-ep" class="tall-images width-75px">
+  <h2>Edge Permutation</h2>
+  <p>
+    The algs are from Lars Vandenbergh's site, <a href="http://www.cube-china.com.cn/bbs/viewthread.php?tid=4433&amp;pid=73365&amp;page=1&amp;extra=page%3D1#pid73365" target="_blank">this thread</a>, and from videos on <a href="http://www.youtube.com/Vault312" target="_blank">David Woner</a>'s and <a href="http://www.youtube.com/85861218" target="_blank">Bingliang Li</a>'s YouTube channel.
+  </p>
+
+  <p>
+    Red text indicates a case with an odd number of swaps, a.k.a. cases with parity, and an asterisk indicated that the equator will flip when the alg is performed.
+  </p>
+
+  <p>
+    The numbering system is as followed:
+  </p>
+
+  <p>
+    0: all edges permuted, 1: adjacent swap, 2: opposite swap, 3: clockwise O perm, 4: counterclockwise O perm, 5: W perm, 6: clockwise U perm, 7: counterclockwise U perm, 8: Z perm, 9: H perm.
+  </p>
+
+  <p>
+    The first number indicates the cycle on the D layer and the second number indicates the cycle on the U layer.
+  </p>
+
+  <div id="active-alg"></div>
+
+  <ul class="alg-list">
+    <li id="01">
+      <div class="overview">
+        <img src="/images/square-1/ep1.png">
+        <span class="alg-name">01</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj on U</h3>
+        <span class="alg red">/ (-3,0) / (0,3) / (0,-3) / (0,3) / (2,0) / (0,2) / (-2,0) / (4,0) / (0,-2) / (0,2) / (-1,4) / (0,-3) / (0,3) *</span>
+      </div>
+    </li>
+
+    <li id="02">
+      <div class="overview">
+        <img src="/images/square-1/ep2.png">
+        <span class="alg-name">02</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp on U</h3>
+        <span class="alg red">/ (3,3) / (-1,0) / (2,-4) / (4,-2) / (0,-2) / (-4,2) / (1,-5) / (3,0) / (3,3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="03">
+      <div class="overview">
+        <img src="/images/square-1/ep3.png">
+        <span class="alg-name">03</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO on U</h3>
+        <span class="alg red">(0,-1) / (-2,-2) / (2,0) / (-3,-3) / (0,1) / (-2,-2) / (0,-2) / (2,2) / (0,-1) / (3,3) / (3,3)</span>
+      </div>
+    </li>
+
+    <li id="04">
+      <div class="overview">
+        <img src="/images/square-1/ep4.png">
+        <span class="alg-name">04</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO on U</h3>
+        <span class="alg red">/ (-3,-3) / (0,1) / (-2,-2) / (0,2) / (2,2) / (0,-1) / (3,3) / (-2,0) / (2,2) / (-3,-2)</span>
+      </div>
+    </li>
+
+    <li id="05">
+      <div class="overview">
+        <img src="/images/square-1/ep5.png">
+        <span class="alg-name">05</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W on U/h3>
+        <span class="alg red">(0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,-3) / (-3,0) *</span>
+      </div>
+    </li>
+
+    <li id="06">
+      <div class="overview">
+        <img src="/images/square-1/ep6.png">
+        <span class="alg-name">06</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU on U</h3>
+        <span class="alg">/ (0,3) / (1,0) / (-3,0) / (-1,0) / (0,-3) / (1,0) / (3,0) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="07">
+      <div class="overview">
+        <img src="/images/square-1/ep7.png">
+        <span class="alg-name">07</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU on U</h3>
+        <span class="alg">(1,0) / (-3,0) / (-1,0) / (0,3) / (1,0) / (3,0) / (-1,0) / (0,-3) /</span>
+      </div>
+    </li>
+
+    <li id="08">
+      <div class="overview">
+        <img src="/images/square-1/ep8.png">
+        <span class="alg-name">08</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z on U</h3>
+        <span class="alg">/ (3,3) / (0,3) / (1,1) / (-1,-4) / (-3,-3)</span>
+      </div>
+    </li>
+
+    <li id="09">
+      <div class="overview">
+        <img src="/images/square-1/ep9.png">
+        <span class="alg-name">09</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H on U</h3>
+        <span class="alg">/ (3,-3) / (3,-3) / (0,1) / (-3,3) / (-3,3) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="10">
+      <div class="overview">
+        <img src="/images/square-1/ep10.png">
+        <span class="alg-name">10</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj on D</h3>
+        <span class="alg">/ (0,3) / (-3,0) / (3,0) / (-3,0) / (0,-2) / (-2,0) / (0,2) / (0,-4) / (2,0) / (-2,0) / (-4,1) / (3,0) / (-3,0) *</span>
+      </div>
+    </li>
+
+    <li id="11">
+      <div class="overview">
+        <img src="/images/square-1/ep11.png">
+        <span class="alg-name">11</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-Adj</h3>
+        <span class="alg">(1,0) / (3,0) / (-1,-1) / (-2,1) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="12">
+      <div class="overview">
+        <img src="/images/square-1/ep12.png">
+        <span class="alg-name">12</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-Adj</h3>
+        <span class="alg">(0,-1) / (0,-3) / (0,3) / (1,-2) / (-1,-1) / (0,3) / (0,-3) / (0,3) / (0,1)</span>
+      </div>
+    </li>
+
+    <li id="13">
+      <div class="overview">
+        <img src="/images/square-1/ep13.png">
+        <span class="alg-name">13</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-Adj</h3>
+        <span class="alg">/ (-3,0) / (-2,0) / (5,-1) / (-5,0) / (3,0) / (-3,0) / (0,1) / (-3,0) / (-3,0) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="14">
+      <div class="overview">
+        <img src="/images/square-1/ep14.png">
+        <span class="alg-name">14</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-Adj</h3>
+        <span class="alg">(1,0) / (3,0) / (3,0) / (0,-1) / (3,0) / (-3,0) / (5,0) / (-5,1) / (2,0) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="15">
+      <div class="overview">
+        <img src="/images/square-1/ep15.png">
+        <span class="alg-name">15</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-Adj</h3>
+        <span class="alg">(1,0) / (3,0) / (-1,-1) / (3,0) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="16">
+      <div class="overview">
+        <img src="/images/square-1/ep16.png">
+        <span class="alg-name">16</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-Adj</h3>
+        <span class="alg red">/ (-3,-3) / (0,1) / (0,-2) / (0,-4) / (-4,0) / (-4,0) / (-2,0) / (5,0) / (-3,-3) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="17">
+      <div class="overview">
+        <img src="/images/square-1/ep17.png">
+        <span class="alg-name">17</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-Adj</h3>
+        <span class="alg red">/ (3,3) / (-5,0) / (2,0) / (4,0) / (4,0) / (0,4) / (0,2) / (0,-1) / (3,3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="18">
+      <div class="overview">
+        <img src="/images/square-1/ep18.png">
+        <span class="alg-name">18</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-Adj</h3>
+        <span class="alg red">/ (-3,0) / (3,3) / (3,0) / (1,0) / (4,-2) / (2,-4) / (3,-1) / (0,-3) / (-3,-3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="19">
+      <div class="overview">
+        <img src="/images/square-1/ep19.png">
+        <span class="alg-name">19</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-Adj</h3>
+        <span class="alg red">/ (-3,0) / (3,3) / (3,0) / (1,0) / (4,-2) / (2,-4) / (4,0) / (-1,-4) / (-3,-3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="20">
+      <div class="overview">
+        <img src="/images/square-1/ep20.png">
+        <span class="alg-name">20</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp on D</h3>
+        <span class="alg red">/ (3,3) / (1,0) / (4,-2) / (2,-4) / (0,2) / (-2,4) / (5,-1) / (0,3) / (-3,-3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="21">
+      <div class="overview">
+        <img src="/images/square-1/ep21.png">
+        <span class="alg-name">21</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-Opp</h3>
+        <span class="alg">(1,0) / (-1,0) / (-3,0) / (0,-1) / (6,0) / (1,0) / (3,0) / (0,1) / (5,0)</span>
+      </div>
+    </li>
+
+    <li id="22">
+      <div class="overview">
+        <img src="/images/square-1/ep22.png">
+        <span class="alg-name">22</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-Opp</h3>
+        <span class="alg">(1,0) / (-1,-1) / (6,1) / (1,0) / (-1,-1) / (6,1)</span>
+      </div>
+    </li>
+
+    <li id="23">
+      <div class="overview">
+        <img src="/images/square-1/ep23.png">
+        <span class="alg-name">23</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-Opp</h3>
+        <span class="alg">(0,-1) / (1,1) / (3,0) / (-1,-1) / (3,0) / (1,1) / (5,0)</span>
+      </div>
+    </li>
+
+    <li id="24">
+      <div class="overview">
+        <img src="/images/square-1/ep24.png">
+        <span class="alg-name">24</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-Opp</h3>
+        <span class="alg"> (0,-1) / (1,1) / (-3,0) / (-1,-1) / (-3,0) / (1,1) / (5,0)</span>
+      </div>
+    </li>
+
+    <li id="25">
+      <div class="overview">
+        <img src="/images/square-1/ep25.png">
+        <span class="alg-name">25</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-Opp</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,0) / (0,3) / (1,0) / (2,2) / (0,1) / (0,3) / (1,0) / (-3,0) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="26">
+      <div class="overview">
+        <img src="/images/square-1/ep26.png">
+        <span class="alg-name">26</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-Opp</h3>
+        <span class="alg red">/ (3,0) / (-3,0) / (3,0) / (0,3) / (1,0) / (0,2) / (4,0) / (0,-4) / (2,0) / (0,5) / (3,3) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="27">
+      <div class="overview">
+        <img src="/images/square-1/ep27.png">
+        <span class="alg-name">27</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-Opp</h3>
+        <span class="alg red">/ (-3,-3) / (0,-5) / (-2,0) / (0,4) / (-4,0) / (0,-2) / (-1,0) / (0,-3) / (-3,0) / (3,0) / (-3,0) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="28">
+      <div class="overview">
+        <img src="/images/square-1/ep28.png">
+        <span class="alg-name">28</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-Opp</h3>
+        <span class="alg red">/ (-3,-3) / (0,-3) / (-2,-2) / (2,0) / (-2,4) / (2,-4) / (0,-1) / (3,3) / (-3,0) *</span>
+      </div>
+    </li>
+
+    <li id="29">
+      <div class="overview">
+        <img src="/images/square-1/ep29.png">
+        <span class="alg-name">29</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-Opp</h3>
+        <span class="alg red">/ (3,3) / (1,0) / (-2,4) / (2,-4) / (2,0) / (-3,-3) / (0,-3) / (-3,-3) / (3,0) *</span>
+      </div>
+    </li>
+
+    <li id="30">
+      <div class="overview">
+        <img src="/images/square-1/ep30.png">
+        <span class="alg-name">30</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO on D</h3>
+        <span class="alg red">/ (3,3) / (-1,0) / (2,2) / (-2,0) / (4,4) / (0,1) / (3,3) / (-2,0) / (2,2) / (0,1)</span>
+      </div>
+    </li>
+
+    <li id="31">
+      <div class="overview">
+        <img src="/images/square-1/ep31.png">
+        <span class="alg-name">31</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-CwO</h3>
+        <span class="alg">(0,-1) / (0,-3) / (0,-3) / (1,0) / (0,-3) / (0,3) / (0,-5) / (-1,5) / (0,-2) / (0,-3) /</span>
+      </div>
+    </li>
+
+    <li id="32">
+      <div class="overview">
+        <img src="/images/square-1/ep32.png">
+        <span class="alg-name">32</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-CwO</h3>
+        <span class="alg">(1,0) / (-1,-1) / (0,-3) / (1,1) / (0,-3) / (-1,-1) / (0,-5)</span>
+      </div>
+    </li>
+
+    <li id="33">
+      <div class="overview">
+        <img src="/images/square-1/ep33.png">
+        <span class="alg-name">33</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-CwO</h3>
+        <span class="alg">(1,0) / (5,-1) / (-3,0) / (1,1) / (-4,2) / (1,1) / (0,-3) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="34">
+      <div class="overview">
+        <img src="/images/square-1/ep34.png">
+        <span class="alg-name">34</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-CwO</h3>
+        <span class="alg">(1,0) / (2,2) / (3,0) / (1,1) / (-3,0) / (2,2) / (3,0) / (-5,-5) / (-1,-3) *</span>
+      </div>
+    </li>
+
+    <li id="35">
+      <div class="overview">
+        <img src="/images/square-1/ep35.png">
+        <span class="alg-name">35</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-CwO</h3>
+        <span class="alg">(1,0) / (5,-1) / (-3,0) / (1,1) / (-3,0) / (3,0) / (-1,2) / (1,1) / (0,-3) / (2,0) *</span>
+      </div>
+    </li>
+
+    <li id="36">
+      <div class="overview">
+        <img src="/images/square-1/ep36.png">
+        <span class="alg-name">36</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-CwO</h3>
+        <span class="alg red"> / (-3,-3) / (0,1) / (-2,-4) / (-4,0) / (0,-4) / (-4,2) / (5,0) / (0,3) / (0,3) / (-3,0) / (0,3) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="37">
+      <div class="overview">
+        <img src="/images/square-1/ep37.png">
+        <span class="alg-name">37</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-CwO</h3>
+        <span class="alg red">/ (0,-3) / (3,3) / (0,3) / (-1,0) / (0,-4) / (-2,4) / (2,4) / (-2,0) / (0,-4) / (0,5) / (3,3) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="38">
+      <div class="overview">
+        <img src="/images/square-1/ep38.png">
+        <span class="alg-name">38</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-CwO</h3>
+        <span class="alg red">/ (-3,-3) / (-3,0) / (5,5) / (0,2) / (-4,2) / (-2,4) / (0,2) / (2,2) / (0,3) / (3,3) / *</span>
+      </div>
+    </li>
+
+    <li id="39">
+      <div class="overview">
+        <img src="/images/square-1/ep39.png">
+        <span class="alg-name">39</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-CwO</h3>
+        <span class="alg red">/ (-3,-3) / (2,-1) / (-2,-2) / (0,-2) / (4,-2) / (2,-4) / (5,0) / (-3,-3) / (0,-3) *</span>
+      </div>
+    </li>
+
+    <li id="40">
+      <div class="overview">
+        <img src="/images/square-1/ep40.png">
+        <span class="alg-name">40</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO on D</h3>
+        <span class="alg red">(0,-1) / (-2,-2) / (2,0) / (-3,-3) / (0,-1) / (-4,-4) / (2,0) / (-2,-2) / (1,0) / (-3,-3)</span>
+      </div>
+    </li>
+
+    <li id="41">
+      <div class="overview">
+        <img src="/images/square-1/ep41.png">
+        <span class="alg-name">41</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-CcwO</h3>
+        <span class="alg">/ (0,3) / (0,2) / (1,-5) / (0,5) / (0,-3) / (0,3) / (-1,0) / (0,3) / (0,3) / (0,1)</span>
+      </div>
+    </li>
+
+    <li id="42">
+      <div class="overview">
+        <img src="/images/square-1/ep42.png">
+        <span class="alg-name">42</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-CcwO</h3>
+        <span class="alg">(1,0) / (-1,-1) / (0,3) / (1,1) / (0,3) / (-1,-1) / (0,-5)</span>
+      </div>
+    </li>
+
+    <li id="43">
+      <div class="overview">
+        <img src="/images/square-1/ep43.png">
+        <span class="alg-name">43</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-CcwO</h3>
+        <span class="alg">(1,3) / (5,5) / (-3,0) / (-2,-2) / (3,0) / (-1,-1) / (-3,0) / (-2,-2) / (-1,0) *</span>
+      </div>
+    </li>
+
+    <li id="44">
+      <div class="overview">
+        <img src="/images/square-1/ep44.png">
+        <span class="alg-name">44</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-CcwO</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,-1) / (4,-2) / (-1,-1) / (3,0) / (-5,1) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="45">
+      <div class="overview">
+        <img src="/images/square-1/ep45.png">
+        <span class="alg-name">45</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-CcwO</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (-4,0) *</span>
+      </div>
+    </li>
+
+    <li id="46">
+      <div class="overview">
+        <img src="/images/square-1/ep46.png">
+        <span class="alg-name">46</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-CcwO</h3>
+        <span class="alg">/ (-3,-3) / (0,-5) / (0,4) / (2,0) / (-2,-4) / (2,-4) / (0,4) / (1,0) / (0,-3) / (-3,-3) / (0,3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="47">
+      <div class="overview">
+        <img src="/images/square-1/ep47.png">
+        <span class="alg-name">47</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-CcwO</h3>
+        <span class="alg red">/ (0,-3) / (3,0) / (0,-3) / (0,-3) / (-5,0) / (4,-2) / (0,4) / (4,0) / (2,4) / (0,-1) / (3,3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="48">
+      <div class="overview">
+        <img src="/images/square-1/ep48.png">
+        <span class="alg-name">48</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-CcwO</h3>
+        <span class="alg red">/ (-3,-3) / (0,-3) / (-2,-2) / (0,-2) / (2,-4) / (4,-2) / (0,-2) / (-5,-5) / (3,0) / (3,3) / (-3,0) *</span>
+      </div>
+    </li>
+
+    <li id="49">
+      <div class="overview">
+        <img src="/images/square-1/ep49.png">
+        <span class="alg-name">49</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-CcwO</h3>
+        <span class="alg red">/ (3,3) / (-5,0) / (-2,4) / (-4,2) / (0,2) / (2,2) / (-2,1) / (3,3) / (0,3) *</span>
+      </div>
+    </li>
+
+    <li id="50">
+      <div class="overview">
+        <img src="/images/square-1/ep50.png">
+        <span class="alg-name">50</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W on D</h3>
+        <span class="alg red">/ (0,3) / (1,0)/ (2,-2) / (4,0) / (4,0) / (-3,2) / (-1,0) / (0,-3) / (4,0) / (-1,2) / (3,-2) *</span>
+      </div>
+    </li>
+
+    <li id="51">
+      <div class="overview">
+        <img src="/images/square-1/ep51.png">
+        <span class="alg-name">51</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-W</h3>
+        <span class="alg">(0,-1) / (0,-3) / (1,1) / (0,-3) / (0,3) / (-1,-1) / (0,3) / (0,-5) *</span>
+      </div>
+    </li>
+
+    <li id="52">
+      <div class="overview">
+        <img src="/images/square-1/ep52.png">
+        <span class="alg-name">52</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-W</h3>
+        <span class="alg">(1,0) / (0,3) / (0,-1) / (0,3) / (0,1) / (2,2) / (1,0) / (0,3) / (0,1) / (-3,0) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="53">
+      <div class="overview">
+        <img src="/images/square-1/ep53.png">
+        <span class="alg-name">53</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-W</h3>
+        <span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (0,-3) / (-1,5) / (0,4) *</span>
+      </div>
+    </li>
+
+    <li id="54">
+      <div class="overview">
+        <img src="/images/square-1/ep54.png">
+        <span class="alg-name">54</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-W</h3>
+        <span class="alg">(0,-1) / (1,-5) / (0,3) / (-1,-1) / (0,3) / (0,-3) / (-2,1) / (-1,-1) / (3,0) / (0,1) *</span>
+      </div>
+    </li>
+
+    <li id="55">
+      <div class="overview">
+        <img src="/images/square-1/ep55.png">
+        <span class="alg-name">55</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-W</h3>
+        <span class="alg">(1,0) / (5,-1) / (3,3) / (3,0) / (1,1) / (-3,0) / (3,-3) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="56">
+      <div class="overview">
+        <img src="/images/square-1/ep56.png">
+        <span class="alg-name">56</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-W</h3>
+        <span class="alg red">/ (0,3) / (0,-4) / (0,3) / (-3,0) / (0,1) / (0,2) / (4,4) / (2,0) / (-1,0) / (0,4) / (-3,0) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="57">
+      <div class="overview">
+        <img src="/images/square-1/ep57.png">
+        <span class="alg-name">57</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-W</h3>
+        <span class="alg red">/ (3,0) / (0,-4) / (1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,-1) / (3,0) / (0,-3) / (0,4) / (0,-3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="58">
+      <div class="overview">
+        <img src="/images/square-1/ep58.png">
+        <span class="alg-name">58</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-W</h3>
+        <span class="alg red">/ (-3,-3) / (2,-1) / (4,-4) / (4,-2) / (-4,2) / (0,-1) / (3,0) / (-3,-3) / (0,-3) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="59">
+      <div class="overview">
+        <img src="/images/square-1/ep59.png">
+        <span class="alg-name">59</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-W</h3>
+        <span class="alg red">/ (0,-3) / (3,0) / (0,-3) / (0,-3) / (1,-2) / (-2,0) / (-4,2) / (4,-2) / (0,-2) / (-2,1) / (3,3) / (0,-6)</span>
+      </div>
+    </li>
+
+    <li id="60">
+      <div class="overview">
+        <img src="/images/square-1/ep60.png">
+        <span class="alg-name">60</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU on D</h3>
+        <span class="alg">/ (0,-3) / (0,-1) / (3,0) / (0,1) / (0,3) / (0,-1) / (-3,0) / (0,1)</span>
+      </div>
+    </li>
+
+    <li id="61">
+      <div class="overview">
+        <img src="/images/square-1/ep61.png">
+        <span class="alg-name">61</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-CwU</h3>
+        <span class="alg red">/ (3,3) / (5,0) / (2,0) / (4,0) / (0,4) / (0,4) / (0,2) / (0,1) / (3,3) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="62">
+      <div class="overview">
+        <img src="/images/square-1/ep62.png">
+        <span class="alg-name">62</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-CwU</h3>
+        <span class="alg red">/ (3,3) / (5,0) / (0,2) / (-4,0) / (0,4) / (2,0) / (0,1) / (3,0) / (0,3) / (0,-3) / (0,3) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="63">
+      <div class="overview">
+        <img src="/images/square-1/ep63.png">
+        <span class="alg-name">63</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-CwU</h3>
+        <span class="alg red">/ (3,3) / (5,0) / (-4,0) / (0,-2) / (4,2) / (4,-2) / (-4,0) / (0,-1) / (3,0) / (3,3) / (-3,0) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="64">
+      <div class="overview">
+        <img src="/images/square-1/ep64.png">
+        <span class="alg-name">64</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-CwU</h3>
+        <span class="alg red">/ (3,0) / (-3,-3) / (-3,0) / (0,1) / (4,0) / (-4,2) / (-4,-2) / (0,2) / (4,0) / (-5,0) / (-3,-3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="65">
+      <div class="overview">
+        <img src="/images/square-1/ep65.png">
+        <span class="alg-name">65</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-CwU</h3>
+        <span class="alg red">/ (0,-3) / (4,0) / (0,-1) / (0,2) / (4,4) / (2,0) / (1,0) / (0,-3) / (3,0) / (-4,0) / (3,0) / (0,-3)</span>
+      </div>
+    </li>
+
+    <li id="66">
+      <div class="overview">
+        <img src="/images/square-1/ep66.png">
+        <span class="alg-name">66</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-CwU</h3>
+        <span class="alg">(1,0) / (5,-1) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="67">
+      <div class="overview">
+        <img src="/images/square-1/ep67.png">
+        <span class="alg-name">67</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-CwU</h3>
+        <span class="alg">(1,0) / (5,-1) / (-5,1) / (-3,0) / (0,3) / (-1,-1) / (1,-2) / (-4,0) *</span>
+      </div>
+    </li>
+
+    <li id="68">
+      <div class="overview">
+        <img src="/images/square-1/ep68.png">
+        <span class="alg-name">68</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-CwU</h3>
+        <span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,-3) / (0,-3) / (1,1) / (-1,2) / (0,4)</span>
+      </div>
+    </li>
+
+    <li id="69">
+      <div class="overview">
+        <img src="/images/square-1/ep69.png">
+        <span class="alg-name">69</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-CwU</h3>
+        <span class="alg">(0,-1) / (-3,0) / (0,-5) / (0,3) / (-5,0) / (5,0) / (0,-3) / (1,3) / (5,-1) / (0,-5) *</span>
+      </div>
+    </li>
+
+    <li id="70">
+      <div class="overview">
+        <img src="/images/square-1/ep70.png">
+        <span class="alg-name">70</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU on D</h3>
+        <span class="alg">(0,-1) / (3,0) / (0,1) / (0,-3) / (0,-1) / (-3,0) / (0,1) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="71">
+      <div class="overview">
+        <img src="/images/square-1/ep71.png">
+        <span class="alg-name">71</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-CcwU</h3>
+        <span class="alg red">/ (-3,-3) / (0,-1) / (0,-2) / (0,-4) / (0,-4) / (-4,0) / (-2,0) / (-5,0) / (-3,-3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="72">
+      <div class="overview">
+        <img src="/images/square-1/ep72.png">
+        <span class="alg-name">72</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-CcwU</h3>
+        <span class="alg red">/ (0,-3) / (0,3) / (0,-3) / (-3,0) / (0,-1) / (-2,0) / (0,-4) / (4,0) / (0,-2) / (-5,0) / (-3,-3) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="73">
+      <div class="overview">
+        <img src="/images/square-1/ep73.png">
+        <span class="alg-name">73</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-CcwU</h3>
+        <span class="alg red">/ (3,0) / (0,-3) / (3,0) / (3,0) / (0,5) / (2,-4) / (-4,0) / (0,-4) / (-4,-2) / (1,0) / (-3,-3) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="74">
+      <div class="overview">
+        <img src="/images/square-1/ep74.png">
+        <span class="alg-name">74</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-CcwU/h3>
+        <span class="alg red">/ (3,3) / (-1,0) / (4,2) / (0,4) / (4,0) / (-2,4) / (0,-5) / (-3,0) / (-3,0) / (0,3) / (-3,0) / (3,0) </span>
+      </div>
+    </li>
+
+    <li id="75">
+      <div class="overview">
+        <img src="/images/square-1/ep75.png">
+        <span class="alg-name">75</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-CcwU</h3>
+        <span class="alg red">/ (-3,0) / (4,0) / (-3,0) / (0,3) / (-1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,1) / (-4,0) / (0,3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="76">
+      <div class="overview">
+        <img src="/images/square-1/ep76.png">
+        <span class="alg-name">76</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-CcwU</h3>
+        <span class="alg">(0,-1) / (1,-5) / (-1,5) / (0,3) / (-3,0) / (1,1) / (2,-1) / (0,4) *</span>
+      </div>
+    </li>
+
+    <li id="77">
+      <div class="overview">
+        <img src="/images/square-1/ep77.png">
+        <span class="alg-name">77</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-CcwU</h3>
+        <span class="alg">(1,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (5,0)</span>
+      </div>
+    </li>
+
+    <li id="78">
+      <div class="overview">
+        <img src="/images/square-1/ep78.png">
+        <span class="alg-name">78</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-CcwU</h3>
+        <span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (-1,2) / (0,-2)</span>
+      </div>
+    </li>
+
+    <li id="79">
+      <div class="overview">
+        <img src="/images/square-1/ep79.png">
+        <span class="alg-name">79</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-CcwU</h3>
+        <span class="alg">(0,-1) / (-5,1) / (-1,-3) / (0,3) / (-5,0) / (5,0) / (0,-3) / (0,5) / (3,0) / (0,-5) *</span>
+      </div>
+    </li>
+
+    <li id="80">
+      <div class="overview">
+        <img src="/images/square-1/ep80.png">
+        <span class="alg-name">80</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z on D</h3>
+        <span class="alg">/ (-3,-3) / (-3,0) / (-1,-1) / (4,1) / (3,3)</span>
+      </div>
+    </li>
+
+    <li id="81">
+      <div class="overview">
+        <img src="/images/square-1/ep81.png">
+        <span class="alg-name">81</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-Z</h3>
+        <span class="alg red">/ (-3,0) / (3,3) / (3,0) / (5,0) / (-4,2) / (-2,4) / (3,1) / (0,3) / (-3,-3) / (3,6)</span>
+      </div>
+    </li>
+
+    <li id="82">
+      <div class="overview">
+        <img src="/images/square-1/ep82.png">
+        <span class="alg-name">82</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-Z</h3>
+        <span class="alg red">/ (-3,-3) / (0,-1) / (-4,2) / (4,-2) / (-4,0) / (-2,-2) / (0,3) / (3,3) / (0,3) *</span>
+      </div>
+    </li>
+
+    <li id="83">
+      <div class="overview">
+        <img src="/images/square-1/ep83.png">
+        <span class="alg-name">83</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-Z</h3>
+        <span class="alg red">/ (3,3) / (3,0) / (2,2) / (2,0) / (4,-2) / (2,-4) / (2,0) / (5,5) / (0,-3) / (-3,-3) / (0,3) *</span>
+      </div>
+    </li>
+
+    <li id="84">
+      <div class="overview">
+        <img src="/images/square-1/ep84.png">
+        <span class="alg-name">84</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-Z</h3>
+        <span class="alg red"> / (3,3) / (0,3) / (-5,-5) / (-2,0) / (-2,4) / (-4,2) / (-2,0) / (-2,-2) / (-3,0) / (-3,-3) / *</span>
+      </div>
+    </li>
+
+    <li id="85">
+      <div class="overview">
+        <img src="/images/square-1/ep85.png">
+        <span class="alg-name">85</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-Z</h3>
+        <span class="alg red">/ (3,3) / (1,-2) / (4,-4) / (2,-4) / (-2,4) / (1,0) / (0,-3) / (3,3) / (3,0) / (3,0)</span>
+      </div>
+    </li>
+
+    <li id="86">
+      <div class="overview">
+        <img src="/images/square-1/ep86.png">
+        <span class="alg-name">86</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-Z</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (-2,1) / (2,0)</span>
+      </div>
+    </li>
+
+    <li id="87">
+      <div class="overview">
+        <img src="/images/square-1/ep87.png">
+        <span class="alg-name">87</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-Z</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (3,0) / (3,0) / (-1,-1) / (-2,1) / (-4,0)</span>
+      </div>
+    </li>
+
+    <li id="88">
+      <div class="overview">
+        <img src="/images/square-1/ep88.png">
+        <span class="alg-name">88</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-Z</h3>
+        <span class="alg">(1,0) / (0,3) / (-1,-1) / (4,-2) / (-1,-1) / (-2,1) / (-1,0)</span>
+      </div>
+    </li>
+
+    <li id="89">
+      <div class="overview">
+        <img src="/images/square-1/ep89.png">
+        <span class="alg-name">89</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-Z</h3>
+        <span class="alg">/ (3,3) / (0,-3) / (1,-5) / (4,-2) / (-2,1) / (3,3) / *</span>
+      </div>
+    </li>
+
+    <li id="90">
+      <div class="overview">
+        <img src="/images/square-1/ep90.png">
+        <span class="alg-name">90</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H on D</h3>
+        <span class="alg">/ (3,-3) / (3,-3) / (-1,0) / (-3,3) / (-3,3) / (0,1)</span>
+      </div>
+    </li>
+
+    <li id="91">
+      <div class="overview">
+        <img src="/images/square-1/ep91.png">
+        <span class="alg-name">91</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Adj-H</h3>
+        <span class="alg red">/ (-3,0) / (3,3) / (3,0) / (5,0) / (-4,2) / (-2,4) / (2,0) / (-2,1) / (3,3) / (0,3)</span>
+      </div>
+    </li>
+
+    <li id="92">
+      <div class="overview">
+        <img src="/images/square-1/ep92.png">
+        <span class="alg-name">92</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Opp-H</h3>
+        <span class="alg red">/ (-3,-3) / (3,0) / (-3,-3) / (2,0) / (-4,2) / (4,-2) / (1,0) / (-3,-3) / (3,0) *</span>
+      </div>
+    </li>
+
+    <li id="93">
+      <div class="overview">
+        <img src="/images/square-1/ep93.png">
+        <span class="alg-name">93</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwO-H</h3>
+        <span class="alg red">/ (-3,-3) / (0,5) / (-4,2) / (-2,4) / (-2,0) / (-2,-2) / (-1,2) / (-3,-3) / (-3,0) *</span>
+      </div>
+    </li>
+
+    <li id="94">
+      <div class="overview">
+        <img src="/images/square-1/ep94.png">
+        <span class="alg-name">94</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwO-H</h3>
+        <span class="alg red">/ (3,3) / (1,-2) / (2,2) / (2,0) / (2,-4) / (4,-2) / (0,-5) / (3,3) / (3,0) * </span>
+      </div>
+    </li>
+
+    <li id="95">
+      <div class="overview">
+        <img src="/images/square-1/ep95.png">
+        <span class="alg-name">95</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">W-H</h3>
+        <span class="alg red">/ (3,0) / (0,-3) / (3,0) / (3,0) / (2,-1) / (0,2) / (-2,4) / (2,-4) / (2,0) / (-1,2) / (-3,-3) / (-3,0)</span>
+      </div>
+    </li>
+
+    <li id="96">
+      <div class="overview">
+        <img src="/images/square-1/ep96.png">
+        <span class="alg-name">96</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CwU-H</h3>
+        <span class="alg">(1,0) / (-1,5) / (3,1) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-5,0) / (0,-3) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="97">
+      <div class="overview">
+        <img src="/images/square-1/ep97.png">
+        <span class="alg-name">97</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">CcwU-H</h3>
+        <span class="alg">(1,0) / (0,3) / (5,0) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-3,-1) / (1,-5) / (5,0) *</span>
+      </div>
+    </li>
+
+    <li id="98">
+      <div class="overview">
+        <img src="/images/square-1/ep98.png">
+        <span class="alg-name">98</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">Z-H</h3>
+        <span class="alg">/ (-3,-3) / (3,0) / (5,-1) / (2,-4) / (-1,2) / (-3,-3) / *</span>
+      </div>
+    </li>
+
+    <li id="99">
+      <div class="overview">
+        <img src="/images/square-1/ep99.png">
+        <span class="alg-name">99</span>
+      </div>
+
+      <div class="details">
+        <h3 class="alg-nickname">H-H</h3>
+        <span class="alg">/ (3,-3) / (3,-3) / (-1,1) / (3,-3) / (3,-3) / (-5,5)</span>
+      </div>
     </li>
   </ul>
 </div>
