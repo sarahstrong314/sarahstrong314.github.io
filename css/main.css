@@ -120,6 +120,7 @@ a.button:hover {
   position: absolute;
   left: 260px;
   margin-right: 3em;
+  min-width: 450px;
 }
 
 #content ul {
