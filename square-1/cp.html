@@ -3,13 +3,18 @@ layout: default
 title: Square-1 &mdash; CP Algorithms
 ---
 
-<div id="square-1-cp" class="tall-images width-75px">
+<div id="square-1-cp" class="tall-images width-75px collapsible">
   <h2>Corner Permutation</h2>
   <a href="/square-1/cp.pdf" class="button right">Printable Version</a>
 
+  <ul class="tabs">
+    <li id="standard">Standard</li>
+    <li id="parity">Parity</li>
+  </ul>
+
   <div id="active-alg"></div>
 
-  <ul class="alg-list">
+  <ul class="alg-list" id="standard">
     <li id="1">
       <div class="overview">
         <img src="/images/square-1/cp1.png">
@@ -89,5 +94,8 @@ title: Square-1 &mdash; CP Algorithms
         <span class="alg">/ (0,3) / (0,-3) / (0,3) / (0,-3) /</span>
       </div>
     </li>
+  </ul>
+
+  <ul class="alg-list" id="parity">
   </ul>
 </div>
