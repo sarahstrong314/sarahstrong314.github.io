@@ -38,7 +38,7 @@ $(document).ready(function() {
   $(".tabs li").click(function(ev) {
     var $li = $(ev.target).closest("li");
     var $activeTab = $(".tabs li.active")
-    var $activeList;
+    var $activeSection;
 
     if ($li !== $activeTab) {
       $("#active-alg").slideUp('fast', function() {
@@ -47,15 +47,15 @@ $(document).ready(function() {
       });
 
       if ($activeTab.length > 0) {
-        $activeList = $(".alg-list#" + $activeTab.attr('id'));
+        $activeSection = $(".section#" + $activeTab.attr('id'));
       }
 
-      if ($activeList !== undefined) {
-        $activeList.fadeOut('fast', function() {
-          $(".alg-list#" + $li.attr('id')).fadeIn('fast');
+      if ($activeSection !== undefined) {
+        $activeSection.fadeOut('fast', function() {
+          $(".section#" + $li.attr('id')).fadeIn('fast');
         });
       } else {
-        $(".alg-list#" + $li.attr('id')).fadeIn('fast');
+        $(".section#" + $li.attr('id')).fadeIn('fast');
       }
 
       $(".tabs li").removeClass('active');
@@ -76,30 +76,33 @@ $(document).ready(function() {
     }
   });
 
+  var navigateWithHash = function() {
+    // Automatically open tab/alg specified in hash.
+    if (document.location.hash !== "") {
+      var tab, $algLi;
 
+      // Activate this particular algorithm.
+      if (document.location.hash.indexOf('alg/') === 1) {
+        $algLi = $(".alg-list li#" + document.location.hash.substr(5));
 
-  // Automatically open tab/alg specified in hash.
-  if (document.location.hash !== "") {
-    var tab, $algLi;
+        tab = $algLi.closest('ul').attr('id');
+      } else {
+        tab = document.location.hash.substr("#section/".length);
+      }
 
-    // Activate this particular algorithm.
-    if (document.location.hash.indexOf('alg/') === 1) {
-      $algLi = $(".alg-list li#" + document.location.hash.substr(5));
+      // Activate this tab, if this page supports tabs.
+      if ($(".collapsible").length > 0) {
+        $(".tabs li#" + tab).click();
+      }
 
-      tab = $algLi.closest('ul').attr('id');
-    } else {
-      tab = document.location.hash.substr("#section/".length);
+      if ($algLi !== undefined) {
+        $algLi.click();
+      }
     }
+  };
 
-    // Activate this tab, if this page supports tabs.
-    if ($(".collapsible").length > 0) {
-      $(".tabs li#" + tab).click();
-    }
-
-    if ($algLi !== undefined) {
-      $algLi.click();
-    }
-  }
+  $(window).on('hashchange', navigateWithHash);
+  navigateWithHash();
 
   var path = document.location.pathname.replace('.html', '');
   $("#nav").find("a[href='" + path + "']").closest("ul").show();
