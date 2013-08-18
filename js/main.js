@@ -76,6 +76,8 @@ $(document).ready(function() {
     }
   });
 
+
+
   // Automatically open tab/alg specified in hash.
   if (document.location.hash !== "") {
     var tab, $algLi;
@@ -98,4 +100,7 @@ $(document).ready(function() {
       $algLi.click();
     }
   }
+
+  var path = document.location.pathname.replace('.html', '');
+  $("#nav").find("a[href='" + path + "']").closest("ul").show();
 });
