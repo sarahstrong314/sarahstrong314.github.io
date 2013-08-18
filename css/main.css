@@ -184,6 +184,11 @@ h3 small {
   padding: 5px 5px 15px 5px;
 }
 
+#active-alg a, a:visited {
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
 .inactive {
   opacity: 0.66;
 }
