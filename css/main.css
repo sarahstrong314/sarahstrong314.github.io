@@ -219,6 +219,11 @@ a.button:hover {
   float: right;
 }
 
+#square-1-ep .alg-list {
+  width: 860px;
+  margin: 0;
+}
+
 /* Homepage */
 #home {
   min-width: 804px;
