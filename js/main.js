@@ -65,6 +65,18 @@ $(document).ready(function() {
     }
   });
 
+  $("#nav li h3").click(function(ev) {
+    var $li = $(ev.target).closest("li");
+
+    if ($li.find("ul").is(":visible")) {
+      $li.find("ul").slideUp();
+    } else {
+      $("#nav li").not($li).find("ul").slideUp();
+      $li.find("ul").slideDown();
+    }
+  });
+
+  // Automatically open tab/alg specified in hash.
   if (document.location.hash !== "") {
     var tab, $algLi;
 
@@ -77,6 +89,7 @@ $(document).ready(function() {
       tab = document.location.hash.substr(1);
     }
 
+    // Activate this tab, if this page supports tabs.
     if ($(".collapsible").length > 0) {
       $(".tabs li#" + tab).click();
     }
