@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  var justNavigatedWhileOnPage = false;
-
   $("#content").addClass($("#content > div").attr('id'));
 
   // Focussing on one particular algorithm.
@@ -8,8 +6,9 @@ $(document).ready(function() {
     var $alg = $(ev.target).closest("li");
     var activeAlgPosition;
 
-    $(".alg-list li").not($alg).find(".overview").addClass('inactive');
+    $(".alg-list li").not($alg).find(".overview").removeClass('active').addClass('inactive');
     $alg.find(".overview").removeClass('inactive');
+    $alg.addClass('active');
     $alg = $alg.clone();
 
     if ($alg.find(".alg-name").length > 0) {
@@ -41,10 +40,14 @@ $(document).ready(function() {
     var $li = $(ev.target).closest("li");
     var $activeTab = $(".tabs li.active")
     var $prependTitle = $(".prepend-title");
-    var $activeSection, $newSection, $newTitle;
+    var $activeSection, $newSection, $newTitle, newHash;
 
     // Don't switch between tabs if the user clicked the current tab.
     if ($li !== $activeTab) {
+      // Update tab appearance.
+      $(".tabs li").removeClass('active');
+      $li.addClass('active');
+
       $("#active-alg").slideUp('fast', function() {
         $("#active-alg").empty();
         $(".inactive").removeClass('inactive');
@@ -62,10 +65,6 @@ $(document).ready(function() {
         $newSection.fadeIn('fast');
       }
 
-      // Update tab appearance.
-      $(".tabs li").removeClass('active');
-      $li.addClass('active');
-
       // Join subtitle with title, if applicable.
       if ($prependTitle.length > 0) {
         $('.joined-title').remove();
@@ -76,8 +75,10 @@ $(document).ready(function() {
         $newTitle.show();
       }
 
-      justNavigatedWhileOnPage = true;
-      window.location.hash = "section/" + $li.attr('id');
+      newHash = "section/" + $li.attr('id');
+      if (window.location.hash !== newHash) {
+        window.location.hash = newHash;
+      }
     }
   });
 
@@ -93,10 +94,7 @@ $(document).ready(function() {
   });
 
   var navigateWithHash = function() {
-    if (justNavigatedWhileOnPage) {
-      // Don't re-process this navigate event that occurred from a user's click.
-      justNavigatedWhileOnPage = false;
-    } else if (document.location.hash !== "") {
+    if (document.location.hash !== "") {
       // Automatically open tab/alg specified in hash.
       var tab, $algLi;
 
@@ -111,11 +109,11 @@ $(document).ready(function() {
 
       // Activate this tab, if this page supports tabs.
       if ($(".collapsible").length > 0) {
-        $(".tabs li#" + tab).click();
+        $(".tabs li#" + tab).not(".active").click();
       }
 
       if ($algLi !== undefined) {
-        $algLi.click();
+        $algLi.not(".active").click();
       }
     }
   };
