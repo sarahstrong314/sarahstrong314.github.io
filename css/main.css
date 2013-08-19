@@ -222,6 +222,7 @@ a.button:hover {
 .introduction {
   display: block;
   float: left;
+  width: 100%;
 }
 
 #square-1-ep .alg-list {
@@ -231,6 +232,15 @@ a.button:hover {
 
 .append-title {
   display: none;
+}
+
+/* I'm sorry. I didn't realize IDs couldn't start with a number. */
+[id='3x3x3-beginners-method'] h3 {
+  margin-top: 20px;
+}
+
+p img {
+  vertical-align: middle;
 }
 
 /* Homepage */
