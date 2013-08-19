@@ -38,28 +38,41 @@ $(document).ready(function() {
   $(".tabs li").click(function(ev) {
     var $li = $(ev.target).closest("li");
     var $activeTab = $(".tabs li.active")
-    var $activeSection;
+    var $prependTitle = $(".prepend-title");
+    var $activeSection, $newSection, $newTitle;
 
+    // Don't switch between tabs if the user clicked the current tab.
     if ($li !== $activeTab) {
       $("#active-alg").slideUp('fast', function() {
         $("#active-alg").empty();
         $(".inactive").removeClass('inactive');
       });
 
+      $newSection = $(".section#" + $li.attr('id'));
+
+      // Fade out old content if a tab was previously selected.
       if ($activeTab.length > 0) {
         $activeSection = $(".section#" + $activeTab.attr('id'));
-      }
-
-      if ($activeSection !== undefined) {
         $activeSection.fadeOut('fast', function() {
-          $(".section#" + $li.attr('id')).fadeIn('fast');
+          $newSection.fadeIn('fast');
         });
       } else {
-        $(".section#" + $li.attr('id')).fadeIn('fast');
+        $newSection.fadeIn('fast');
       }
 
+      // Update tab appearance.
       $(".tabs li").removeClass('active');
       $li.addClass('active');
+
+      // Join subtitle with title, if applicable.
+      if ($prependTitle.length > 0) {
+        $('.joined-title').remove();
+        $newTitle = $prependTitle.hide().clone().removeClass('prepend-title').addClass('joined-title');
+        $newTitle.append(" &mdash; " + $newSection.find(".append-title").text());
+        $prependTitle.parent().prepend($newTitle);
+        $newSection.find(".append-title").hide();
+        $newTitle.show();
+      }
 
       window.location.hash = "section/" + $li.attr('id');
     }

@@ -229,6 +229,10 @@ a.button:hover {
   margin: 0;
 }
 
+.append-title {
+  display: none;
+}
+
 /* Homepage */
 #home {
   min-width: 804px;
