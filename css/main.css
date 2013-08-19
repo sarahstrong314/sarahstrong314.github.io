@@ -88,6 +88,10 @@ h3 small {
   background-color: #F8F8F8; /* beige */
 }
 
+.tabs {
+  width: 100%;
+}
+
 .tabs li, a.button {
   padding: 10px;
   -webkit-border-radius: 4px;
