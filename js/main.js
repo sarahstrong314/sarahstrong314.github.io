@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var justNavigatedWhileOnPage = false;
+
   $("#content").addClass($("#content > div").attr('id'));
 
   // Focussing on one particular algorithm.
@@ -74,6 +76,7 @@ $(document).ready(function() {
         $newTitle.show();
       }
 
+      justNavigatedWhileOnPage = true;
       window.location.hash = "section/" + $li.attr('id');
     }
   });
@@ -90,8 +93,11 @@ $(document).ready(function() {
   });
 
   var navigateWithHash = function() {
-    // Automatically open tab/alg specified in hash.
-    if (document.location.hash !== "") {
+    if (justNavigatedWhileOnPage) {
+      // Don't re-process this navigate event that occurred from a user's click.
+      justNavigatedWhileOnPage = false;
+    } else if (document.location.hash !== "") {
+      // Automatically open tab/alg specified in hash.
       var tab, $algLi;
 
       // Activate this particular algorithm.
