@@ -256,11 +256,10 @@ p img {
 #home img {
   float: right;
   padding: 0 15px 15px 15px;
-  margin-right: 300px;
 }
 
 #content.home {
-  width: 100%;
+  width: 70%;
 }
 
 /* Guestbook */
