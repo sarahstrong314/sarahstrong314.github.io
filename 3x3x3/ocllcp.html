@@ -4,16 +4,463 @@ title: 3x3x3 &mdash; OCLLCP Algorithms
 ---
 
 <div id="3x3x3-ocllcp">
-  <h2></h2>
+  <h2>Corners of the Last Layer (Preserving Edge Orientation)</h2>
   <a href="/3x3x3/ocllcp.pdf" class="button right">Printable Version</a>
-  <ul>
+  <p>
+    These are the algs I use when I get a COLL case. I don't use it too often for the 3x3x3, but for big cubes (4x4x4 and up) I almost always force all of the last layer edges to be oriented while I'm doing the last F2L slot. The images on the left show all the sticker colours of each corner, and the images on the right show which sticker colours I may attention to, in order to recognize the COLL case. Most of these algorithms are from <a target="_blank" href="http://cube.danrcohen.com/coll.html">Dan Cohen's site</a> and <a target="_blank" href="http://jmbaum.110mb.com/coll.htm">Jason Baum's site</a>, and the rest are from a few other pages.
+  </p>
+
+  <div id="active-alg" class="activateable"></div>
+
+  <ul class="alg-list">
     <li id="solved">
       <div class="overview">
         <img src="/images/ocllcp/OCLLCPsolved.png">
+        <img src="/images/ocllcp/OCLLCPsolved.png" class="activateable">
       </div>
 
       <div class="details">
         <span class="alg">Skip!</span>
+      </div>
+    </li>
+
+    <li id="H1">
+      <div class="overview">
+        <img src="/images/coll1/H1.png">
+        <img src="/images/coll/H1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R-_U-_R_U_R-_U-_R_U-_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">R U2 R' U' R U R' U' R U' R'</a>
+      </div>
+    </li>
+
+    <li id="H2">
+      <div class="overview">
+        <img src="/images/coll1/H2.png">
+        <img src="/images/coll/H2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R_U_R-_U-_R_U_R-_U-_R_U_R-_U-_F-_y2&animtype=solve&scheme=gorbwy&stage=PLL">F R U R' U' R U R' U' R U R' U' F'</a>
+      </div>
+    </li>
+
+    <li id="H3">
+      <div class="overview">
+        <img src="/images/coll1/H3.png">
+        <img src="/images/coll/H3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U_R_U_L-_U_R-_U-_L_y&animtype=solve&scheme=gorbwy&stage=PLL">y R U R' U R U L' U R' U' L</a>
+      </div>
+    </li>
+
+    <li id="H4">
+      <div class="overview">
+        <img src="/images/coll1/H4.png">
+        <img src="/images/coll/H4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R_U-_R-_U_R_U2_R-_U-_R_U_R-_U-_F-_y2&animtype=solve&scheme=gorbwy&stage=PLL">y F R U' R' U R U2 R' U' R U R' U' F'</a>
+      </div>
+    </li>
+
+    <li id="pi1">
+      <div class="overview">
+        <img src="/images/coll1/pi1.png">
+        <img src="/images/coll/pi1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R2_U-_R2_U-_R2_U2_R_y-&animtype=solve&scheme=gorbwy&stage=PLL">R U2 R2 U' R2 U' R2 U2 R</a>
+      </div>
+    </li>
+
+    <li id="pi2">
+      <div class="overview">
+        <img src="/images/coll1/pi2.png">
+        <img src="/images/coll/pi2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_D-_R_U_R-_D_R2_U-_R-_U-_R2-_U2-_R_y2&animtype=solve&scheme=gorbwy&stage=PLL">R U D' R U R' D R2 U' R' U' R2' U2' R</a>
+      </div>
+    </li>
+
+    <li id="pi3">
+      <div class="overview">
+        <img src="/images/coll1/pi3.png">
+        <img src="/images/coll/pi3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=L-_U_R_U-_L_U-_R-_U-_R_U-_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y2 L' U R U' L U' R' U' R U' R'</a>
+      </div>
+    </li>
+
+    <li id="pi4">
+      <div class="overview">
+        <img src="/images/coll1/pi4.png">
+        <img src="/images/coll/pi4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_U_R_U-_R-_U_R_U2_R-_U-_R_U_R-_F-_y&animtype=solve&scheme=gorbwy&stage=PLL">y F U R U' R' U R U2 R' U' R U R' F'</a>
+      </div>
+    </li>
+
+    <li id="pi5">
+      <div class="overview">
+        <img src="/images/coll1/pi5.png">
+        <img src="/images/coll/pi5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_F2_R_U2_R_U2_R-_F2_U-_R_U-_R-_&animtype=solve&scheme=gorbwy&stage=PLL">R' F2 R U2 R U2 R' F2 U' R U' R'</a>
+      </div>
+    </li>
+
+    <li id="pi6">
+      <div class="overview">
+        <img src="/images/coll1/pi6.png">
+        <img src="/images/coll/pi6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U_F2_R_U2_R-_U2_R-_F2_R_y-&animtype=solve&scheme=gorbwy&stage=PLL">y' R U R' U F2 R U2 R' U2 R' F2 R</a>
+      </div>
+    </li>
+
+    <li id="antisune1">
+      <div class="overview">
+        <img src="/images/coll1/antisune1.png">
+        <img src="/images/coll/antisune1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R-_U-_R_U-_R-_y2&animtype=solve&scheme=gorbwy&stage=PLL">R U2 R' U' R U' R'</a>
+      </div>
+    </li>
+
+    <li id="antisune2">
+      <div class="overview">
+        <img src="/images/coll1/antisune2.png">
+        <img src="/images/coll/antisune2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=y_R-_U-_R_U-_L_U-_R-_U_L-_U2_R&animtype=solve&scheme=gorbwy&stage=PLL">y R' U' R U' L U' R' U L' U2 R</a>
+      </div>
+    </li>
+
+    <li id="antisune3">
+      <div class="overview">
+        <img src="/images/coll1/antisune3.png">
+        <img src="/images/coll/antisune3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=L-_U_R_U-_L_U_R-&animtype=solve&scheme=gorbwy&stage=PLL">y L' U R U' L U R'</a>
+      </div>
+    </li>
+
+    <li id="antisune4">
+      <div class="overview">
+        <img src="/images/coll1/antisune4.png">
+        <img src="/images/coll/antisune4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R2_D_R-_U2_R_D-_R2_U-_R_U-_R-_&animtype=solve&scheme=gorbwy&stage=PLL">y R2 D R' U2 R D' R2 U' R U' R'</a>
+      </div>
+    </li>
+
+    <li id="antisune5">
+      <div class="overview">
+        <img src="/images/coll1/antisune5.png">
+        <img src="/images/coll/antisune5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R-_U2_L-_U_R_U-_M-_x-&animtype=solve&scheme=gorbwy&stage=PLL">y R U2 R' U2 L' U R U' M' x'</a>
+      </div>
+    </li>
+
+    <li id="antisune6">
+      <div class="overview">
+        <img src="/images/coll1/antisune6.png">
+        <img src="/images/coll/antisune6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F-_L_U2_L-_F_L_F-_U2_F_L-&animtype=solve&scheme=gorbwy&stage=PLL">y F' L U2 L' F L F' U2 F L'</a>
+      </div>
+    </li>
+
+    <li id="sune1">
+      <div class="overview">
+        <img src="/images/coll1/sune1.png">
+        <img src="/images/coll/sune1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U_R_U2_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y' R U R' U R U2 R'</a>
+      </div>
+    </li>
+
+    <li id="sune2">
+      <div class="overview">
+        <img src="/images/coll1/sune2.png">
+        <img src="/images/coll/sune2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U_L-_U_R_U-_L_U2_R-_y2&animtype=solve&scheme=gorbwy&stage=PLL">y R U R' U L' U R U' L U2 R'</a>
+      </div>
+    </li>
+
+    <li id="sune3">
+      <div class="overview">
+        <img src="/images/coll1/sune3.png">
+        <img src="/images/coll/sune3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U-_L-_U_R-_U-_L_&animtype=solve&scheme=gorbwy&stage=PLL">y' R U' L' U R' U' L</a>
+      </div>
+    </li>
+
+    <li id="sune4">
+      <div class="overview">
+        <img src="/images/coll1/sune4.png">
+        <img src="/images/coll/sune4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R2_D-_R_U2_R-_D_R2_U_R-_U_R_y2&animtype=solve&scheme=gorbwy&stage=PLL">y R2 D' R U2 R' D R2 U R' U R</a>
+      </div>
+    </li>
+
+    <li id="sune5">
+      <div class="overview">
+        <img src="/images/coll1/sune5.png">
+        <img src="/images/coll/sune5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U2_R_U2_L_U-_R-_U_M_x_y2&animtype=solve&scheme=gorbwy&stage=PLL">y R' U2 R U2 L U' R' U M x</a>
+      </div>
+    </li>
+
+    <li id="sune6">
+      <div class="overview">
+        <img src="/images/coll1/sune6.png">
+        <img src="/images/coll/sune6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R-_U2_R_F-_R-_F_U2_F-_R&animtype=solve&scheme=gorbwy&stage=PLL">y' F R' U2 R F' R' F U2 F' R</a>
+      </div>
+    </li>
+
+    <li id="T1">
+      <div class="overview">
+        <img src="/images/coll1/T1.png">
+        <img src="/images/coll/T1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=r_U_R-_U-_r-_F_R_F-&animtype=solve&scheme=gorbwy&stage=PLL">y Rw U R' U' R'w F R F'</a>
+      </div>
+    </li>
+
+    <li id="T2">
+      <div class="overview">
+        <img src="/images/coll1/T2.png">
+        <img src="/images/coll/T2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=l-_U-_L_U_R_U-_r-_F_y-&animtype=solve&scheme=gorbwy&stage=PLL">y' L'w U' L U R U' R'w F</a>
+      </div>
+    </li>
+
+    <li id="T3">
+      <div class="overview">
+        <img src="/images/coll1/T3.png">
+        <img src="/images/coll/T3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U_R2_D_r-_U2_r_D-_R2_U-_R_y-&animtype=solve&scheme=gorbwy&stage=PLL">y2 R' U R2 D R'w U2 Rw D' R2 U' R</a>
+      </div>
+    </li>
+
+    <li id="T4">
+      <div class="overview">
+        <img src="/images/coll1/T4.png">
+        <img src="/images/coll/T4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U_R_U2_L-_R-_U_R_U-_L_y&animtype=solve&scheme=gorbwy&stage=PLL">y2 R' U R U2 L' R' U R U' L</a>
+      </div>
+    </li>
+
+    <li id="T5">
+      <div class="overview">
+        <img src="/images/coll1/T5.png">
+        <img src="/images/coll/T5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U-_R-_U2_R_U_R-_U2_R_U_R-_U_R_U-_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">R U' R' U2 R U R' U2 R U R' U R U' R'</a>
+      </div>
+    </li>
+
+    <li id="T6">
+      <div class="overview">
+        <img src="/images/coll1/T6.png">
+        <img src="/images/coll/T6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R-_F2_R_U2_R-_U2_R-_F2_R__&animtype=solve&scheme=gorbwy&stage=PLL">y' R U2 R' F2 R U2 R' U2 R' F2 R  </a>
+      </div>
+    </li>
+
+    <li id="U1">
+      <div class="overview">
+        <img src="/images/coll1/U1.png">
+        <img src="/images/coll/U1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R2_D_R-_U2_R_D-_R-_U2_R-_y&animtype=solve&scheme=gorbwy&stage=PLL">R2 D R' U2 R D' R' U2 R'</a>
+      </div>
+    </li>
+
+    <li id="U2">
+      <div class="overview">
+        <img src="/images/coll1/U2.png">
+        <img src="/images/coll/U2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R2_D-_R_U2_R-_D_R_U2_R_y2&animtype=solve&scheme=gorbwy&stage=PLL">y2 R2 D' R U2 R' D R U2 R</a>
+      </div>
+    </li>
+
+    <li id="U3">
+      <div class="overview">
+        <img src="/images/coll1/U3.png">
+        <img src="/images/coll/U3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_F2_R_U2_R_U2_R-_F2_R_U2_R-&animtype=solve&scheme=gorbwy&stage=PLL">R' F2 R U2 R U2 R' F2 R U2 R'</a>
+      </div>
+    </li>
+
+    <li id="U4">
+      <div class="overview">
+        <img src="/images/coll1/U4.png">
+        <img src="/images/coll/U4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U_R-_U-_R_U-_R-_U2_R_U-_R-_U2_R_U_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y R U R' U' R U' R' U2 R U' R' U2 R U R'</a>
+      </div>
+    </li>
+
+    <li id="U5">
+      <div class="overview">
+        <img src="/images/coll1/U5.png">
+        <img src="/images/coll/U5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U2_R_F_U-_R-_U-_R_U_F-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y2 R' U2 R F U' R' U' R U F'</a>
+      </div>
+    </li>
+
+    <li id="U6">
+      <div class="overview">
+        <img src="/images/coll1/U6.png">
+        <img src="/images/coll/U6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U-_R_F_R2_D-_R_U_R-_D_R2_U-_F-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y R' U' R F R2 D' R U R' D R2 U' F'</a>
+      </div>
+    </li>
+
+    <li id="L1">
+      <div class="overview">
+        <img src="/images/coll1/L1.png">
+        <img src="/images/coll/L1.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F_R-_F-_r_U_R_U-_r-&animtype=solve&scheme=gorbwy&stage=PLL">F R' F' Rw U R U' R'w</a>
+      </div>
+    </li>
+
+    <li id="L2">
+      <div class="overview">
+        <img src="/images/coll1/L2.png">
+        <img src="/images/coll/L2.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=F-_L_F_l-_U-_L-_U_l_y2&animtype=solve&scheme=gorbwy&stage=PLL">y F' L F L'w U' L' U Lw</a>
+      </div>
+    </li>
+
+    <li id="L3">
+      <div class="overview">
+        <img src="/images/coll1/L3.png">
+        <img src="/images/coll/L3.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R_D_R-_U2_R_D-_R2&animtype=solve&scheme=gorbwy&stage=PLL">R U2 R D R' U2 R D' R2</a>
+      </div>
+    </li>
+
+    <li id="L4">
+      <div class="overview">
+        <img src="/images/coll1/L4.png">
+        <img src="/images/coll/L4.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R-_U2_R-_D-_R_U2_R-_D_R2_y2&animtype=solve&scheme=gorbwy&stage=PLL">y' R' U2 R' D' R U2 R' D R2</a>
+      </div>
+    </li>
+
+    <li id="L5">
+      <div class="overview">
+        <img src="/images/coll1/L5.png">
+        <img src="/images/coll/L5.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=L-_U2_R_U-_R-_U2_L_R_U-_R-_y-&animtype=solve&scheme=gorbwy&stage=PLL">y2 L' U2 R U' R' U2 L R U' R'</a>
+      </div>
+    </li>
+
+    <li id="L6">
+      <div class="overview">
+        <img src="/images/coll1/L6.png">
+        <img src="/images/coll/L6.png" class="activateable">
+      </div>
+
+      <div class="details">
+        <a class="alg" href="http://alg.garron.us/?alg=R_U2_R-_U-_R_U_R-_U-_R_U_R-_U-_R_U-_R-_y2&animtype=solve&scheme=gorbwy&stage=PLL">y2 R U2 R' U' (R U R' U')*2 R U' R'</a>
       </div>
     </li>
   </ul>

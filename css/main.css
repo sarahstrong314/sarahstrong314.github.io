@@ -211,6 +211,18 @@ a.button:hover {
   text-decoration: none;
 }
 
+#active-alg.activateable img {
+  display: none;
+}
+
+#active-alg.activateable img.activateable {
+  display: inline;
+}
+
+.alg-list img.activateable {
+  display: none;
+}
+
 .inactive {
   opacity: 0.66;
 }
