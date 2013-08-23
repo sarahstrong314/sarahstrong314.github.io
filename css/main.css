@@ -31,6 +31,11 @@ h3 small {
   font-size: 12px;
 }
 
+abbr {
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+
 #container {
   margin: 3em;
   height: auto !important;
