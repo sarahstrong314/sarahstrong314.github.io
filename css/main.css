@@ -36,6 +36,10 @@ abbr {
   cursor: help;
 }
 
+p {
+  line-height: 1.4;
+}
+
 #container {
   margin: 3em;
   height: auto !important;
