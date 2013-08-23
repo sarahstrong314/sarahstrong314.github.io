@@ -20,9 +20,9 @@ $(document).ready(function() {
     "OCLLCP": "Orientation of the Corners of the Last Layer and Corner Permutation",
     "CFOP": "Cross->F2L->OLL->PLL. A.K.A. the Fridrich Method.",
     "OELL": "Edge Orientation of the Last Layer",
-    "EOLS": "Edge Orientation and Last Slot"
+    "EOLS": "Edge Orientation and Last Slot",
     "PELL": "Permutation of the Edges of the Last Layer",
-    "ELS": "Edge Step of the Last Slot"
+    "ELS": "Edge Step of the Last Slot",
     "MGLS": "Makisumi-Garron Last Slot",
     "LS": "Last Slot",
     "LL": "Last Layer",
