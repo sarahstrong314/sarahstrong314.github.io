@@ -220,6 +220,14 @@ a.button:hover {
   display: none;
 }
 
+#active-alg.show-all-images img {
+  display: inline;
+}
+
+#active-alg.show-all-images img.activateable {
+  padding-left: 10px;
+}
+
 #active-alg.activateable img.activateable {
   display: inline;
 }
