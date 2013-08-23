@@ -25,7 +25,8 @@ $(document).ready(function() {
     "ELS": "Edge Step of the Last Slot"
     "MGLS": "Makisumi-Garron Last Slot",
     "LS": "Last Slot",
-    "LL": "Last Layer"
+    "LL": "Last Layer",
+    "CE": "Corner-Edge pair"
   };
 
 
