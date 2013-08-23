@@ -13,17 +13,19 @@ $(document).ready(function() {
     "L3C": "Last 3 Centers",
     "L3E": "Last 3 Edges",
     "OCLL": "Orientation of the Corners of the Last Layer",
+    "PCLL": "Permutation of the Corners of the Last Layer",
     "CP": "Corner Permutation",
     "EO": "Edge Orientation",
     "EP": "Edge Permutation",
-    "OCLLCP": null,
-    "CFOP": null,
-    "EOLL": null,
-    "EPLL": null,
-    "ELS": null,
-    "MGLS": null,
-    "LS": null,
-    "LL": null
+    "OCLLCP": "Orientation of the Corners of the Last Layer and Corner Permutation",
+    "CFOP": "Cross->F2L->OLL->PLL. A.K.A. the Fridrich Method.",
+    "OELL": "Edge Orientation of the Last Layer",
+    "EOLS": "Edge Orientation and Last Slot"
+    "PELL": "Permutation of the Edges of the Last Layer",
+    "ELS": "Edge Step of the Last Slot"
+    "MGLS": "Makisumi-Garron Last Slot",
+    "LS": "Last Slot",
+    "LL": "Last Layer"
   };
 
 
