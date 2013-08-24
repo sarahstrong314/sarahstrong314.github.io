@@ -21,7 +21,7 @@ $(document).ready(function() {
     "ELL": "Edges of the Last Layer; The last step of the CFCE method.",
     "VHLS": "Vanderbergh-Harris Last Slot; combines LS and OELL.",
     "EOLS": "Edge Orientation and Last Slot",
-    "WV": "Winter Variation; combines LS and OCLL.",
+    "WVLS": "Winter Variation - Last Slot; WV for short; combines LS and OCLL.",
     "CLS": "Corner Step of the Last Slot",
     "ELS": "Edge Step of the Last Slot",   
     "F2L": "First 2 Layers",
