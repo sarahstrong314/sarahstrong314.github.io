@@ -1,13 +1,12 @@
 $(document).ready(function() {
   var abbreviations = {
-
     "CO": "Corner Orientation",
     "CP": "Corner Permutation",
     "EO": "Edge Orientation",
     "EP": "Edge Permutation",
     "LS": "Last Slot",
     "LL": "Last Layer",
-    "CE": "Corner-Edge"
+    "CE": "Corner-Edge",
     "OLL": "Orientation of the Last Layer; the second last step of the CFOP method.",
     "OCLL": "Orientation of the Corners of the Last Layer",
     "OELL": "Orientation of the Edges of the Last Layer",
@@ -33,7 +32,6 @@ $(document).ready(function() {
     "CFOP": "Cross->F2L->OLL->PLL; A.K.A. the Fridrich Method.",
     "CFCE": "Cross->F2L->CLL->ELL; A CFOP variant.",
     "MGLS": "Makisumi-Garron Last Slot; Substitutes LS+OLL with ELS+CLS"
-
   };
 
 
