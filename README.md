@@ -1,1 +1,1 @@
-Sarah's new cubing site.
+Sarah's new cubing website.
