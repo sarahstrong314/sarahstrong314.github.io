@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var abbreviations = {
-    
-    "CO" "Corner Orientation",
+
+    "CO": "Corner Orientation",
     "CP": "Corner Permutation",
     "EO": "Edge Orientation",
     "EP": "Edge Permutation",
@@ -23,7 +23,7 @@ $(document).ready(function() {
     "EOLS": "Edge Orientation and Last Slot",
     "WVLS": "Winter Variation - Last Slot; WV for short; combines LS and OCLL.",
     "CLS": "Corner Step of the Last Slot",
-    "ELS": "Edge Step of the Last Slot",   
+    "ELS": "Edge Step of the Last Slot",
     "F2L": "First 2 Layers",
     "F2L-1": "F2L minus one pair; F2L without the LS solved",
     "L2C": "Last 2 Centers",
