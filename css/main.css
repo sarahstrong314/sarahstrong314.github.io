@@ -188,7 +188,7 @@ a.button:hover {
   width: 100%;
 }
 
-.width-100px .overview {
+.width-100px .alg-list .overview, .alg-list.width-100px .overview {
   width: 100px;
 }
 
