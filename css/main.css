@@ -237,8 +237,16 @@ a.button:hover {
   display: inline;
 }
 
-.alg-list img.activateable {
+.alg-list .activateable {
   display: none;
+}
+
+#active-algs .deactivateable {
+  display: none;
+}
+
+.alg-list .activateable {
+  display: none !important;
 }
 
 .inactive {
