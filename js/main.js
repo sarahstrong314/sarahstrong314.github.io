@@ -3,36 +3,46 @@ $(document).ready(function() {
 
   // Focussing on one particular algorithm.
   $(".alg-list li").click(function(ev) {
-    var $alg = $(ev.target).closest("li");
+    var $li = $(ev.target).closest("li");
+    var $algs = $(".alg-list li#" + $li.attr('id') + ", .alg-list li." + $li.attr('id'));
     var activeAlgPosition;
 
-    $(".alg-list li").not($alg).find(".overview").removeClass('active').addClass('inactive');
-    $alg.find(".overview").removeClass('inactive');
-    $alg.addClass('active');
-    $alg = $alg.clone();
+    // Update .alg-list view to indicate which alg is active.
+    $(".alg-list li").not($algs).find(".overview").removeClass('active').addClass('inactive');
+    $algs.find(".overview").removeClass('inactive');
+    $algs.addClass('active');
 
-    if ($alg.find(".alg-name").length > 0) {
-      $alg.find(".details h3").prepend($alg.find(".alg-name").text() + ": ")
-      $alg.find(".alg-name").remove()
-    }
+    // Start to prepare the alg for display in #active-algs.
+    $algs = $algs.clone();
 
-    if ($("#active-alg").is(":visible")) {
-      $("#active-alg").fadeOut('fast', function() {
+    // Form title from the alg name (short name) and alg nickname, if applicable.
+    $algs.each(function(i, el) {
+      if ($(el).find(".alg-name").length > 0) {
+        debugger;
+        $(el).find(".details h3").prepend($(el).find(".alg-name").text() + ": ").show();
+        $(el).find(".alg-name").remove();
+      }
+    });
 
-       $("#active-alg").html($alg.html()).fadeIn();
+    // Use a fade to transition to the new active alg.
+    if ($("#active-algs").is(":visible")) {
+      $("#active-algs").fadeOut('fast', function() {
+        $(this).empty();
+        $(this).append($algs).fadeIn();
       });
     } else {
-      $("#active-alg").html($alg.html()).slideDown('fast');
+      $("#active-algs").append($algs).slideDown();
     }
 
-    activeAlgPosition = $('#active-alg').position().top;
-
+    // Scroll up to #active-algs, if needed.
+    activeAlgPosition = $('#active-algs').position().top;
 
     if ($('body').scrollTop() > activeAlgPosition) {
       $('body').animate({scrollTop: activeAlgPosition}, 500);
     }
 
-    document.location.hash = "#alg/" + $alg.attr('id');
+    // Update URL in order to create a permalink to this particular alg.
+    document.location.hash = "#alg/" + $algs.first().attr('id');
   });
 
   // Switching sub-views of algorithms.
@@ -48,8 +58,8 @@ $(document).ready(function() {
       $(".tabs li").removeClass('active');
       $li.addClass('active');
 
-      $("#active-alg").slideUp('fast', function() {
-        $("#active-alg").empty();
+      $("#active-algs").slideUp('fast', function() {
+        $("#active-algs").empty();
         $(".inactive").removeClass('inactive');
       });
 

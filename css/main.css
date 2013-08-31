@@ -23,7 +23,7 @@ h3 {
   padding: 0;
 }
 
-#active-alg h3 {
+#active-algs h3 {
   margin-bottom: 10px;
 }
 
@@ -146,7 +146,7 @@ a.button:hover {
   float: left;
 }
 
-#content ul li {
+#content .alg-list li, #content .tabs li {
   display: inline;
   cursor: pointer;
 }
@@ -167,33 +167,34 @@ a.button:hover {
   display: none;
 }
 
-#active-alg {
+#active-algs {
   display: none;
   margin: 3em;
 }
 
-#active-alg .details {
+#active-algs .details {
   display: block;
   float: left;
   margin-left: 5em;
 }
 
-#active-alg .details .alg {
+#active-algs .details .alg {
   display: block;
 }
 
-#active-alg {
+#active-algs {
   min-width: 565px;
   float: left;
   width: 100%;
 }
 
-.width-100px .alg-list .overview, .alg-list.width-100px .overview {
-  width: 100px;
+#active-algs li {
+  display: block;
+  height: 125px;
 }
 
-.height-100px #active-alg {
-  height: 100px;
+.width-100px .alg-list .overview, .alg-list.width-100px .overview {
+  width: 100px;
 }
 
 .width-75px .overview {
@@ -211,28 +212,28 @@ a.button:hover {
   padding: 5px 5px 25px 5px;
 }
 
-#active-alg .overview {
+#active-algs .overview {
   padding: 5px 5px 15px 5px;
 }
 
-#active-alg a, a:visited {
+#active-algs a, a:visited {
   padding-bottom: 5px;
   text-decoration: none;
 }
 
-#active-alg.activateable img {
+#active-algs.activateable img {
   display: none;
 }
 
-#active-alg.show-all-images img {
+#active-algs.show-all-images img {
   display: inline;
 }
 
-#active-alg.show-all-images img.activateable {
+#active-algs.show-all-images img.activateable {
   padding-left: 10px;
 }
 
-#active-alg.activateable img.activateable {
+#active-algs.activateable img.activateable {
   display: inline;
 }
 
