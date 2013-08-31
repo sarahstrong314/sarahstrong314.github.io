@@ -18,7 +18,6 @@ $(document).ready(function() {
     // Form title from the alg name (short name) and alg nickname, if applicable.
     $algs.each(function(i, el) {
       if ($(el).find(".alg-name").length > 0) {
-        debugger;
         $(el).find(".details h3").prepend($(el).find(".alg-name").text() + ": ").show();
         $(el).find(".alg-name").remove();
       }
@@ -63,11 +62,11 @@ $(document).ready(function() {
         $(".inactive").removeClass('inactive');
       });
 
-      $newSection = $(".section#" + $li.attr('id'));
+      $newSection = $(".section." + $li.attr('id'));
 
       // Fade out old content if a tab was previously selected.
       if ($activeTab.length > 0) {
-        $activeSection = $(".section#" + $activeTab.attr('id'));
+        $activeSection = $(".section." + $activeTab.attr('id'));
         $activeSection.fadeOut('fast', function() {
           $newSection.fadeIn('fast');
         });
@@ -106,13 +105,20 @@ $(document).ready(function() {
   var navigateWithHash = function() {
     if (document.location.hash !== "") {
       // Automatically open tab/alg specified in hash.
-      var tab, $algLi;
+      var tab, $algLi, $algList;
 
       // Activate this particular algorithm.
       if (document.location.hash.indexOf('alg/') === 1) {
         $algLi = $(".alg-list li#" + document.location.hash.substr(5));
+        $algList = $algLi.closest('ul');
 
-        tab = $algLi.closest('ul').attr('id');
+        // Determine tab from class name.
+        $(".tabs li").each(function(i, el) {
+          if ($algList.hasClass($(el).attr('id'))) {
+            tab = $(el).attr('id');
+            return false;
+          }
+        });
       } else {
         tab = document.location.hash.substr("#section/".length);
       }
