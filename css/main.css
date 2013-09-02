@@ -282,6 +282,10 @@ a.button:hover {
   margin-top: 20px;
 }
 
+[id='3x3x3-ocllcp'] .alg-list {
+  width: 660px;
+}
+
 p img {
   vertical-align: middle;
 }
