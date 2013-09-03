@@ -141,7 +141,7 @@ a.button:hover {
   min-width: 450px;
 }
 
-#content ul {
+#content ul.alg-list, #content ul.tabs {
   list-style-type: none;
   float: left;
 }
