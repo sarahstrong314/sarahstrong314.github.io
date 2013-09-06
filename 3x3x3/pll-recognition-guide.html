@@ -13,9 +13,9 @@ title: PLL Recognition Guide
     <li id="introduction">Introduction</li>
     <li id="cp-recognition">CP Recognition</li>
     <li id="patterns">Patterns</li><br />
+    <li id="cp-categories">CP Categories</li>
     <li id="epll">EPLL</li>
     <li id="diag-cp">Diag. CP</li>
-    <li id="adj-cp-categories">Adj. CP Categories</li>
     <li id="adj-cp-a">Adj. CP - A</li>
     <li id="adj-cp-b">Adj. CP - B</li>
     <li id="adj-cp-c">Adj. CP - C</li>
@@ -33,21 +33,10 @@ title: PLL Recognition Guide
       The naming system from the <a href="http://www.speedsolving.com/wiki/index.php/PLL">PLL wiki</a> will be used.
     </p>
 
-    <p>
-      To begin, there are several easy cases that should hopefully require no explanation. If these cases are not obvious, then you’re not familiar enough with your PLLs!
-    </p>
-
-    <img src="/images/pll-recog-guide/easy-cases.png" />
-
-    <p>
-      These cases will <strong>not</strong> be included in the rest of the guide.
-    </p>
-  </div>
-
-  <div class="cp-recognition section">
+    <div class="cp-recognition section">
     <h2 class="append-title">CP Recognition</h2>
     <p>
-      The remaining cases will be divided into three sections based on their corner permutation.
+      All of the cases will be divided into three sections based on their corner permutation.
       <ol>
         <li>All corners solved.</li>
         <li>Two opposite corners swapped.</li>
@@ -64,29 +53,23 @@ title: PLL Recognition Guide
     </p>
 
     <p>
-      <img src="/images/pll-recog-guide/headlights-both-sides.png" />
+      <img src="/images/pll-recog-guide/CP1.png" />
       When there are <span class="hoverable-image" data-src="/images/pll-recog-guide/headlights-each-side.png">a set of 'headlights' on each side</span> (two of the same corner sticker colours on a face), no corners are swapped.
     </p>
 
     <p>
-      <img src="/images/pll-recog-guide/two-opposite-colors-both-sides.png" />
+      <img src="/images/pll-recog-guide/CP2.png" />
       When <span class="hoverable-image" data-src="/images/pll-recog-guide/opposite-colors-each-side.png">each side has a set of two opposite colours</span>, two diagonal corners are swapped.
     </p>
 
-    <!-- TODO - missing image -->
     <p>
-      <img src="/images/pll-recog-guide/headlights-one-side.png" />
+      <img src="/images/pll-recog-guide/CP3.png" /> <img src="/images/pll-recog-guide/CP4.png" />
       When only one side has a set of 'headlights', two adjacent corners are swapped.
     </p>
 
-    <!-- TODO - missing image -->
     <p>
-      <img src="/images/pll-recog-guide/two-opposite-colors-one-side.png" />
-      When only one side has a set of two opposite colours, two adjacent corners are swapped.
-    </p>
-
-    <p>
-      Fun fact: the headlights will be on the opposite side of the side with the two opposite colours.
+      <img src="/images/pll-recog-guide/CP5.png" /> <img src="/images/pll-recog-guide/CP6.png" />
+      When only one side has a set of two opposite colours, two adjacent corners are swapped. The headlights will be on the opposite side of the side with the two opposite colours.
     </p>
   </div>
 
@@ -96,16 +79,66 @@ title: PLL Recognition Guide
       A 'checker pattern' will also be used sometimes to distinguish between cases. It is a pattern made by two alternating adjacent colours. They look like this:
     </p>
 
-    <img src="/images/pll-recog-guide/checker-pattern.png" />
+    <img src="/images/pll-recog-guide/pattern1.png" />     
+    <img src="/images/pll-recog-guide/pattern2.png" />
+    <img src="/images/pll-recog-guide/pattern3.png" />
+    <img src="/images/pll-recog-guide/pattern4.png" />
 
     <p>
       When there is a visible 2x1 block, it is located in one of two places, the 'outside' or the 'inside'. When it is on the outside, the block will include one of the two far corners, and when it is on the inside it will include the corner located in the center.
     </p>
 
     <p>
-      Outside block: <img src="/images/pll-recog-guide/outside-block.png" />
-      Inside block: <img src="/images/pll-recog-guide/inside-block.png" />
+      Outside block: <img src="/images/pll-recog-guide/block1.png" /> <img src="/images/pll-recog-guide/block2.png" />
+      Inside block: <img src="/images/pll-recog-guide/block3.png" /> <img src="/images/pll-recog-guide/block4.png" />
     </p>
+  </div>
+
+  <div class="cp-categories section">
+    <h2 class="append-title">CP Categories</h2>
+    <p>
+      All of the cases will be divided into seven section. 
+    </p>
+    <p>
+      The first two sections are for the <a href="#section/epll">EPLL</a> and <a href="#section/diag-cp">Diagonal CP cases</a>.
+    </p>
+    <p>      
+      The remaining five are Adjacent CP cases. Here are the five Adjacent CP sections:
+    </p>
+
+    <ul>
+      <li><a href="#section/adj-cp-a">A: Two visible blocks, no visible set of headlights.</a></li>
+      <li><a href="#section/adj-cp-b">B: One visible block, one set of visible set of headlights.</a></li>
+      <li><a href="#section/adj-cp-c">C: No visible set of headlights, one visible block.</a></li>
+      <li><a href="#section/adj-cp-d">D: No visible blocks, one set of visible set of headlights.</a></li>
+      <li><a href="#section/adj-cp-e">E: No visible blocks, no visible set of headlights.</a></li>
+    </ul>
+    
+    <p>      
+      Here are the PLL cases that are found under each section:
+    </p>
+    <p> 
+    EPLLs: H, Ua, Ub, Z
+    </p>
+    <p>     
+    Diagonal CP: E, Na, Nb, V, Y
+    </p> 
+    <p> 
+    Adjacent CP - A: Ja, Jb 
+    </p>
+    <p> 
+    Adjacent CP - B: Aa, Ab, Ga, Gc 
+    </p>
+    <p> 
+    Adjacent CP - C: Gb, Gd, Aa, Ab, Ga, Gc Ra, Rb, T
+    </p>  
+    <p> 
+    Adjacent CP - D: Gb, Gd, Ga, Gc, Ra, Rb, Aa, Ab
+    </p>
+    <p> 
+    Adjacent CP - E: Ra, Rb, F, Ga, Gc
+    </p>
+    
   </div>
 
   <div class="epll section">
@@ -167,25 +200,41 @@ title: PLL Recognition Guide
     </ul>
   </div>
 
-  <div class="adj-cp-categories section">
-    <h2 class="append-title">Adj. CP Categories</h2>
-    <p>Possible Cases: Aa, Ab, F, Ga, Gb, Gc, Gd Ja, Jb, Ra, Rb, T</p>
-
+  <div class="adj-cp-a section">
+    <h2 class="append-title">Adj. CP - No Headlights, Two Blocks</h2>
+    <p>Possible Cases: Ja, Jb</p>
     <p>
-      This section will be divided into five parts:
+       These are both J perms. To tell them apart, look at the orientation of the blocks on each side. 
     </p>
 
     <ul>
-      <li><a href="#section/adj-cp-a">A: No visible set of headlights, one visible block.</a></li>
-      <li><a href="#section/adj-cp-b">B: Two visible blocks, no visible set of headlights.</a></li>
-      <li><a href="#section/adj-cp-c">C: No visible blocks, one set of visible set of headlights.</a></li>
-      <li><a href="#section/adj-cp-d">D: One visible block, one set of visible set of headlights.</a></li>
-      <li><a href="#section/adj-cp-e">E: No visible blocks, no visible set of headlights.</a></li>
+      <!-- TODO - missing image -->
+      <li>If the blocks are towards the left, it's the Ja perm.</li>
+
+      <!-- TODO - missing image -->
+      <li>
+        If the blocks are towards the right, it's the Jb perm.<br />
+        <img src="/images/pll-recog-guide/ja-jb-perms.png" />
+      </li>
     </ul>
   </div>
 
-  <div class="adj-cp-a section">
-    <h2 class="append-title">Adj. CP - A: Headlights (0), Block (1)</h2>
+    <div class="adj-cp-b section">
+    <h2 class="append-title">Adj. CP - B: Headlights, One Block </h2>
+    <p>Possible Cases: Aa, Ab, Ga, Gc</p>
+
+    <p>Count the number of unique sticker colours that appear</p>
+    <ul>
+      <li>If there are three, it's an A perm.</li>
+      <li>
+        If there are four, it's Ga or Gc.<br />
+        <img src="/images/pll-recog-guide/aa-ab-ga-gc-perms.png" />
+      </li>
+    </ul>
+  </div>
+
+  <div class="adj-cp-c section">
+    <h2 class="append-title">Adj. CP - C: No headlights, One block</h2>
     <p>Possible Cases: Gb, Gd, Aa, Ab, Ga, Gc Ra, Rb, T</p>
 
     <p>Look at the corner sticker on the same side as the block.</p>
@@ -242,27 +291,8 @@ title: PLL Recognition Guide
     </ul>
   </div>
 
-  <div class="adj-cp-b section">
-    <h2 class="append-title">Adj. CP - B: Headlights (0), Block (2)</h2>
-    <p>Possible Cases: Ja, Jb</p>
-    <p>
-       These are both J perms. To tell them apart, look at the orientation of the blocks on each side. 
-    </p>
-
-    <ul>
-      <!-- TODO - missing image -->
-      <li>If the blocks are towards the left, it's the Ja perm.</li>
-
-      <!-- TODO - missing image -->
-      <li>
-        If the blocks are towards the right, it's the Jb perm.<br />
-        <img src="/images/pll-recog-guide/ja-jb-perms.png" />
-      </li>
-    </ul>
-  </div>
-
-    <div class="adj-cp-c section">
-    <h2 class="append-title">Adj. CP - C: Headlights (1), Block (0)</h2>
+  <div class="adj-cp-d section">
+    <h2 class="append-title">Adj. CP - D: Headlights, No Blocks</h2>
     <p>Possible Cases: Gb, Gd, Ga, Gc, Ra, Rb, Aa, Ab</p>
     <p>Look at the edge sticker in between the headlights.</p>
     <ul>
@@ -290,22 +320,8 @@ title: PLL Recognition Guide
     <img src="/images/pll-recog-guide/ga-gc-ra-rb-aa-ab-perms.png" />
   </div>
 
-    <div class="adj-cp-d section">
-    <h2 class="append-title">Adj. CP - D: Headlights (1), Block (1)</h2>
-    <p>Possible Cases: Aa, Ab, Ga, Gc</p>
-
-    <p>Count the number of unique sticker colours that appear</p>
-    <ul>
-      <li>If there are three, it's an A perm.</li>
-      <li>
-        If there are four, it's Ga or Gc.<br />
-        <img src="/images/pll-recog-guide/aa-ab-ga-gc-perms.png" />
-      </li>
-    </ul>
-  </div>
-
     <div class="adj-cp-e section">
-    <h2 class="append-title">Adj. CP - E: Headlights (0), Block (0)</h2>
+    <h2 class="append-title">Adj. CP - E: No Headlights, No Blocks</h2>
     <p>Possible Cases: Ra, Rb, F, Ga, Gc</p>
 
     <p>Look at the colour of the edge stickers</p>
