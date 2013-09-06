@@ -11,11 +11,11 @@ title: Square-1 &mdash; EP Algorithms
   </p>
   
   <p>
-    Red text indicates a case with parity, and an asterisk indicated that the equator will be flipped afterthe alg is performed.
+    Red text indicates a case with parity, and an asterisk indicated that the equator will be flipped after the alg is performed.
   </p>
 
   <p>
-    The numbering system is as followed:
+    The first digit indicates the cycle on the D layer and the second digit indicates the cycle on the U layer. The numbering system is as followed:
   </p>
 
   <p>
@@ -23,7 +23,7 @@ title: Square-1 &mdash; EP Algorithms
   </p>
 
   <p>
-    The first digit indicates the cycle on the D layer and the second digit indicates the cycle on the U layer.
+    All U or D moves before an alg are AUF/ADFs; they're not part of the alg.
   </p>
 
   <ul id="active-algs"></ul>
@@ -56,7 +56,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp on U
-        </h3><span class="alg red">/ (3,3) / (-1,0) / (2,-4) / (4,-2) / (0,-2) / (-4,2) / (1,-5) / (3,0) / (3,3) / (3,0)</span>
+        </h3><span class="alg red">(U) / (3,3) / (-1,0) / (2,-4) / (4,-2) / (0,-2) / (-4,2) / (1,-5) / (3,0) / (3,3) / (3,0)</span>
       </div>
     </li>
 
@@ -89,7 +89,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z on U
-        </h3><span class="alg">/ (3,3) / (0,3) / (1,1) / (-1,-4) / (-3,-3)</span>
+        </h3><span class="alg">(U) / (3,3) / (0,3) / (1,1) / (-1,-4) / (-3,-3)</span>
       </div>
     </li>
 
@@ -133,7 +133,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W on U
-        </h3><span class="alg red">(0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,-3) / (-3,0) *</span>
+        </h3><span class="alg red">(U2) (0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,-3) / (-3,0) *</span>
         </h3>
       </div>
     </li>
@@ -158,7 +158,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-Adj
-        </h3><span class="alg">(1,0) / (3,0) / (-1,-1) / (-2,1) / (-1,0)</span>
+        </h3><span class="alg">(U2 D) (1,0) / (3,0) / (-1,-1) / (-2,1) / (-1,0)</span>
       </div>
     </li>
 
@@ -169,7 +169,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp-Adj
-        </h3><span class="alg">(0,-1) / (0,-3) / (0,3) / (1,-2) / (-1,-1) / (0,3) / (0,-3) / (0,3) / (0,1)</span>
+        </h3><span class="alg">(D) (0,-1) / (0,-3) / (0,3) / (1,-2) / (-1,-1) / (0,3) / (0,-3) / (0,3) / (0,1)</span>
       </div>
     </li>
 
@@ -180,7 +180,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-Adj
-        </h3><span class="alg red">/ (-3,-3) / (0,1) / (0,-2) / (0,-4) / (-4,0) / (-4,0) / (-2,0) / (5,0) / (-3,-3) / (0,-3)</span>
+        </h3><span class="alg red">(D') / (-3,-3) / (0,1) / (0,-2) / (0,-4) / (-4,0) / (-4,0) / (-2,0) / (5,0) / (-3,-3) / (0,-3)</span>
       </div>
     </li>
 
@@ -224,7 +224,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwO-Adj
-        </h3><span class="alg">/ (-3,0) / (-2,0) / (5,-1) / (-5,0) / (3,0) / (-3,0) / (0,1) / (-3,0) / (-3,0) / (-1,0)</span>
+        </h3><span class="alg">(D) / (-3,0) / (-2,0) / (5,-1) / (-5,0) / (3,0) / (-3,0) / (0,1) / (-3,0) / (-3,0) / (-1,0)</span>
       </div>
     </li>
 
@@ -235,7 +235,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwO-Adj
-        </h3><span class="alg">(1,0) / (3,0) / (3,0) / (0,-1) / (3,0) / (-3,0) / (5,0) / (-5,1) / (2,0) / (3,0)</span>
+        </h3><span class="alg">(D) (1,0) / (3,0) / (3,0) / (0,-1) / (3,0) / (-3,0) / (5,0) / (-5,1) / (2,0) / (3,0)</span>
       </div>
     </li>
 
@@ -246,7 +246,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-Adj
-        </h3><span class="alg">(1,0) / (3,0) / (-1,-1) / (3,0) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
+        </h3><span class="alg">(U) (1,0) / (3,0) / (-1,-1) / (3,0) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
       </div>
     </li>
   </ul>
@@ -259,7 +259,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp on D
-        </h3><span class="alg red">/ (3,3) / (1,0) / (4,-2) / (2,-4) / (0,2) / (-2,4) / (5,-1) / (0,3) / (-3,-3) / (3,0)</span>
+        </h3><span class="alg red">(D) / (3,3) / (1,0) / (4,-2) / (2,-4) / (0,2) / (-2,4) / (5,-1) / (0,3) / (-3,-3) / (3,0)</span>
       </div>
     </li>
 
@@ -270,7 +270,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-Opp
-        </h3><span class="alg">(1,0) / (-1,0) / (-3,0) / (0,-1) / (6,0) / (1,0) / (3,0) / (0,1) / (5,0)</span>
+        </h3><span class="alg">(D) (1,0) / (-1,0) / (-3,0) / (0,-1) / (6,0) / (1,0) / (3,0) / (0,1) / (5,0)</span>
       </div>
     </li>
 
@@ -292,7 +292,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-Opp
-        </h3><span class="alg red">/ (3,0) / (-3,0) / (3,0) / (0,3) / (1,0) / (0,2) / (4,0) / (0,-4) / (2,0) / (0,5) / (3,3) / (0,-3)</span>
+        </h3><span class="alg red">(U2) / (3,0) / (-3,0) / (3,0) / (0,3) / (1,0) / (0,2) / (4,0) / (0,-4) / (2,0) / (0,5) / (3,3) / (0,-3)</span>
       </div>
     </li>
 
@@ -303,7 +303,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-Opp
-        </h3><span class="alg red">/ (-3,-3) / (0,-5) / (-2,0) / (0,4) / (-4,0) / (0,-2) / (-1,0) / (0,-3) / (-3,0) / (3,0) / (-3,0) / (0,3)</span>
+        </h3><span class="alg red">(U2 D) / (-3,-3) / (0,-5) / (-2,0) / (0,4) / (-4,0) / (0,-2) / (-1,0) / (0,-3) / (-3,0) / (3,0) / (-3,0) / (0,3)</span>
       </div>
     </li>
 
@@ -314,7 +314,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z-Opp
-        </h3><span class="alg red">/ (-3,-3) / (0,-3) / (-2,-2) / (2,0) / (-2,4) / (2,-4) / (0,-1) / (3,3) / (-3,0) *</span>
+        </h3><span class="alg red">(D) / (-3,-3) / (0,-3) / (-2,-2) / (2,0) / (-2,4) / (2,-4) / (0,-1) / (3,3) / (-3,0) *</span>
       </div>
     </li>
 
@@ -325,7 +325,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           H-Opp
-        </h3><span class="alg red">/ (3,3) / (1,0) / (-2,4) / (2,-4) / (2,0) / (-3,-3) / (0,-3) / (-3,-3) / (3,0) *</span>
+        </h3><span class="alg red">(D) / (3,3) / (1,0) / (-2,4) / (2,-4) / (2,0) / (-3,-3) / (0,-3) / (-3,-3) / (3,0) *</span>
       </div>
     </li>
     
@@ -347,7 +347,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwO-Opp
-        </h3><span class="alg">(0,-1) / (1,1) / (-3,0) / (-1,-1) / (-3,0) / (1,1) / (5,0)</span>
+        </h3><span class="alg">(D) (0,-1) / (1,1) / (-3,0) / (-1,-1) / (-3,0) / (1,1) / (5,0)</span>
       </div>
     </li>
 
@@ -358,7 +358,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-Opp
-        </h3><span class="alg">(1,0) / (0,3) / (-1,0) / (0,3) / (1,0) / (2,2) / (0,1) / (0,3) / (1,0) / (-3,0) / (-1,0)</span>
+        </h3><span class="alg">(U' D) (1,0) / (0,3) / (-1,0) / (0,3) / (1,0) / (2,2) / (0,1) / (0,3) / (1,0) / (-3,0) / (-1,0)</span>
       </div>
     </li>
   </ul>
@@ -404,7 +404,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-CwU
-        </h3><span class="alg">(1,0) / (5,-1) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
+        </h3><span class="alg">(U' D) (1,0) / (5,-1) / (-3,0) / (1,1) / (-3,0) / (5,0) *</span>
       </div>
     </li>
 
@@ -415,7 +415,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-CwU
-        </h3><span class="alg">(1,0) / (5,-1) / (-5,1) / (-3,0) / (0,3) / (-1,-1) / (1,-2) / (-4,0) *</span>
+        </h3><span class="alg">(U D) (1,0) / (5,-1) / (-5,1) / (-3,0) / (0,3) / (-1,-1) / (1,-2) / (-4,0) *</span>
       </div>
     </li>
 
@@ -426,7 +426,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z-CwU
-        </h3><span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,-3) / (0,-3) / (1,1) / (-1,2) / (0,4)</span>
+        </h3><span class="alg">(U) (0,-1) / (-3,0) / (1,1) / (2,-1) / (0,-3) / (0,-3) / (1,1) / (-1,2) / (0,4)</span>
       </div>
     </li>
 
@@ -437,7 +437,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           H-CwU
-        </h3><span class="alg">(0,-1) / (-3,0) / (0,-5) / (0,3) / (-5,0) / (5,0) / (0,-3) / (1,3) / (5,-1) / (0,-5) *</span>
+        </h3><span class="alg">(D') (0,-1) / (-3,0) / (0,-5) / (0,3) / (-5,0) / (5,0) / (0,-3) / (1,3) / (5,-1) / (0,-5) *</span>
       </div>
     </li>
 
@@ -448,7 +448,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwO-CwU
-        </h3><span class="alg red">/ (3,3) / (5,0) / (-4,0) / (0,-2) / (4,2) / (4,-2) / (-4,0) / (0,-1) / (3,0) / (3,3) / (-3,0) / (0,-3)</span>
+        </h3><span class="alg red">(D') / (3,3) / (5,0) / (-4,0) / (0,-2) / (4,2) / (4,-2) / (-4,0) / (0,-1) / (3,0) / (3,3) / (-3,0) / (0,-3)</span>
       </div>
     </li>
 
@@ -470,7 +470,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-CwU
-        </h3><span class="alg red">/ (0,-3) / (4,0) / (0,-1) / (0,2) / (4,4) / (2,0) / (1,0) / (0,-3) / (3,0) / (-4,0) / (3,0) / (0,-3)</span>
+        </h3><span class="alg red">(D2) / (0,-3) / (4,0) / (0,-1) / (0,2) / (4,4) / (2,0) / (1,0) / (0,-3) / (3,0) / (-4,0) / (3,0) / (0,-3)</span>
       </div>
     </li>
   </ul>
@@ -494,7 +494,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-CcwU
-        </h3><span class="alg red">/ (-3,-3) / (0,-1) / (0,-2) / (0,-4) / (0,-4) / (-4,0) / (-2,0) / (-5,0) / (-3,-3) / (3,0)</span>
+        </h3><span class="alg red">(U) / (-3,-3) / (0,-1) / (0,-2) / (0,-4) / (0,-4) / (-4,0) / (-2,0) / (-5,0) / (-3,-3) / (3,0)</span>
       </div>
     </li>
 
@@ -505,7 +505,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp-CcwU
-        </h3><span class="alg red">/ (0,-3) / (0,3) / (0,-3) / (-3,0) / (0,-1) / (-2,0) / (0,-4) / (4,0) / (0,-2) / (-5,0) / (-3,-3) / (3,0)</span>
+        </h3><span class="alg red">(D2) / (0,-3) / (0,3) / (0,-3) / (-3,0) / (0,-1) / (-2,0) / (0,-4) / (4,0) / (0,-2) / (-5,0) / (-3,-3) / (3,0)</span>
       </div>
     </li>
 
@@ -516,7 +516,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-CcwU
-        </h3><span class="alg">(0,-1) / (1,-5) / (-1,5) / (0,3) / (-3,0) / (1,1) / (2,-1) / (0,4) *</span>
+        </h3><span class="alg">(U D) (0,-1) / (1,-5) / (-1,5) / (0,3) / (-3,0) / (1,1) / (2,-1) / (0,4) *</span>
       </div>
     </li>
 
@@ -527,7 +527,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-CcwU
-        </h3><span class="alg">(1,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (5,0)</span>
+        </h3><span class="alg">(U D) (1,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (5,0)</span>
       </div>
     </li>
 
@@ -538,7 +538,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z-CcwU
-        </h3><span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (-1,2) / (0,-2)</span>
+        </h3><span class="alg">(U D)(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (-1,2) / (0,-2)</span>
       </div>
     </li>
 
@@ -549,7 +549,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           H-CcwU
-        </h3><span class="alg">(0,-1) / (-5,1) / (-1,-3) / (0,3) / (-5,0) / (5,0) / (0,-3) / (0,5) / (3,0) / (0,-5) *</span>
+        </h3><span class="alg">(D) (0,-1) / (-5,1) / (-1,-3) / (0,3) / (-5,0) / (5,0) / (0,-3) / (0,5) / (3,0) / (0,-5) *</span>
       </div>
     </li>
 
@@ -570,7 +570,7 @@ title: Square-1 &mdash; EP Algorithms
       </div>
       <div class="details">
         <h3 class="alg-nickname">
-          CcwO-CcwU</h3> <span class="alg red">/ (3,3) / (-1,0) / (4,2) / (0,4) / (4,0) / (-2,4) / (0,-5) / (-3,0) / (-3,0) / (0,3) / (-3,0) / (3,0)</span>
+          CcwO-CcwU</h3> <span class="alg red">(D) / (3,3) / (-1,0) / (4,2) / (0,4) / (4,0) / (-2,4) / (0,-5) / (-3,0) / (-3,0) / (0,3) / (-3,0) / (3,0)</span>
         </h3>
       </div>
     </li>
@@ -582,7 +582,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-CcwU
-        </h3><span class="alg red">/ (-3,0) / (4,0) / (-3,0) / (0,3) / (-1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,1) / (-4,0) / (0,3) / (0,3)</span>
+        </h3><span class="alg red">(U2 D') / (-3,0) / (4,0) / (-3,0) / (0,3) / (-1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,1) / (-4,0) / (0,3) / (0,3)</span>
       </div>
     </li>
   </ul>
@@ -595,7 +595,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z on D
-        </h3><span class="alg">/ (-3,-3) / (-3,0) / (-1,-1) / (4,1) / (3,3)</span>
+        </h3><span class="alg">(D) / (-3,-3) / (-3,0) / (-1,-1) / (4,1) / (3,3)</span>
       </div>
     </li>
 
@@ -617,7 +617,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp-Z
-        </h3><span class="alg red">/ (-3,-3) / (0,-1) / (-4,2) / (4,-2) / (-4,0) / (-2,-2) / (0,3) / (3,3) / (0,3) *</span>
+        </h3><span class="alg red">(U) / (-3,-3) / (0,-1) / (-4,2) / (4,-2) / (-4,0) / (-2,-2) / (0,3) / (3,3) / (0,3) *</span>
       </div>
     </li>
 
@@ -628,7 +628,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-Z
-        </h3><span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (-2,1) / (2,0)</span>
+        </h3><span class="alg">(U' D) (1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (-2,1) / (2,0)</span>
       </div>
     </li>
 
@@ -639,7 +639,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-Z
-        </h3><span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (3,0) / (3,0) / (-1,-1) / (-2,1) / (-4,0)</span>
+        </h3><span class="alg">(D) (1,0) / (0,3) / (-1,-1) / (1,-2) / (3,0) / (3,0) / (-1,-1) / (-2,1) / (-4,0)</span>
       </div>
     </li>
 
@@ -650,7 +650,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z-Z
-        </h3><span class="alg">(1,0) / (0,3) / (-1,-1) / (4,-2) / (-1,-1) / (-2,1) / (-1,0)</span>
+        </h3><span class="alg">(D) (1,0) / (0,3) / (-1,-1) / (4,-2) / (-1,-1) / (-2,1) / (-1,0)</span>
       </div>
     </li>
 
@@ -683,7 +683,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwO-Z
-        </h3><span class="alg red">/ (3,3) / (0,3) / (-5,-5) / (-2,0) / (-2,4) / (-4,2) / (-2,0) / (-2,-2) / (-3,0) / (-3,-3) / *</span>
+        </h3><span class="alg red">(D) / (3,3) / (0,3) / (-5,-5) / (-2,0) / (-2,4) / (-4,2) / (-2,0) / (-2,-2) / (-3,0) / (-3,-3) / *</span>
       </div>
     </li>
 
@@ -694,7 +694,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-Z
-        </h3><span class="alg red">/ (3,3) / (1,-2) / (4,-4) / (2,-4) / (-2,4) / (1,0) / (0,-3) / (3,3) / (3,0) / (3,0)</span>
+        </h3><span class="alg red">(U') / (3,3) / (1,-2) / (4,-4) / (2,-4) / (-2,4) / (1,0) / (0,-3) / (3,3) / (3,0) / (3,0)</span>
       </div>
     </li>
   </ul>
@@ -740,7 +740,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-H
-        </h3><span class="alg">(1,0) / (-1,5) / (3,1) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-5,0) / (0,-3) / (5,0) *</span>
+        </h3><span class="alg">(U) (1,0) / (-1,5) / (3,1) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-5,0) / (0,-3) / (5,0) *</span>
       </div>
     </li>
 
@@ -751,7 +751,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-H
-        </h3><span class="alg">(1,0) / (0,3) / (5,0) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-3,-1) / (1,-5) / (5,0) *</span>
+        </h3><span class="alg">(U') (1,0) / (0,3) / (5,0) / (-3,0) / (0,5) / (0,-5) / (3,0) / (-3,-1) / (1,-5) / (5,0) *</span>
       </div>
     </li>
 
@@ -806,7 +806,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-H
-        </h3><span class="alg red">/ (3,0) / (0,-3) / (3,0) / (3,0) / (2,-1) / (0,2) / (-2,4) / (2,-4) / (2,0) / (-1,2) / (-3,-3) / (-3,0)</span>
+        </h3><span class="alg red">(U2) / (3,0) / (0,-3) / (3,0) / (3,0) / (2,-1) / (0,2) / (-2,4) / (2,-4) / (2,0) / (-1,2) / (-3,-3) / (-3,0)</span>
       </div>
     </li>
   </ul>
@@ -830,7 +830,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-CwO
-        </h3><span class="alg">(0,-1) / (0,-3) / (0,-3) / (1,0) / (0,-3) / (0,3) / (0,-5) / (-1,5) / (0,-2) / (0,-3) /</span>
+        </h3><span class="alg">(U) (0,-1) / (0,-3) / (0,-3) / (1,0) / (0,-3) / (0,3) / (0,-5) / (-1,5) / (0,-2) / (0,-3) /</span>
       </div>
     </li>
 
@@ -852,7 +852,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-CwO
-        </h3><span class="alg red">/ (-3,-3) / (0,1) / (-2,-4) / (-4,0) / (0,-4) / (-4,2) / (5,0) / (0,3) / (0,3) / (-3,0) / (0,3) / (0,-3)</span>
+        </h3><span class="alg red">(U') / (-3,-3) / (0,1) / (-2,-4) / (-4,0) / (0,-4) / (-4,2) / (5,0) / (0,3) / (0,3) / (-3,0) / (0,3) / (0,-3)</span>
       </div>
     </li>
 
@@ -863,7 +863,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-CwO
-        </h3><span class="alg red">/ (0,-3) / (3,3) / (0,3) / (-1,0) / (0,-4) / (-2,4) / (2,4) / (-2,0) / (0,-4) / (0,5) / (3,3) / (-3,0)</span>
+        </h3><span class="alg red">(U') / (0,-3) / (3,3) / (0,3) / (-1,0) / (0,-4) / (-2,4) / (2,4) / (-2,0) / (0,-4) / (0,5) / (3,3) / (-3,0)</span>
       </div>
     </li>
 
@@ -874,7 +874,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Z-CwO
-        </h3><span class="alg red">/ (-3,-3) / (-3,0) / (5,5) / (0,2) / (-4,2) / (-2,4) / (0,2) / (2,2) / (0,3) / (3,3) / *</span>
+        </h3><span class="alg red">(U) / (-3,-3) / (-3,0) / (5,5) / (0,2) / (-4,2) / (-2,4) / (0,2) / (2,2) / (0,3) / (3,3) / *</span>
       </div>
     </li>
 
@@ -942,7 +942,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-CcwO
-        </h3><span class="alg">/ (0,3) / (0,2) / (1,-5) / (0,5) / (0,-3) / (0,3) / (-1,0) / (0,3) / (0,3) / (0,1)</span>
+        </h3><span class="alg">(U) / (0,3) / (0,2) / (1,-5) / (0,5) / (0,-3) / (0,3) / (-1,0) / (0,3) / (0,3) / (0,1)</span>
       </div>
     </li>
 
@@ -975,7 +975,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-CcwO
-        </h3><span class="alg red">/ (0,-3) / (3,0) / (0,-3) / (0,-3) / (-5,0) / (4,-2) / (0,4) / (4,0) / (2,4) / (0,-1) / (3,3) / (0,3)</span>
+        </h3><span class="alg red">(U') / (0,-3) / (3,0) / (0,-3) / (0,-3) / (-5,0) / (4,-2) / (0,4) / (4,0) / (2,4) / (0,-1) / (3,3) / (0,3)</span>
       </div>
     </li>
 
@@ -1030,7 +1030,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-CcwO
-        </h3><span class="alg">(1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (-4,0) *</span>
+        </h3><span class="alg">(U) (1,0) / (0,3) / (-1,-1) / (1,-2) / (-3,0) / (3,0) / (-1,-1) / (3,0) / (-5,1) / (-4,0) *</span>
       </div>
     </li>
   </ul>
@@ -1043,7 +1043,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W on D
-        </h3><span class="alg red">/ (0,3) / (1,0)/ (2,-2) / (4,0) / (4,0) / (-3,2) / (-1,0) / (0,-3) / (4,0) / (-1,2) / (3,-2) *</span>
+        </h3><span class="alg red">(D') / (0,3) / (1,0)/ (2,-2) / (4,0) / (4,0) / (-3,2) / (-1,0) / (0,-3) / (4,0) / (-1,2) / (3,-2) *</span>
       </div>
     </li>
 
@@ -1054,7 +1054,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Adj-W
-        </h3><span class="alg">(0,-1) / (0,-3) / (1,1) / (0,-3) / (0,3) / (-1,-1) / (0,3) / (0,-5) *</span>
+        </h3><span class="alg">(D') (0,-1) / (0,-3) / (1,1) / (0,-3) / (0,3) / (-1,-1) / (0,3) / (0,-5) *</span>
       </div>
     </li>
 
@@ -1065,7 +1065,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           Opp-W
-        </h3><span class="alg">(1,0) / (0,3) / (0,-1) / (0,3) / (0,1) / (2,2) / (1,0) / (0,3) / (0,1) / (-3,0) / (-1,0)</span>
+        </h3><span class="alg">(U D2) (1,0) / (0,3) / (0,-1) / (0,3) / (0,1) / (2,2) / (1,0) / (0,3) / (0,1) / (-3,0) / (-1,0)</span>
       </div>
     </li>
 
@@ -1076,7 +1076,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwU-W
-        </h3><span class="alg red">/ (0,3) / (0,-4) / (0,3) / (-3,0) / (0,1) / (0,2) / (4,4) / (2,0) / (-1,0) / (0,4) / (-3,0) / (-3,0)</span>
+        </h3><span class="alg red">(U' D2) / (0,3) / (0,-4) / (0,3) / (-3,0) / (0,1) / (0,2) / (4,4) / (2,0) / (-1,0) / (0,4) / (-3,0) / (-3,0)</span>
       </div>
     </li>
 
@@ -1087,7 +1087,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CcwU-W
-        </h3><span class="alg red">/ (3,0) / (0,-4) / (1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,-1) / (3,0) / (0,-3) / (0,4) / (0,-3) / (3,0)</span>
+        </h3><span class="alg red">(U2) / (3,0) / (0,-4) / (1,0) / (-2,0) / (-4,-4) / (0,-2) / (0,-1) / (3,0) / (0,-3) / (0,4) / (0,-3) / (3,0)</span>
       </div>
     </li>
 
@@ -1109,7 +1109,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           H-W
-        </h3><span class="alg red">/ (0,-3) / (3,0) / (0,-3) / (0,-3) / (1,-2) / (-2,0) / (-4,2) / (4,-2) / (0,-2) / (-2,1) / (3,3) / (0,-6)</span>
+        </h3><span class="alg red">(D2) / (0,-3) / (3,0) / (0,-3) / (0,-3) / (1,-2) / (-2,0) / (-4,2) / (4,-2) / (0,-2) / (-2,1) / (3,3) / (0,-6)</span>
       </div>
     </li>
     
@@ -1120,7 +1120,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           CwO-W
-        </h3><span class="alg">(0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (0,-3) / (-1,5) / (0,4) *</span>
+        </h3><span class="alg">(D') (0,-1) / (-3,0) / (1,1) / (2,-1) / (0,3) / (0,-3) / (1,1) / (0,-3) / (-1,5) / (0,4) *</span>
       </div>
     </li>
 
@@ -1142,7 +1142,7 @@ title: Square-1 &mdash; EP Algorithms
       <div class="details">
         <h3 class="alg-nickname">
           W-W
-        </h3><span class="alg">(1,0) / (5,-1) / (3,3) / (3,0) / (1,1) / (-3,0) / (3,-3) / (5,0) *</span>
+        </h3><span class="alg">(U) (1,0) / (5,-1) / (3,3) / (3,0) / (1,1) / (-3,0) / (3,-3) / (5,0) *</span>
       </div>
     </li>
   </ul>
