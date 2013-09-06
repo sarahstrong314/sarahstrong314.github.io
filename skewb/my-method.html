@@ -6,24 +6,166 @@ title: Skewb &mdash; My Method
 <div id="skewb-my-method" class="collapsible">
   <div class="introduction">
     <h2>My Method</h2>
-    <a href="/skewb/my-method.pdf" class="button right">Printable Version</a>
+    <a href="/skewb/skewb-guide.pdf" class="button right">Printable Version</a>
   </div>
 
   <ul class="tabs">
-    <li id="intro">Intro</li>
-    <li id="overview">Overview</li>
-    <li id="tutorial">Tutorial</li>
+    <li id="notation-and-algs">Notarion &amp; Algs</li>
+    <li id="beginners-variation">The "Beginner' Variation"</li>
+    <li id="intermediate-variation">The "Intermediate Variation"</li>
+    <li id="advanced-variation">The "Advanced Variation"</li>
   </ul>
 
-  <div class="intro section">
-    Intro content goes here.
+  <div class="notation-and-algs">
+    <p>For simplicity, I’ll be using this notation:</p>
+    <p>"L" layer </p>
+    <img src="/images/skewb/move3.png">
+    <p>"F" layer </p>
+    <img src="/images/skewb/move1.png">    
+    <p>	"R" layer </p>
+    <img src="/images/skewb/move2.png">    
+    <p>
+     This notation is NOT related to FCN. 
+     I'll be using this instead of FCN because it's much more convenient to describe the algorithms I use. 
+     The x, y, and z rotations will be the same rotations as used in FCN.
+    </p>
+    <p> 
+     My method is based off of two very easy algorithms. 
+     They’re both four moves, and they are the same as the "sledgehammer" (R' F R F') and the "hedgeslammer" (F R' F' R) on a 3x3x3 cube.    
+    </p>
+    <p>
+     I recommend being familiar with these two algorithms, since you’re going to be using them a lot.  
+     There are lots of ways to grip the skewb to preform them, there isn't a single best way to do it. 
+     Also, figure out for yourself whether you prefer the sledgehammer or hedgeslammer, since you can often control which one you do more often.
+    </p>
   </div>
 
-  <div class="overview section">
-    Overview content goes here.
+  <div class="beginners-variation"> 
+    <p>These are the four steps:</p>
+    <p>Step 1 – Solve a side</p> 
+    <img src="/images/skewb/step1.png">
+    <p>Step 2 – Solve the remaining corners</p> 
+    <img src="/images/skewb/step2.png">
+    <p>Step 3 – Solve the U center</p> 
+    <img src="/images/skewb/step3.png">
+    <p>Step 4 – Solve the remaining centers</p>     
+    <img src="/images/skewb/step4.png">
+    
+    <p>
+     The first step is intuitive. 
+     Once you become familiar with how the skewb turns, this is an easy step. 
+     When you’re trying to solve a side for the first few times, the last corner might be a bit tricky. 
+     Two-thirds of the time, you will have to take out an already-solved corner in order to solve the last corner. 
+     If this is the case, place the corner so that it is in one of the two positions below, and preform the algorithm below it.
+    </p> 
+    
+    <img src="/images/skewb/corner1.png">        
+    <p>L F' L'</p> 
+    <img src="/images/skewb/corner2.png">
+    <p>R' F R</p>
+
+    <p>
+      The second step is where the 4-movers come in. 
+      If the upper corners aren’t already solved, you will have one of these two cases.
+    </p>
+
+    <img src="/images/skewb/pi.png"> 
+    <p> F’ L F L’ or (y2) L F’ L’ F </p>
+    <img src="/images/skewb/L.png">
+    <p> R’ F R F’ (y) R’ F R F’ or  L F’ L’ F (y’) L F’ L’ F</p>
+    
+    <p>The third step is simple enough. </p>
+    
+    <img src="/images/skewb/U-center.png">
+    <p>R’ F R F’ (y2) R’ F R F’ or F R’ F’ R (y2) F R’ F’ R</p>        
+
+	  <p>The last step involves the same algorithms used in step 3. Do a (z) or (z’) rotation first, to match one of the cases below.</p>   
+
+    <img src="/images/skewb/l4c-1.png">
+    <p>R’ F R F’ (y2) R’ F R F’ or F R’ F’ R (y2) F R’ F’ R</p>
+    
+    <img src="/images/skewb/l4c-2.png">
+    <p>R’ F R F’ (y2) R’ F R F’ (y2 x’) R’ F R F’ (y2) R’ F R F’ or F R’ F’ R (y2) F R’ F’ R (y2 x’) F R’ F’ R (y2) F R’ F’ R</p>
+    
+    <img src="/images/skewb/l4c-3.png">
+    <p>R’ F R F’ (y2) R’ F R F’(z2 x’) R’ F R F’ (y2) R’ F R F’ or F R’ F’ R (y2) F R’ F’ R (z2 x’) F R’ F’ R (y2) F R’ F’ R</p>
+ 
   </div>
 
-  <div class="tutorial section">
-    Tutorial content goes here.
+  <div class="intermediate-variation"> 
+  
+    <p>This variation is just like the Beginners’ variation, except the second and third steps are combined. These are the steps:</p>
+   
+    <p>Step 1 – Solve a side</p>
+    <img src="/images/skewb/step1.png">
+    <p>Step 2 – Solve the opposite side</p>
+    <img src="/images/skewb/step3.png">
+    <p>Step 3 – Solve the remaining centers</p>
+    <img src="/images/skewb/step4.png">
+
+    <p>
+     The first and third steps are done the same way as in the beginner’s variation. 
+     There are ten cases for the second step, divided into three categories. 
+     The category 2 and 3 cases are eventually reduced to category 1 cases.
+    </p>
+
+    <p>Category 1 Cases</p>
+    
+    <img src="/images/skewb/pi2.png">
+    <p>F’ L F L’(y2)</p>
+    <img src="/images/skewb/pi4.png">
+    <p>L F’ L’ F (y2)</p>
+    <img src="/images/skewb/pi1.png">
+    <p>(F’ L F L’)2 or (L F’ L’ F)2</p> 
+
+    <p>Category 2 Cases</p>
+
+    <img src="/images/skewb/L2.png">
+    <p>R’ F R F’ → cat. 1 or (y2) R’ F R F’ → cat. 1</p> 
+    <img src="/images/skewb/L4.png">
+    <p>R’ F R F’ → cat. 1 or (y2) F R’ F’ R → cat. 1</p>
+    <img src="/images/skewb/L3.png">
+    <p>L F’ L’ F → cat. 1 or (y2) L F’ L’ F → cat. 1</p>
+    <img src="/images/skewb/L5.png">
+    <p>L F’ L’ F → cat. 1 or (y2) F’ L F L’ → cat. 1</p>
+    
+    <p>Category 3 Cases</p>
+    
+    <img src="/images/skewb/pi5.png">
+    <p>R’ F R F’ → cat. 2 or F R’ F’ R → cat. 2</p>
+    <img src="/images/skewb/pi3.png">
+    <p>(y2) R’ F R F’ → cat. 2 or (y2) F R’ F’ R → cat. 2</p>
+    <img src="/images/skewb/L1.png">
+    <p>R’ F R F’ → cat. 2 or (y) R’ F R F’ → cat. 2 or (y’) F R’ F’ R → cat. 2 or (y2) F R’ F’ R → cat. 2</p>
+  
   </div>
+  
+  <div class="advanced-variation"> 
+    <p>
+      This is where it gets a bit crazy. 
+      The second and third steps of the intermediate variation are combined into one step. 
+    </p>
+
+    <p>These are the two steps:</p>
+    
+    <p>Step 1 – Solve a side</p>
+    <img src="/images/skewb/step1.png">
+    <p>Step 2 – Solve the rest</p>
+    <img src="/images/skewb/step4.png">
+    
+    <p>
+      There are 134 cases for the second step. 
+      I’ve organized them into groups based on their “CLL+U center” case.
+      The sledgehammer and hedgeslammer are named A and B respectively, for simplicity, where the sledgehammer is F’ L F L’ and the hedgeslammer is L F’ L’ F. 
+      The letter in brackets at the end of algorithm indicate which face is at the Front-Left. Green is (g), orange is (o), blue is (b), and red is (r). 
+      In other words, (g) indicates no rotation, (o) indicates a (y) rotation, (b) indicates a (y2) rotation, and (r) indicates a (y’) rotation.
+      If an algorithm is missing (indicated by an ‘-‘), it’s because it takes 5 sledgehammers/hedgeslammers, making it a bit too inefficient. 
+      If you intend to learn these cases, I suggest learning optimal algs for the hardest  seven cases.
+      For the most of the Last 5 Centers cases, it’s not very efficient solving them with sledgehammers and hedgeslammers. 
+      For optimal algorithms, check out meep.cubing.net/l5c.htm (note: they’re written in FCN). 
+    </p>
+    
+    <p>[insert images]</p>
+    
+  </div>  
 </div>
