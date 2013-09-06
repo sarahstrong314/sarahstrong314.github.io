@@ -12,8 +12,8 @@ title: PLL Recognition Guide
   <ul class="tabs">
     <li id="introduction">Introduction</li>
     <li id="cp-recognition">CP Recognition</li>
-    <li id="patterns">Patterns</li><br />
-    <li id="cp-categories">CP Categories</li>
+    <li id="patterns">Patterns</li>
+    <li id="cp-categories">CP Categories</li><br />
     <li id="epll">EPLL</li>
     <li id="diag-cp">Diag. CP</li>
     <li id="adj-cp-a">Adj. CP - A</li>
@@ -26,7 +26,9 @@ title: PLL Recognition Guide
   <div class="introduction section">
     <h2 class="append-title">Introduction</h2>
     <p>
-      This will be a guide showing how to recognize any PLL case by only looking at two adjacent sides.  During the PLL stage of a solve, the PLL case can always be figured out by only looking those six visible stickers above the E layer. There are many ways of doing this. This guide just shows the approach that I would take.
+      This will be a guide showing how to recognize any PLL case by only looking at two adjacent sides.  
+      During the PLL stage of a solve, the PLL case can always be figured out by only looking those six visible stickers above the E layer. 
+      There are many ways of doing this; this guide just shows the approach that I would take.
     </p>
 
     <p>
@@ -76,22 +78,33 @@ title: PLL Recognition Guide
   <div class="patterns section">
     <h2 class="append-title">Patterns</h2>
     <p>
-      A 'checker pattern' will also be used sometimes to distinguish between cases. It is a pattern made by two alternating adjacent colours. They look like this:
+      Opposite and adjacent pieces will be mentioned often in this guide.
+      For readablility, a piece is "opposite" when its sticker is the opposite colour of its adjacent pieces'/piece's sticker(s), and likewise for when a piece is "adjacent".
+    </p>
+    <p>
+      A 'checker pattern' will sometimes be used to distinguish cases. 
+      It is a pattern made by two alternating adjacent colours. They look like this:
     </p>
 
     <img src="/images/pll-recog-guide/pattern1.png" />     
     <img src="/images/pll-recog-guide/pattern2.png" />
-    <img src="/images/pll-recog-guide/pattern3.png" />
-    <img src="/images/pll-recog-guide/pattern4.png" />
 
     <p>
-      When there is a visible 2x1 block, it is located in one of two places, the 'outside' or the 'inside'. When it is on the outside, the block will include one of the two far corners, and when it is on the inside it will include the corner located in the center.
+      Blocks will sometimes be used to disinguish cases. 
+      Unless otherwise indicated, a "block" will refer to a 2x1 block on one face.
+      When there is a visible 2x1 block, it is located in one of two places, the 'outside' or the 'inside'. 
+      When it is on the outside, the block will include one of the two far corners, and when it is on the inside it will include the corner located in the center.
     </p>
 
     <p>
       Outside block: <img src="/images/pll-recog-guide/block1.png" /> <img src="/images/pll-recog-guide/block2.png" />
       Inside block: <img src="/images/pll-recog-guide/block3.png" /> <img src="/images/pll-recog-guide/block4.png" />
     </p>
+    
+    <p>
+      Similarly, corner stickers can also be on the 'outside' or the 'inside'. 
+    </p>
+    
   </div>
 
   <div class="cp-categories section">
@@ -143,275 +156,363 @@ title: PLL Recognition Guide
 
   <div class="epll section">
     <h2 class="append-title">EPLL</h2>
-    <img src="/images/pll-recog-guide/solved.png" />
-    <img src="/images/pll-recog-guide/Ua1.png" />
-    <img src="/images/pll-recog-guide/Ua4.png" />
-    <img src="/images/pll-recog-guide/Ub1.png" />
-    <img src="/images/pll-recog-guide/Ub4.png" />
-    <img src="/images/pll-recog-guide/Ua3.png" />
-    <img src="/images/pll-recog-guide/Ub2.png" />
-    <img src="/images/pll-recog-guide/H1.png" />
-    <img src="/images/pll-recog-guide/Ua2.png" />
-    <img src="/images/pll-recog-guide/Ub3.png" />
-    <img src="/images/pll-recog-guide/Z1.png" />
-    <img src="/images/pll-recog-guide/Z2.png" />
+    
+    <u1>
+     <p>Category 0: Two 3x1 Blocks</p>
+      <p>PLL skip!</p>
+       <img src="/images/pll-recog-guide/solved.png" />
+     <p>I hope you can recognize this.</p>
+    </u1>
 
+    <u1>
+     <p>Category 1: One 3x1 Block</p>
+     <p>Ua</p>
+       <img src="/images/pll-recog-guide/Ua1.png" />
+       <img src="/images/pll-recog-guide/Ua4.png" />
+     <p>Ub</p>       
+       <img src="/images/pll-recog-guide/Ub1.png" />
+       <img src="/images/pll-recog-guide/Ub4.png" />
+     <p>
+       When the block is on the left:
+       <li>It’s Ub when an opposite edge colour is on the right</li> 
+       <li>It’s Ua when an adjacent edge colour is on the right</li> 
+       When the block is on the right:
+      <li>It’s Ua when an opposite edge colour is on the left</li>
+      <li>It’s Ub when an adjacent edge colour is on the left</li> 
+     </p>
+    </u1>
 
-    <ul>
-      <li>
-        When there is an <span class="hoverable-image" data-src="/images/pll-recog-guide/edge-sticker-opposite-of-corners.png">edge sticker that is the opposite colour of the corner stickers between it</span>, it is a U perm.<br />
-        <img src="/images/pll-recog-guide/epll-case1.png" />
-      </li>
-    </ul>
-    <p>
-      If both colours are adjacent colours to the corner stickers around them, count the number of unique colours that appear.
-    </p>
+    <u1>
+     <p>Category 2: No 3x1 Blocks &amp; &gt; 1 Opposite Colour Edge</p>
+     <p>Ua</p>
+       <img src="/images/pll-recog-guide/Ua3.png" />
+     <p>Ub</p>       
+       <img src="/images/pll-recog-guide/Ub2.png" />
+     <p>H</p>       
+       <img src="/images/pll-recog-guide/H1.png" />     
+     <p>
+      <li>It’s Ua when an opposite edge colour is on the right</li>
+      <li>It’s Ub when an opposite edge colour is on the left</li>
+      <li>It’s H when an opposite edge colour is on each side</li>
+     </p>
+    </u1>
 
-    <ul>
-      <li>
-        When there are three colours, it's a U perm.
-      </li>
-
-      <li>
-        When there are four colours, it's a Z perm.<br />
-        <img src="/images/pll-recog-guide/epll-case2.png" />
-      </li>
-    </ul>
+    <u1>
+     <p>No 3x1 Blocks &amp; No Opposite Colour Edge</p>
+     <p>Ua</p>
+       <img src="/images/pll-recog-guide/Ua2.png" />
+     <p>Ub</p>       
+       <img src="/images/pll-recog-guide/Ub3.png" />
+     <p>Z</p>       
+       <img src="/images/pll-recog-guide/Z1.png" />
+    <img src="/images/pll-recog-guide/Z2.png" />      
+     <p>
+       When a single colour appears three times:
+      <li>It’s Ua when the edge of that colour is on the right</li>
+      <li>It’s Ub when the edge of that colour is on the left</li>
+      Otherwise:
+      <li>It’s Z</li>
+     </p>
+    </u1>
   </div>
 
   <div class="diag-cp section">
     <h2 class="append-title">Diag. CP</h2>
-    <img src="/images/pll-recog-guide/V1.png" />
-    <img src="/images/pll-recog-guide/Y1.png" />
-    <img src="/images/pll-recog-guide/Na1.png" />
-    <img src="/images/pll-recog-guide/Nb4.png" />
-    <img src="/images/pll-recog-guide/V2.png" />
-    <img src="/images/pll-recog-guide/V4.png" />
-    <img src="/images/pll-recog-guide/Y2.png" />
-    <img src="/images/pll-recog-guide/Y4.png" />
-    <img src="/images/pll-recog-guide/V3.png" />
-    <img src="/images/pll-recog-guide/Y3.png" />
-    <img src="/images/pll-recog-guide/E1.png" />
-    <img src="/images/pll-recog-guide/E2.png" />
 
-    <p>
-      If there is one visible 2x1 block, look at where the block is located.
-    </p>
+    <u1>
+     <p>Category 1: Two Blocks</p>
+     <p>V</p>
+       <img src="/images/pll-recog-guide/V1.png" />
+     <p>Y</p>       
+       <img src="/images/pll-recog-guide/Y1.png" />
+     <p>Na</p>
+       <img src="/images/pll-recog-guide/Na1.png" />
+     <p>Nb</p>       
+       <img src="/images/pll-recog-guide/Nb1.png" />   
+     <p>
+     <li>It’s V when the blocks are both on the inside</li>
+     <li>It’s Y when the blocks are both on the outside</li>
+     <li>It’s Na when the fully-visible corner is part of a left block</li>
+     <li>It’s Nb when the fully-visible corner is part of a right block</li>
+     </p>
+    </u1>
+    
+    <u1>
+     <p>Category 2: One Block</p>
+     <p>V</p>
+       <img src="/images/pll-recog-guide/V2.png" />
+       <img src="/images/pll-recog-guide/V4.png" />
+     <p>Y</p>       
+       <img src="/images/pll-recog-guide/Y2.png" />
+       <img src="/images/pll-recog-guide/Y4.png" />
+     <p>
+      <li>It’s V when there’s a block on the outside</li>
+      <li>It’s Y when there’s a block on the inside</li>
+     </p>
+    </u1>
+    
+   <u1>
+     <p>Category 3: No Blocks</p>
+     <p>V</p>
+       <img src="/images/pll-recog-guide/V3.png" />
+     <p>Y</p>       
+       <img src="/images/pll-recog-guide/Y3.png" />
+     <p>E</p>       
+       <img src="/images/pll-recog-guide/E1.png" />       
+       <img src="/images/pll-recog-guide/E2.png" />           
+     <p>
+      <li>It’s V when there’s a checker pattern on the inside</li>
+      <li>It’s Y when there’s a checker pattern on the outside</li>
+     </p>
+    </u1>
 
-    <ul>
-      <!-- TODO - missing image -->
-      <li>When the block is located on the outside, it's a V perm.</li>
-      <li>
-        When <span class="hoverable-image" data-src="/images/pll-recog-guide/block-on-inside.png">the block is located is in the inside</span>, it is a Y perm.<br />
-        <img src="/images/pll-recog-guide/diag-cp-case1.png" />
-      </li>
-    </ul>
-
-    <p>
-      If there is no visible block, look around for checker patterns.
-    </p>
-
-    <ul>
-      <li>When there's a <span class="hoverable-image" data-src="/images/pll-recog-guide/checker-pattern-inside.png">checker pattern in the inside</span>, it's a V perm.</li>
-      <li>When there's a <span class="hoverable-image" data-src="/images/pll-recog-guide/checker-pattern-outside.png">checker pattern on the outside</span>, it's a Y perm.</li>
-      <li>
-        When there's no checker pattern, it's an E perm.<br />
-        <img src="/images/pll-recog-guide/diag-cp-case2.png" />
-      </li>
-    </ul>
   </div>
 
   <div class="adj-cp-a section">
     <h2 class="append-title">Adj. CP - No Headlights, Two Blocks</h2>
-    <img src="/images/pll-recog-guide/Ja1.png" />
-    <img src="/images/pll-recog-guide/Ja4.png" />
-    <img src="/images/pll-recog-guide/Jb1.png" />
-    <img src="/images/pll-recog-guide/Jb4.png" />
-    <img src="/images/pll-recog-guide/Ja2.png" />
-    <img src="/images/pll-recog-guide/Ja3.png" />
-    <img src="/images/pll-recog-guide/Jb2.png" />
-    <img src="/images/pll-recog-guide/Jb3.png" />
 
+   <u1>
+     <p>Category 1: A 3x1 Block &amp; A 2x1 Block</p>
+     <p>Ja</p>       
+       <img src="/images/pll-recog-guide/Ja1.png" />
+       <img src="/images/pll-recog-guide/Ja4.png" />       
+     <p>Jb</p>       
+       <img src="/images/pll-recog-guide/Jb1.png" />       
+       <img src="/images/pll-recog-guide/Jb2.png" />           
+     <p>
+      When the 3x1 block is on the left:
+      <li>It’s Ja when the 2x1 block is on the inside</li>
+      <li>It’s Jb when the 2x1 block is on the outside</li>
+      When the 3x1 block is on the right:
+      <li>It’s Jb when the 2x1 block is on the inside</li>
+      <li>It’s Ja when the 2x1 block is on the outside</li>
+     </p>
+    </u1>
 
-
-
-    <p>
-       These are both J perms. To tell them apart, look at the orientation of the blocks on each side. 
-    </p>
-
-    <ul>
-      <!-- TODO - missing image -->
-      <li>If the blocks are towards the left, it's the Ja perm.</li>
-
-      <!-- TODO - missing image -->
-      <li>
-        If the blocks are towards the right, it's the Jb perm.<br />
-        <img src="/images/pll-recog-guide/ja-jb-perms.png" />
-      </li>
-    </ul>
+    <u1>
+     <p>Category 2: Two 2x1 Blocks</p>
+     <p>Ja</p>       
+       <img src="/images/pll-recog-guide/Ja2.png" />
+       <img src="/images/pll-recog-guide/Ja3.png" />       
+     <p>Jb</p>       
+       <img src="/images/pll-recog-guide/Jb2.png" />       
+       <img src="/images/pll-recog-guide/Jb3.png" />          
+     <p>
+      <li>It’s Ja when the 2x1 block on the outside is on the left</li>
+      <li>It’s Jb when the 2x1 block on the outside is on the right</li>
+     </p>
+    </u1>
   </div>
 
     <div class="adj-cp-b section">
     <h2 class="append-title">Adj. CP - B: Headlights, One Block </h2>
-    <img src="/images/pll-recog-guide/T1.png" />
-    <img src="/images/pll-recog-guide/T4.png" />
-    <img src="/images/pll-recog-guide/Ra1.png" />
-    <img src="/images/pll-recog-guide/Rb4.png" />
-    <img src="/images/pll-recog-guide/Aa4.png" />
-    <img src="/images/pll-recog-guide/Ab2.png" />
-    <img src="/images/pll-recog-guide/Ga4.png" />
-    <img src="/images/pll-recog-guide/Gc1.png" />
 
-
-    <p>Count the number of unique sticker colours that appear</p>
-    <ul>
-      <li>If there are three, it's an A perm.</li>
-      <li>
-        If there are four, it's Ga or Gc.<br />
-        <img src="/images/pll-recog-guide/aa-ab-ga-gc-perms.png" />
-      </li>
-    </ul>
+   <u1>
+     <p>Category 1: Inner Block</p>
+     <p>T</p>       
+      <img src="/images/pll-recog-guide/T1.png" />
+      <img src="/images/pll-recog-guide/T4.png" />    
+     <p>Ra</p>       
+       <img src="/images/pll-recog-guide/Ra1.png" />           
+     <p>Rb</p>       
+       <img src="/images/pll-recog-guide/Rb4.png" />        
+     <p>
+      When the edge in between the headlights is adjacent:
+      <li>It’s Ra when the block is on the right</li>
+      <li>It’s Rb when the block is on the left</li>
+      Otherwise:
+      <li>It’s T</li>
+     </p>
+    </u1>
+    
+    <u1>
+     <p>Category 2: Outer Block</p>
+     <p>Aa</p>  
+       <img src="/images/pll-recog-guide/Aa4.png" />
+     <p>Ab</p> 
+       <img src="/images/pll-recog-guide/Ab2.png" />
+     <p>Ga</p>       
+       <img src="/images/pll-recog-guide/Ga4.png" />
+     <p>Gc</p> 
+       <img src="/images/pll-recog-guide/Gc1.png" />            
+     <p>
+      When only three unique colours are visible:
+      <li>It’s Aa when the block is on the right</li>
+      <li>It’s Ab when the block is on the left</li>
+      Otherwise:
+      <li>It’s Ga when the block is on the right</li>
+      <li>It’s Gb when the block is on the left</li>
+     </p>
+    </u1>
   </div>
 
   <div class="adj-cp-c section">
     <h2 class="append-title">Adj. CP - C: No headlights, One block</h2>
-    <img src="/images/pll-recog-guide/F1.png" />
-    <img src="/images/pll-recog-guide/F4.png" />
-    <img src="/images/pll-recog-guide/Aa1.png" />
-    <img src="/images/pll-recog-guide/Ab1.png" />
-    <img src="/images/pll-recog-guide/Gb1.png" />
-    <img src="/images/pll-recog-guide/Gd4.png" />
-    <img src="/images/pll-recog-guide/Gb4.png" />
-    <img src="/images/pll-recog-guide/Gd1.png" />
-    <img src="/images/pll-recog-guide/Aa1.png" />
-    <img src="/images/pll-recog-guide/Ab4.png" />
+
+    <u1>
+     <p>Category 1: A 3x1 Block</p>
+     <p>Aa</p>  
+       <img src="/images/pll-recog-guide/F1.png" />
+       <img src="/images/pll-recog-guide/F4.png" />        
+     <p>
+      <li>It’s F</li>
+     </p>
+    </u1>
+
+    <u1>
+     <p>Category 2: Two 2x1 Blocks</p>
+     <p>Aa</p>  
+      <img src="/images/pll-recog-guide/Aa1.png" />
+     <p>Ab</p> 
+      <img src="/images/pll-recog-guide/Ab1.png" />         
+     <p>
+      <li>It’s Aa when the outer corner on the right is opposite</li>
+      <li>It’s Ab when the outer corner on the left is opposite</li>
+     </p>
+    </u1>
+
+    <u1>
+     <p>Category 3: Inner Block </p>
+     <p>Ga</p>  
+       <img src="/images/pll-recog-guide/Ga1.png" />    
+     <p>Gc</p>  
+       <img src="/images/pll-recog-guide/Gc4.png" />    
+     <p>Gb</p>  
+       <img src="/images/pll-recog-guide/Gb1.png" />    
+     <p>Gd</p>  
+       <img src="/images/pll-recog-guide/Gd4.png" />           
+     <p>
+      When the corner beside the block is adjacent: 
+      <li>It’s Ga when the block is on the left</li>
+      <li>It’s Gc when the block is on the right</li>
+      Otherwise: 
+      <li>It’s Gb when the block is on the left</li>
+      <li>It’s Gd when the block is on the right</li>
+     </p>
+    </u1>
+
+
     <img src="/images/pll-recog-guide/Ga1.png" />
     <img src="/images/pll-recog-guide/Ga4.png" />
-    <img src="/images/pll-recog-guide/Ra2.png" />
-    <img src="/images/pll-recog-guide/Rb3.png" />
-    <img src="/images/pll-recog-guide/T2.png" />
-    <img src="/images/pll-recog-guide/T3.png" />
-
-    <p>Look at the corner sticker on the same side as the block.</p>
-    <ul>
-      <li>Case 1: If it is the opposite colour of the block, the PLL must be Gb, Gd, Aa or Ab.</li>
-      <li>Case 2. If it is not the opposite colour of the block, the PLL must Ga, Gc, Ra, Rb or T.</li>
-    </ul>
-
-    <p>If you get case 1, look at the location of the block.</p>
-    <ul>
-      <li>
-        If <span class="hoverable-image" data-src="/images/pll-recog-guide/a-block-inside.png">the block is on the inside</span>, then it's a G perm.<br />
-        <img src="/images/pll-recog-guide/gb-gd-perms.png" />
-      </li>
-
-      <!-- TODO - missing image -->
-      <li>If the block is on the outside, it is either a G perm or an A perm.</li>
-    </ul>
-
+    
+    <u1>
+     <p>Category 4: Outer Block &amp; Opposite Corner </p>
+     <p>Gb</p>  
+       <img src="/images/pll-recog-guide/Gb4.png" />
+     <p>Gd</p>     
+       <img src="/images/pll-recog-guide/Gd1.png" />
+     <p>Aa</p>    
+       <img src="/images/pll-recog-guide/Aa1.png" />
+     <p>Ab</p>   
+       <img src="/images/pll-recog-guide/Ab4.png" />
     <p>
-      To distinguish between the G perms and the A perms when the block is on the outside, look at the colours of the two edge stickers.
-    </p>
-
-    <ul>
-      <!-- TODO - missing image -->
-      <li>If they are opposite colours, it's a G perm.</li>
-      <li>
-        If <span class="hoverable-image" data-src="/images/pll-recog-guide/not-opposite-colors.png">they are not opposite colours</span>, it's an A perm.<br />
-        <img src="/images/pll-recog-guide/gb-gd-aa-ab-perms.png" />
-      </li>
-    </ul>
-    <p>If you get case 2, look at the location of the block.</p>
-
-    <ul>
-      <!-- TODO - missing image -->
-      <li>
-        If the block is on the inside, then it's a G perm.<br />
-        <img src="/images/pll-recog-guide/ga-gc-perms.png" />
-      </li>
-
-      <li>If the block is on the outside, it is either an R perm or a T perm.</li>
-    </ul>
-
-    <p>
-      To distinguish between the R perms and the T perm when the block is on the outside, count the number of unique sticker colours.
-    </p>
-
-    <ul>
-      <li>If they are three colours, it's an R perm.</li>
-      <li>
-        If they are four colours, it's a T perm.<br />
-        <img src="/images/pll-recog-guide/ra-rb-t-perms.png" />
-      </li>
-    </ul>
+      When only three unique colours are visible:
+      <li>It’s Gb when the block is on the right</li>
+      <li>It’s Gd when the block is on the left</li>
+      Otherwise: 
+      <li>It’s Aa when the block is on the left</li>
+      <li>It’s Ab when the block is on the right</li>
+     </p>
+    </u1>
+   
+   
+   
+   
+    <u1>
+     <p>Category 5: Category 5: Outer Block &amp; Adjacent Corner </p>
+     <p>Ra</p>  
+       <img src="/images/pll-recog-guide/Ra2.png" />
+     <p>Rb</p>  
+       <img src="/images/pll-recog-guide/Rb3.png" />
+     <p>T</p>         
+       <img src="/images/pll-recog-guide/T2.png" />         
+       <img src="/images/pll-recog-guide/T3.png" />
+     <p>
+      When only three unique colours are visible:
+      <li>It’s Ra when the block is on the right</li>
+      <li>It’s Rb when the block is on the left</li>
+      Otherwise: 
+      <li>It’s T</li>
+     </p>
+    </u1>
   </div>
 
   <div class="adj-cp-d section">
     <h2 class="append-title">Adj. CP - D: Headlights, No Blocks</h2>
-    <img src="/images/pll-recog-guide/Gb2.png" />
-    <img src="/images/pll-recog-guide/Gb3.png" />
-    <img src="/images/pll-recog-guide/Gd2.png" />
-    <img src="/images/pll-recog-guide/Gd3.png" />
-    <img src="/images/pll-recog-guide/Ga3.png" />
-    <img src="/images/pll-recog-guide/Gc2.png" />
-    <img src="/images/pll-recog-guide/Ra4.png" />
-    <img src="/images/pll-recog-guide/Rb1.png" />
-    <img src="/images/pll-recog-guide/Aa3.png" />
-    <img src="/images/pll-recog-guide/Ab3.png" />
+
+    <u1>
+     <p>Category 1: Opposite edge in between headlights</p>
+     <p>Gb</p>  
+       <img src="/images/pll-recog-guide/Gb2.png" />
+       <img src="/images/pll-recog-guide/Gb3.png" />
+     <p>Gd</p>  
+       <img src="/images/pll-recog-guide/Gd2.png" />
+       <img src="/images/pll-recog-guide/Gd3.png" />
+     <p>
+       When only three unique colours are visible:
+      <li>It’s Gb when the block is on the left</li>
+      <li>It’s Gd when the block is on the right</li>
+      Otherwise: 
+      <li>It’s Gb when the block is on the right</li>
+      <li>It’s Gd when the block is on the left</li>
+     </p>
+    </u1>
+
+
     
-    <p>Look at the edge sticker in between the headlights.</p>
-    <ul>
-      <!-- TODO - missing image -->
-      <li>Case 1: If it is the opposite colour of the headlight, the PLL must be Gb or Gd.</li>
-      <li>
-        Case 2: If <span class="hoverable-image" data-src="/images/pll-recog-guide/not-opposite-headlights.png">it is not the opposite colour of the headlights</span>, the PLL must Ga, Gc, Ra, Rb, Aa or Ab.<br />
-        <img src="/images/pll-recog-guide/gb-gd-etc-perms.png" />
-      </li>
-    </ul>
-
-    <p>If you get case 2, look at the location of the colour of the edge stickers.</p>
-
-    <ul>
-      <!-- TODO - missing image -->
-      <li>If they are opposite colours, it's Ga or Gc.</li>
-      <li>If <span class="hoverable-image" data-src="/images/pll-recog-guide/adjacent-colors.png">they are adjacent colours</span>, it's an R perm or an A perm.</li>
-    </ul>
-
-    <p>
-      <!-- TODO - missing image -->
-      To distinguish between the R perms and the A perms, look for a checker pattern. The R perms will have a checker pattern and the A perms will not.
-    </p>
-
-    <img src="/images/pll-recog-guide/ga-gc-ra-rb-aa-ab-perms.png" />
+    <u1>
+     <p>Category 1: Adjacent edge in between headlights</p>
+     <p>Ra</p>  
+       <img src="/images/pll-recog-guide/Ra4.png" />
+     <p>Rb</p>  
+       <img src="/images/pll-recog-guide/Rb1.png" />
+     <p>Ga</p>  
+       <img src="/images/pll-recog-guide/Ga3.png" />
+     <p>Gc</p>     
+       <img src="/images/pll-recog-guide/Gc2.png" />
+     <p>Aa3</p>     
+       <img src="/images/pll-recog-guide/Aa3.png" />
+     <p>Ab3</p>     
+       <img src="/images/pll-recog-guide/Ab3.png" />
+       
+     <p>
+      When only three unique colours are visible:
+      <li>It’s Ra when the headlights are on the left</li>
+      <li>It’s Rb when the headlights are on the right</li>
+      Otherwise:
+      <li>It’s Ga when the headlights are on the right and the outer left corner is adjacent </li>
+      <li>It’s Gc when the headlights are on the left and the outer right corner is adjacent </li>
+      <li>It’s Aa when the headlights are on the right and the outer left corner is opposite </li>
+      <li>It’s Ab when the headlights are on the left and the outer right corner is opposite</li>
+     </p>
+    </u1>     
   </div>
 
-    <div class="adj-cp-e section">
+  <div class="adj-cp-e section">
     <h2 class="append-title">Adj. CP - E: No Headlights, No Blocks</h2>
-    <img src="/images/pll-recog-guide/F2.png" />
-    <img src="/images/pll-recog-guide/F3.png" />
-    <img src="/images/pll-recog-guide/Ga1.png" />
-    <img src="/images/pll-recog-guide/Gc3.png" />
-    <img src="/images/pll-recog-guide/Ra3.png" />
-    <img src="/images/pll-recog-guide/Rb2.png" />
 
-    <p>Look at the colour of the edge stickers</p>
-
-    <ul>
-      <li>Case 1: if <span class="hoverable-image" data-src="/images/pll-recog-guide/there-are-opposite.png">there are opposite</span>, it's an R perm.</li>
-      <li>
-        Case 2: if <span class="hoverable-image" data-src="/images/pll-recog-guide/there-are-not-opposite.png">there are not opposite</span>, it's an F perm or a G perm.<br />
-        <img src="/images/pll-recog-guide/ra-rb-perms.png" />
-      </li>
-    </ul>
-
-    <p>If you get case 2, look for a checker pattern</p>
-
-    <ul>
-      <li>If there's <span class="hoverable-image" data-src="/images/pll-recog-guide/e-checker-pattern.png">a checker pattern</span>, it's an F perm.</li>
-      <li>
-        If there's no checker pattern, it's Ga or Gc.<br />
-        <img src="/images/pll-recog-guide/f-ga-gc-perms.png" />
-      </li>
-    </ul>
+    <u1>
+     <p>F</p>  
+       <img src="/images/pll-recog-guide/F2.png" />
+       <img src="/images/pll-recog-guide/F3.png" />
+     <p>Ga</p>  
+       <img src="/images/pll-recog-guide/Ga1.png" />
+     <p>Gc</p>  
+       <img src="/images/pll-recog-guide/Gc3.png" />
+     <p>Ra</p>     
+       <img src="/images/pll-recog-guide/Ra2.png" />
+     <p>Rb</p>     
+       <img src="/images/pll-recog-guide/Rb3.png" />
+    
+     <p>
+      When only three unique colours are visible:
+      <li>It’s F</li>
+      Otherwise:
+      <li>It’s Ga when an opposite outer corner is on the right</li>
+      <li>It’s Gc when an opposite outer corner is on the left</li>
+      <li>It’s Ra when an opposite inner corner is on the right</li>
+      <li>It’s Rb when an opposite innerr corner is on the left</li>
+    </p>
+    </u1> 
   </div>
 </div>
