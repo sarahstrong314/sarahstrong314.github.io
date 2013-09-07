@@ -40,6 +40,10 @@ p {
   line-height: 1.4;
 }
 
+.clearfix {
+  clear: both;
+}
+
 #container {
   margin: 3em;
   height: auto !important;
@@ -303,6 +307,27 @@ p img {
 
 #content.home {
   width: 70%;
+}
+
+.side-by-side {
+  display: inline;
+  clear: both;
+}
+
+.side-by-side p {
+  display: inline;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.side-by-side img {
+  display: block;
+  padding-top: 10px;
+}
+
+#skewb-my-method .side-by-side, #skewb-my-method .side-by-side p {
+  width: 175px;
 }
 
 /* Guestbook */
