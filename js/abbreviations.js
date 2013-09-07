@@ -31,7 +31,9 @@ $(document).ready(function() {
     "L3E": "Last 3 Edges",
     "CFOP": "Cross->F2L->OLL->PLL; A.K.A. the Fridrich Method.",
     "CFCE": "Cross->F2L->CLL->ELL; A CFOP variant.",
-    "MGLS": "Makisumi-Garron Last Slot; Substitutes LS+OLL with ELS+CLS"
+    "MGLS": "Makisumi-Garron Last Slot; Substitutes LS+OLL with ELS+CLS",
+    "FCN": "Fixed Corner Notation; A skewb notation"
+    
   };
 
 
