@@ -27,7 +27,7 @@ $(document).ready(function() {
     if ($("#active-algs").is(":visible")) {
       $("#active-algs").fadeOut('fast', function() {
         $(this).empty();
-        $(this).append($algs).fadeIn();
+        $(this).append($algs).fadeIn('fast');
       });
     } else {
       $("#active-algs").append($algs).slideDown();
