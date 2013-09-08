@@ -30,7 +30,7 @@ $(document).ready(function() {
         $(this).append($algs).fadeIn('fast');
       });
     } else {
-      $("#active-algs").append($algs).slideDown();
+      $("#active-algs").append($algs).slideDown('fast');
     }
 
     // Scroll up to #active-algs, if needed.
@@ -95,10 +95,10 @@ $(document).ready(function() {
     var $li = $(ev.target).closest("li");
 
     if ($li.find("ul").is(":visible")) {
-      $li.find("ul").slideUp();
+      $li.find("ul").slideUp('fast');
     } else {
-      $("#nav li").not($li).find("ul").slideUp();
-      $li.find("ul").slideDown();
+      $("#nav li").not($li).find("ul").slideUp('fast');
+      $li.find("ul").slideDown('fast');
     }
   });
 
