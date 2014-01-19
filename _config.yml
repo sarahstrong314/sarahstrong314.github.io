@@ -1,14 +1,3 @@
 name: Sarah's Cubing Site
 markdown: redcarpet
 exclude: ['deploy.sh', 'TODO', 'README.md']
-
-assets:
-  cache: true
-  cachebust: soft
-  sources:
-    - css
-    - images
-    - js
-    - js/vendor
-  js_compressor: uglifier
-  css_compressor: sass
