@@ -91,15 +91,20 @@ $(document).ready(function() {
     }
   });
 
-  $("#nav li h3").click(function(ev) {
+  $("nav li h3").click(function(ev) {
     var $li = $(ev.target).closest("li");
 
     if ($li.find("ul").is(":visible")) {
       $li.find("ul").slideUp('fast');
     } else {
-      $("#nav li").not($li).find("ul").slideUp('fast');
+      $("nav li").not($li).find("ul").slideUp('fast');
       $li.find("ul").slideDown('fast');
     }
+  });
+
+  $("[data-show-cheat-sheet]").click(function() {
+    $(this).hide();
+    $("#cheat-sheet").show();
   });
 
   var navigateWithHash = function() {
@@ -138,5 +143,5 @@ $(document).ready(function() {
   navigateWithHash();
 
   var path = document.location.pathname.replace('.html', '');
-  $("#nav").find("a[href='" + path + "']").closest("ul").show();
+  $("nav").find("a[href='" + path + "']").closest("ul").show();
 });
