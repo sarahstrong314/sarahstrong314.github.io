@@ -287,6 +287,10 @@ a.button:hover {
   margin-top: 20px;
 }
 
+[id='3x3x3-beginners-method'] .step4 td {
+  width: 20%;
+}
+
 [id='3x3x3-ocllcp'] .alg-list {
   width: 660px;
 }
