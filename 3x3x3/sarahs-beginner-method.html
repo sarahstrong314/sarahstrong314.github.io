@@ -41,6 +41,8 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <li>focuses on learning and understanding over memorizing.</li>
       <li>provides choices along the way.</li>
     </ul> 
+
+    <p style='width: 700px'>This tutorial uses Twisty Player. You can </p>
   </div>
 
   <div class="step1 section">
@@ -484,7 +486,372 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
 
   <div class="step3 section">
     <h2 class="append-title">The First Layer Corners</h2>
-    TODO
+
+    <div>
+      <p style='width: 700px'>After we've solved the cross, we can finish the first layer. </p> 
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="y'" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            This is what it will look like when every first layer piece is in its correct spot.
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            While we are doing this step, we will have the white face on the botton and the yellow face facing up. 
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>Since we have the four white edges solved, all we have left are the four white corners. Every white corner is either a “good corner” or a “bad corner”.</p> 
+
+      <p style='width: 700px'>A good corner is in the top layer and has a white sticker touching the equator. There are only two possibilities.</p>
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:IIIIIIIMMIMM,CENTERS:-MMMM-" experimental-setup-anchor="end" experimental-setup-alg="z2 F' U F" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example of a good corner
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:IIIIMIIIMIMM,CENTERS:-MMMM-" experimental-setup-anchor="end" experimental-setup-alg="z2 R U' R'" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example of a good corner
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>When we see a good corner, we can turn the top layer so the corner is above its correct spot.</p>
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="R U R'" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example 1
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="F' U' F" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example 2
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>There are two possible ways the white sticker might be facing. In both cases, we can bring the corner in its correct spot in 3 turns. Try to figure out what the 3 turns are before looking at the answer.</p>
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example 1
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="F' U' F" alg="" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Example 2
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>It's a good idea to learn how to write down the turns we make so that we can communicate more easily. We're going to learn something called “standard notation”. “Notation” means we're using letters, numbers, and symbols. “Standard” means it's the most common way.</p>
+
+      <p style='width: 700px'>When we turn a face, we write the first letter of the face. If we're turning it clockwise, we don't need to write anything else. </p>
+      
+      <p style='width: 700px'>To know whether we're turning a face clockwise or counter-clockwise, rotate the cube to look at the center of the face to see which way we're turning it.</p>
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            R (right face clockwise)
+          </td>
+          <td style='border: 1px solid #3c7139; width: 234px'>
+            L (left face clockwise)
+          </td>
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            U (upper face clockwise)
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 234px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+           </td>
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>When we turn a face the other way, we write a symbol that looks like an apostrophe. We say "prime" for the symbol.</p>
+
+      <table style='border-collapse: collapse;' width='768px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            R' (right face counterclockwise)
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            L' (left face counterlockwise)
+           </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            U' (upper face counterclockwise)
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="L'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+           </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="U'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>An algorithm is a list of turns put together. The two algorithms we just saw are L' U' L and R U R'. </p> 
+
+      <table style='border-collapse: collapse;' width='512px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            R U R' (right flick)
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            L' U' L (left flick)
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 234px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2 y" alg="L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+
+      <p style='width: 700px'>We only need these two algorithms to solve the first layer corners. We'll give them nicknames since we'll be using them a lot. R U R' is <strong>right flick</strong> and L' U' L is <strong>left flick</strong>. </p>
+
+      <p style='width: 700px'>When we use these flicks, we need to hold the cube the correct way. For the right flick, make sure the corner is on the right. For the left flick, make sure it's on the left.</p>
+    </div>
+    
+    <div>
+      <p style='width: 700px'>After you solve all your good corners, you might have some bad corners left.</p>
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2 R U R' U2 L U' L' D2 E2" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            If you have a bad corner in the first layer, where the white sticker is facing down, but it's not in its correct spot, put it on your left or on your right.
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table style='border-collapse: collapse;' width='512px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you put it on your left, do the left flick. This will turn the bad corner into a good corner.
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you put it on your right, do the right flick. This will turn the bad corner into a good corner.
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U2 L U' L' D2 E D'" alg="L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 234px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U2 L U' L' D2 E2" alg="R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+
+      <p style='width: 700px'>Then, put it above its correct spot and use a flick to solve it.</p> 
+
+      <table style='border-collapse: collapse;' width='512px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you need to do the right flick, put the corner on the right side.
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you need to do the left flick, put the corner on the left side.
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 234px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="y U' R U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 233px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2 y" alg="y' U L' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U F U R' U2 R y2" alg="L' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            If you have a bad corner in the first layer, where the white sticker is facing left, put it on your left and do a left flick to turn it into a good corner.
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U F U R' U2 R y2 L' U' L" alg="y' U2' L' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Now it's a good corner and we can solve it the same way as before before.
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' U' F U2 F' y'" alg="R U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            If you have a bad corner in the first layer, where the white sticker is facing right, put it on your right and do a right flick to turn it into a good corner.
+          </td>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' U' F U2 F' y' R U R'" alg="y U2 R U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            Now it's a good corner and we can solve it the same way as before before.
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+      <table style='border-collapse: collapse;' width='700px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:IIIIIIIIIIII,CENTERS:-IIII-" experimental-setup-anchor="end" experimental-setup-alg="z2 R2 U" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139;'>
+            If you have a bad corner where the white sticker is facing up, you can put it above its correct spot
+          </td>
+      </table>
+
+      <br />
+
+      <table style='border-collapse: collapse;' width='512px'>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you put it on your left, do the left flick. 
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            If you put it on your right, do the right flick. 
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:-----" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' F' U F U2 y" alg="L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U2 L U' L' D2 E2" alg="R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            It will still be a bad corner, but we can do the same flick again to turn it into a good corner.
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            It will still be a bad corner, but we can do the same flick again to turn it into a good corner.
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:-----" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' F' U F U2 y L' U' L" alg=" L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:-----" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' F' U F U2 R U R'" alg="R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            After we move the corner above where it belongs, the same flick will solve it.
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            After we move the corner above where it belongs, the same flick will solve it.
+          </td>
+        </tr>
+        <tr> 
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:-----" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' F' U F U2 y L' U2 L" alg="U L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+          <td style='border: 1px solid #3c7139; width: 256px'>
+            <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:-----" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' F' U F U2 R U2 R'" alg="U' R U R'" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div>
+
+      <p style='width: 700px'>This is everything you need to solve the first layer corners. Here's a quick summary of all the cases we saw.</p>
+      TODO
+
+<!--       Category 1: Two good edge cases  -->
+
+<!--       Category 2: Three bad edge cases on D -->
+
+<!--       Category 3: One bad edge case on U -->
+
+      <p style='width: 700px'>After you practice solving the first layer for a while, you can move on to the next step: solving the second layer.</p>
+    </div>
+    
   </div>
 
   <div class="step4 section">
