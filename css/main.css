@@ -24,6 +24,12 @@ h3 {
   clear: both;
 }
 
+code {
+  font-size: 15px;
+  background-color: #a3efa1; /*#57B647;*/
+  color: #3c7139;
+}
+
 #active-algs h3 {
   margin-bottom: 10px;
 }
@@ -102,6 +108,10 @@ nav li a:hover, nav h3:hover {
 
 .smaller {
   font-size: smaller;
+}
+
+.simple-list-item:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 #cheat-sheet {
