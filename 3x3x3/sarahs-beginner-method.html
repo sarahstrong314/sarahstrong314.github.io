@@ -36,6 +36,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
 
     <div class="slideshow-section">
       <div>
+        <h3>0 – About This Tutorial</h3>
+
+        <br />
+
         <p>If you want to learn how to solve the Rubik's Cube, you've come to the right place!</p>
         
         <p>This tutorial...</p>
@@ -44,26 +48,49 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
           <li class="simple-list-item">is friendly for kids, teens, and adults.</li>
           <li class="simple-list-item">is friendly for left-handed, right-handed, and ambidextrous people.</li>
           <li class="simple-list-item">focuses on learning and understanding over memorizing.</li>
-          <li class="simple-list-item"> provides choices along the way.</li>
+          <li class="simple-list-item">provides choices along the way.</li>
         </ul>
       </div>
 
       <div>
-        <p>This tutorial uses Twisty Player, a tool for visualizing the cube made by Lucas Garron. </p>
+        <p>This tutorial uses <strong>Twisty Player</strong>, a tool made by Lucas Garron. </p>
 
         <p>Here is what Twisty Player looks like. Find out what happens when you click on the cube and drag your mouse.</p>
 
         <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-setup-anchor="start" experimental-setup-alg="z2" control-panel="none" background="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
 
-        <p>Sometimes there is a control panel with a play button. Click it to see what happens.</p>
+        <p>Sometimes there will be a control panel with a play button. Click it to see what happens.</p>
 
         <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R2 L2' R2 L2'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
       </div>
 
       <div>
-        <p>This is the end of this section.</p>
+        <p>Sometimes there will be pieces with missing stickers.</p>
 
-        <p><strong>Next: 1 – How the Cube Works</strong></p>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <strong>Grey</strong> stickers could be any colour, but that colour is not important to us right now.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" anchor="start" experimental-stickering-mask-orbits="CORNERS:MMMMIIII,EDGES:MMMIMIIIIII-,CENTERS:MIIIII" experimental-setup-alg="z2 F Uw R Uw' R' F' y" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <strong>Pink</strong> stickers are in the correct spot, but there are other colours for us to focus on right now.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>This is the end of this section. You are ready to learn how the cube works.</p>
+
+        <a href="../3x3x3/sarahs-beginner-method#section/step1" target="_self">Next: 1 – How the Cube Works</a>
       </div>
     </div>
   </div>
@@ -73,7 +100,13 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
 
     <div class="slideshow-section">
       <div>
-        <p>Before we learn how to solve the cube, let's learn how the cube is put together. This will help us understand what we're doing better.</p>
+        <h3>1 – How the Cube Works</h3>
+
+        <br />
+
+        <p>Before we learn how to solve the cube, let's learn how the cube is held together.</p>
+
+        <p>This will help us understand what we're doing better.</p>
       </div>
 
       <div>
@@ -83,11 +116,13 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/one-cap-off.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              To take the cube apart, we can pop off one of the caps on a center piece. If you're following along, do this on the <strong>yellow side</strong>.
+              To take the cube apart, <strong>pop</strong> off one of the <strong>caps</strong> on a center piece.
               <br /><br />
-              Next, we can use a screwdriver to loosen the screw until the pieces start to fall apart.
+              If you're following along, do this on the <strong>yellow side</strong>.
               <br /><br />
-              Then we can take out all the pieces.
+              Next, use a screwdriver to loosen the screw until the pieces start to fall apart.
+              <br /><br />
+              Then, take out all the pieces.
             </td>
           </tr>
         </table>
@@ -100,15 +135,20 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/core.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              The part that holds everything together is called the <strong>core</strong>. All the center pieces on the core are connected to each other. 
+              The part that holds everything together is called the <strong>core</strong>. 
               <br /><br />
-              This is important because it means the centers never move away from each other. When we turn the cube, we're really just turning these pieces around the centers.
+              All the center pieces on the core are connected to each other. 
+              This is important because it means <strong>the centers never move away from each other</strong>.
+              <br /><br />
+              When we turn the cube, we're really just turning the pieces around the centers.
             </td>
           </tr>
         </table>
       </div>
 
       <div>
+        <p>These are all the different types of pieces.</p>
+
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
             <td style='border: 1px solid #3c7139; width: 256px'>
@@ -159,16 +199,16 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIIIIII,CENTERS:-----I" experimental-setup-anchor="end" experimental-setup-alg="y'" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              This is what it looks like when the white later is done. Every white piece is in its correct spot.
+              This is what it looks like when the white layer is done. Every white piece is in its correct spot.
             </td>
           </tr>
         </table>
       </div>
 
       <div>
-        <p>Here is how to put the cube back together.</p>
+        <p>It's important that we <em>don't</em> put the pieces back in randomly, because that might make the cube impossible to solve without taking it apart again. </p>
 
-        <p>It's important that we <em>don't</em> put the pieces in randomly, because then it might be impossible to solve without taking it apart again. </p>
+        <p>Here is how to put the cube back together.</p>
 
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -177,7 +217,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/cross-1.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Start by making the core stable so it won't fall over. We'll begin with all the white edge pieces.
+              Start by making the core stable so it won't fall over. Put the four <strong>white edge pieces</strong> in their correct spots.
               <br/ ><br/ >
               This creates a shape called a <strong>cross.</strong>
             </td>
@@ -193,7 +233,9 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/first-layer-2.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Next, we'll do all the white corners. This will complete the <strong>first layer</strong>.
+              Next, put the four <strong>white corners</strong> in their correct spots.
+              <br/ ><br/ >
+              This will complete the <strong>first layer</strong>.
             </td>
           </tr>
         </table>
@@ -207,7 +249,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/f2l-2.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Next, we'll do the second layer edges. These are the edges that don't have white or yellow on them.
+              Next, put the four <strong>middle layer edges</strong>. These are the edges that don't have white or yellow on them.
               <br/ ><br/ >
               This will complete the <strong>first two layers</strong>.
             </td>
@@ -224,20 +266,22 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/one-edge-out.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              To put the <strong>last layer</strong> pieces back in, we can put them in any order as long as we put an edge piece last. 
+              Put the <strong>last layer</strong> pieces in their correct spots in any order as long as an edge piece goes in last. 
               <br /><br />
-              It's easier to put them in when you turn the layer by half a move.
+              It's easier to put the pieces in when the layer is turned by half a move.
             </td>
           </tr>
         </table>
       </div>
 
       <div>
-        <p>All we need to do now is tighten the screw and put the yellow cap back on.</p>
+        <p>Lastly, tighten the screw and put the yellow cap back on.</p>
 
-        <p>You can continue with the rest of the tutorial if you want to learn how to solve it without taking it apart.</p>
+        <p>Once you do this, you will be ready for the rest of the tutorial.</p>
 
-        <p><strong>Next: 2 – The White Cross</strong></p>
+        <p>You will be learning how to solve the cube without taking it apart.</p>
+
+        <a href="../3x3x3/sarahs-beginner-method#section/step2" target="_self">Next: 2 – The White Cross</a>
       </div>
 
       <!-- <div>
@@ -258,6 +302,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
 
     <div class="slideshow-section">
       <div>
+        <h3>2 – The White Cross</h3>
+        
+        <br />
+
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
             <td style='border: 1px solid #3c7139; width: 256px'>
@@ -308,7 +356,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div>
-        <p>When we look at the cube, every cross piece is either a <strong>"good edge"</strong> or a <strong>"bad edge"</strong>. "Good" means we can put the white sticker on the yellow face with just one turn. </p>
+        <p>When we look at the cube, every cross piece is either a <strong>good edge</strong> or a <strong>bad edge</strong>. "Good" means we can put the white sticker on the yellow face with just one turn. </p>
 
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -344,7 +392,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:OIIOIIIIIIII,CENTERS:IIIII-" experimental-setup-anchor="start" experimental-setup-alg="z2 R2 F' U" alg="F'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              As we do this, we need to be careful not to take out any white edges we have already placed. In this example, if we place the white edge right away, we take out a different white edge.
+              As we do this, we need to be careful not to take out any white edges we have already put. In this example, if we put the white edge right away, we take out a different white edge.
             </td>
           </tr>
         </table>
@@ -356,7 +404,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:OIIOIIIIIIII,CENTERS:IIIII-" experimental-setup-anchor="start" experimental-setup-alg="z2 R2 F' U" alg="U' F'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              If we're about to take out a white edge we already placed, we can turn the top layer first to keep it safe.
+              If we're about to take out a white edge we already put, we can turn the top layer first to keep it safe.
             </td>
           </tr>
         </table>
@@ -423,9 +471,9 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div>
-        <p>Just like before, we don't want to take out any edges we already placed, so we can turn the top layer first to keep them safe.</p>
+        <p>Just like before, we don't want to take out any edges we already put, so we can turn the top layer first to keep them safe.</p>
 
-        <p>We might need to turn the top layer before placing the bad edge into the equator and turn the top layer again before placing the edge into the top layer. Here are some examples to give you an idea of how to do this.</p>
+        <p>We might need to turn the top layer before putting the bad edge into the equator and turn the top layer again before putting the edge into the top layer. Here are some examples to give you an idea of how to do this.</p>
 
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -497,7 +545,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 B2 U L2 U2 D' F2 D' B2 U" alg="U F2 L2 U R2 U2 B2" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Here is a full example where the edges are placed in this order: 1. white-green, 2. white-red, 3. white-orange, 4. white-blue.
+              Here is a full example where the edges are put in this order: 1. white-green, 2. white-red, 3. white-orange, 4. white-blue.
             </td>
           </tr>
         </table>
@@ -568,14 +616,14 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:-IIIIIIIIIII,CENTERS:-IIIII" experimental-setup-anchor="end" experimental-setup-alg="" alg="F'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              We start by placing one good edge on the white face.
+              We start by putting one good edge on the white face.
             </td>
           </tr>
         </table>
       </div>
 
       <div>
-        <p>Before we place the other edges on the white face, we need to know how to turn bad edges into good edges.</p>
+        <p>Before we put the other edges on the white face, we need to know how to turn bad edges into good edges.</p>
 
         <p>Examples of bad edges:</p>
 
@@ -636,14 +684,15 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div>
-        <p>After we place the first cross piece on the white face, we need to be aware of where each cross piece actually belongs. We can look at the centers on the equators to see which colours are next to each other.</p>
+        <p>After we put the first cross piece on the white face, we need to be aware of where each cross piece actually belongs. We can look at the centers on the equators to see which colours are next to each other.</p>
 
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
             <td style='border: 1px solid #3c7139; width: 256px'>
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:-I-IIIIIIIII,CENTERS:-I-I--" experimental-setup-anchor="end" experimental-setup-alg="" alg="U R U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
+            </td>
             <td style='border: 1px solid #3c7139;'>
-              This is an example of placing the white-blue edge across the white-green edge.
+              This is an example of putting the white-blue edge across the white-green edge.
             </td>
           </tr>
         </table>
@@ -656,7 +705,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:-II-IIIIIIII,CENTERS:---II-" experimental-setup-anchor="end" experimental-setup-alg="y'" alg="U' R U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              This is an example of placing the white-orange edge next to the white-green edge.
+              This is an example of putting the white-orange edge next to the white-green edge.
             </td>
           </tr>
         </table>
@@ -669,7 +718,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:--IIIIIIIIII,CENTERS:-I--I-" experimental-setup-anchor="end" experimental-setup-alg="" alg="U2 F' U'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee' hint-facelets="none"></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              This is an example of placing the white-red edge next to the white-green edge.
+              This is an example of putting the white-red edge next to the white-green edge.
             </td>
           </tr>
         </table>
@@ -682,7 +731,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 B2 U L2 U2 D' F2 D' B2 U" alg="U F2 L2 U R2 U2 B2" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Here is a full example where the edges are placed in this order: 1. white-green, 2. white-blue, 3. white-red, 4. white-orange.
+              Here is a full example where the edges are put in this order: 1. white-green, 2. white-blue, 3. white-red, 4. white-orange.
             </td>
           </tr>
         </table>
@@ -724,7 +773,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>You've now learned how to solve the cross! You can go on to the next step.</p>
 
-        <p><strong>Next: 3 – The White Corners </strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step3" target="_self">Next: 3 – The White Corners</a>
       </div>
     </div>
   </div>
@@ -734,6 +783,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
     
     <div class="slideshow-section">
       <div>
+        <h3>3 – The White Corners</h3>
+        
+        <br />
+
         <p>After we've solved the cross, we can finish the first layer. </p>
   
         <table style='border-collapse: collapse;' width='700px'>
@@ -755,7 +808,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:IIIIIIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              While we are doing this step, we will have the white face on the bottom and the yellow face facing up.
+              While we are doing this step, we will have the white face on the bottom and the yellow face facing up. We'll keep holding the cube this way for the rest of the tutorial.
             </td>
           </tr>
         </table>
@@ -764,7 +817,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>Every white corner is either a <strong>"good corner"</strong> or a <strong>"bad corner"</strong>.</p>
   
-        <p>A good corner is in the top layer <em>and</em>strong> has a white sticker touching the equator (the pink line). There are only two possibilities.</p>
+        <p>A good corner is in the top layer <em>and</em> has a white sticker touching the equator (the pink line). There are only two possibilities.</p>
   
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -804,7 +857,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="F' U' F" alg="" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              This is one possibility. The white sticker is facing left.
+              This is one possibility. The white sticker is facing the left.
             </td>
           </tr>
           <tr>
@@ -812,7 +865,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="R U R'" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              This is the other possibility. The white sticker is facing right.
+              This is the other possibility. The white sticker is facing the right.
             </td>
           </tr>
         </table>
@@ -1046,6 +1099,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
             <td style='border: 1px solid #3c7139;'>
               If we have a bad corner in the first layer where the white sticker is facing right, put it on the right and do a right flick to turn it into a good corner.
             </td>
+          </tr>
           <tr> 
             <td style='border: 1px solid #3c7139; width: 256px'>
               <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' R' U' F U2 F' y' R U R'" alg="y U2 R U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
@@ -1068,6 +1122,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
             <td style='border: 1px solid #3c7139;'>
               If we have a bad corner where the white sticker is facing up, we can put it above its correct spot.
             </td>
+          </tr>
         </table>
   
         <br />
@@ -1127,7 +1182,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>You've now learned how to solve the first layer! You can go on to the next step.</p>
 
-        <p><strong>Next: 4 – The Equator </strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step4" target="_self">Next: 4 – The Equator</a>
       </div>
 
       <!-- <div>
@@ -1146,7 +1201,11 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
     <div class="slideshow-section">
 
       <div>
-        <p>After we've solved the first layer, we can solve the second layer. </p>
+        <h3>4 – The Equator</h3>
+        
+        <br />
+
+        <p>After we've solved the first layer, we can solve the second layer: the equator. </p>
   
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -1161,9 +1220,233 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div>
+        <p>We're going to use a strategy we've already seen before.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U2 L U' L' D2 E2" alg="R U R' y' U L' U' L" background="none" hint-facelets="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              When we have a first layer corner that is in the first layer but in the wrong spot, we can take it out and put it into its correct spot.
+            </td>
+          </tr>
+        </table>
+
+        <p>This time, we're going to take out <strong>a corner we've already solved</strong> and put it back in differently.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U R' U' F' U' F" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              In this example, the white-green-orange corner is taken out of its spot and put back in differently.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>When we take a corner out of its spot and put it back in differently, we can change the edge piece above it.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIIIMII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U R' U' F' U' F" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              The edge above the white-green-orange corner moves into the top layer.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IMIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U R' U' F' U' F" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              An edge in the top layer moves above the white-green-orange corner.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>We need to pay attention to which way the edge is facing because we might put it in backwards.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F U'" alg="R U R' U' F' U' F" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This equator edge is put in backwards because we weren't paying attention to which way the piece was facing.
+            </td>
+          </tr>
+        </table>
+
+        <p>If you wish, you can try to figure out how to put it in the correct way before moving on to the next section. Hint: Use the same strategy, but try the left-handed version.</p>
+      </div>
+
+      <div>
+        <p>Every edge that belongs in the equator is either a <strong>good edge</strong> or a <strong>bad corner</strong>.</p>
+  
+        <p>A good edge is a non-yellow edge in the top layer.</p>
+  
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" anchor="end" experimental-stickering-mask-orbits="CORNERS:IMMMIMII,EDGES:MMMMIIII--II,CENTERS:MMMMM-" experimental-setup-alg="z2 R L' U R' L F U R U' R' F' U" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              These are examples of good edges.
+            </td>
+          </tr>
+        </table>
+      </div>
+  
+      <div>
+        <p>When we see a good edge, we can turn the top layer so the corner is above its correct spot.</p>
+  
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F U" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This is one possibility. The stickers match on the right side.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:III-IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2 F' U' F U R U R' U'" alg="'" background="none" control-panel="none" hint-facelets="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This is another possibility. The stickers match on the left side.
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F U" alg="U'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If the stickers match on the right side, move the edge away with a <code>U'</code>.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F y" alg="L' U' L" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a left flick to take out the corner.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F y L' U' L" alg="U" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a <code>U</code> to put the corner above where it belongs.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U' F' U' F y L' U' L U" alg="y' R U R'" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a right flick to put the corner back in. This will bring the edge with it.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U' F U R U R' U'" alg="U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If the stickers match on the left side, move the edge away with a <code>U</code>.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U' F U R U R'" alg="R U R'" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a right flick to take out the corner.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U' F U R U R' R U R'" alg="U'" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a <code>U'</code> to move the corner above where it belongs.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIII-II,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F' U' F U R U R' R U R' U'" alg="y L' U' L" background="none"style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then do a left flick to put the corner back in. This will bring the edge with it.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>After all the good edges are solved, we can solve the bad edges.</p>
+
+        <p>A bad edge is a non-yellow edge trapped in the equator in the wrong spot.</p>
+  
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:MMMMIIII,EDGES:MMMMIIIII-I-,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F Rw U Rw' U' F' R2 U2 R2 U2 R2" alg="" background="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              These are examples of bad edges.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>We can move a bad edge into the top layer by putting a yellow edge into its spot.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----I-IIII-I,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 B2 U2 B2 U2 B2 R2 U2 R2 U2 R2 y" alg="U' L' U' L U y' R U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Example #1: Moving a bad edge into the top layer.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----II-III-I,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 B2 U2 B2 U2 B2 R2 U2 R2 U2 R2" alg="U R U R' U' y L' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Example #2: Moving a bad edge into the top layer.
+            </td>
+          </tr>
+        </table>
+
+        <p>Now it's a good edge and we can solve it the same way as before.</p>
+      </div>
+
+      <div>
         <p>You've now learned how to solve the first two layers! You can go on to the next step.</p>
 
-        <p><strong>Next: 5 – Flipping the Yellow Edges </strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step5" target="_self">Next: 5 – Flipping the Yellow Edges</a>
       </div>
 
     </div>
@@ -1176,6 +1459,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
     <div class="slideshow-section">
 
       <div>
+        <h3>5 – Flipping the Yellow Edges</h3>
+        
+        <br />
+
         <p>After we've solved the first two layers, we can make all the yellow edge stickers face up. </p>
   
         <table style='border-collapse: collapse;' width='700px'>
@@ -1203,7 +1490,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <img src='../images/3x3_beginners/cube_with_tape.png'>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Each pair will stay together from now on. If you want, you tape together the two pieces of each pair. This can help you figure out if you made a mistake partway through an algorithm.
+              Each pair will stay together from now on. If you wish, you can tape together the two pieces of each pair. This can help you figure out if you made a mistake partway through an algorithm.
             </td>
           </tr>
         </table>
@@ -1222,7 +1509,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div> 
-        <p>We have seen <code>R</code>, <code>L</code>, <code>U</code> in algorithms. We're now going to see <code>F</code> too. The letter F stands for the front face.</p>
+        <p>We have seen <code>R</code>, <code>L</code>, and <code>U</code> in algorithms. We're now going to see <code>F</code> too. The letter F stands for the front face.</p>
 
         <table style='border-collapse: collapse;' width='512px'>
           <tr>
@@ -1425,7 +1712,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>You've now learned how to make the yellow cross! You can go on to the next step.</p>
 
-        <p><strong>Next: 6 – Twisting the Yellow Corners</strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step6" target="_self">Next: 6 – Twisting the Yellow Corners</a>
       </div>  
     </div>
   </div>
@@ -1435,6 +1722,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
 
     <div class="slideshow-section">
       <div>
+        <h3>6 – Twisting the Yellow Corners</h3>
+        
+        <br />
+
         <p>After we've made all the yellow edge stickers face up, we can make all the yellow corner stickers face up too.</p>
   
         <table style='border-collapse: collapse;' width='700px'>
@@ -1458,8 +1749,8 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIIIIIII,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U R' U' F' U' F" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              When we solved the second layer edges, we took out the first layer corners and put them back differently
-
+              When we solved the second layer edges, we took out the first layer corners and put them back differently.
+              <br /><br />
               Here is an example of taking out a first layer corner and putting it back in differently.
             </td>
           </tr>
@@ -1502,7 +1793,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIII----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 R U R' U" alg="R U2' R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Here's the answer. We can do a right flick again except we turn the U face twice. We call this the <strong>double right flick</strong>. The algorithm is <code>R U2 R'</code>. The 2 represents a double turn.
+              Here's the answer. We can do a right flick again except we turn the U face twice. We call this the <strong>right double flick</strong>. The algorithm is <code>R U2 R'</code>. The 2 represents a double turn. We can choose to go clockwise or counterclockwise since they both do the same thing.
             </td>
           </tr>
         </table>
@@ -1548,7 +1839,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
               <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:----IIII,EDGES:----IIII----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 L' U' L U'" alg="L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
             </td>
             <td style='border: 1px solid #3c7139;'>
-              Then, do a <strong>double left flick</strong> to put the pair back into its spot.
+              Then, do a <strong>left double flick</strong> to put the pair back into its spot.
             </td>
           </tr>
         </table>
@@ -1645,7 +1936,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       </div>
 
       <div>
-        <p>If there are <strong>three</strong> twisted corners, hold the cube so that the non-twisted corner is at the front and there is one yellow sticker facing towards us. 
+        <p>If there are <strong>three</strong> twisted corners, hold the cube so that the non-twisted corner is at the front and there is one yellow sticker facing towards us.</p>
 
         <table style='border-collapse: collapse;' width='700px'>
           <tr>
@@ -1750,7 +2041,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
           </tr>
         </table>
 
-        <p>You can choose either a left sune or right sune. Then, there will be three twisted corners</p>
+        <p>You can choose either left sune or right sune. Then, there will be three twisted corners.</p>
 
         <table style='border-collapse: collapse;' width='512px'>
           <tr>
@@ -1813,7 +2104,7 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>You've now learned how to make all the yellow stickers face up! You can go on to the next step.</p>
 
-        <p><strong>Next: 7 – Placing the Yellow Corners</strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step7" target="_self">Next: 7 – Placing the Yellow Corners</a>
       </div>
     </div>
   </div>
@@ -1824,6 +2115,10 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
     <div class="slideshow-section">
 
       <div>
+        <h3>7 - Placing the Yellow Corners</h3>
+        
+        <br />
+
         <p>After we've made all the yellow stickers face up, we can move the yellow corners to their correct spots.</p>
   
         <table style='border-collapse: collapse;' width='700px'>
@@ -1837,23 +2132,286 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
           </tr>
         </table>
       </div>
+
+      <div>
+        <p>We're going to start by taking a closer look at the sunes.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="R U R' U R U2 R' U2" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If we do the right sune then a U2, we can see that all the yellow corners stay in their correct spots, even though some of them are twisted.
+            </td>
+          </tr>
+        </table>        
+      </div>
+
+      <div>
+        Since we want to move around the yellow corners, we need a new algorithm to swap corners. The one we're learning is named <strong>niklas</strong>. The same Swedish cuber from before named it that. 
+
+        The niklas takes out <strong>two</strong> F2L pairs and then puts them back in differently. There is a right niklas and a left niklas.
+      </div>
+
+      <div>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              The right niklas starts by moving the right F2L pair up, then moving it away.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 R U'" alg="L' U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we do the same thing to the left F2L pair.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' L' U" alg="R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we move the right F2L pair down.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 R U' L' U R'" alg="U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we move the left pair towards us and move it down.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>Here it is all together.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U' L' U R' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>R U' L' U R' U' L</code> (right niklas)
+            </td>
+          </tr>
+        </table>
+
+        <p>If you wish, try to figure out what the left niklas is before looking at the answer in the next section.</p>
+      </div>
+
+      <div>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="L' U" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              The right niklas starts by moving the right F2L pair up, then moving it away.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2 L' U" alg="R U'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we do the same thing to the left F2L pair.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2 L' U R U'" alg="L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we move the right F2L pair down.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2 L' U R U' L" alg="U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Then, we move the left pair towards us and move it down.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>Here it is all together.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="L' U R U' L U R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>L' U R U' L U R'</code> (left niklas)
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>Since a niklas twists three corners, we can do a sune next to untwist them. This will allow us to move around the yellow corners.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="L' U R U' L U R' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>L' U R U' L U R'</code> <code>R U R' U R U2 R'</code> (left niklas + right sune)
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2" alg="R U' L' U R' U' L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>R U' L' U R' U' L</code> <code>L' U' L U' L' U2 L</code> (right niklas + left sune)
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>If there are two of the same colours on the same side, we call that <strong>headlights</strong>.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2 U R U R' U' R' F R2 U' R' U' R U R' F' U'" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This is an example of headlights on the green side.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="45" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="end" experimental-setup-alg="z2" alg="" background="none" control-panel="none" style='width: 256px; height: 132px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If there are headlights on all four sides, all the corners are solved!
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>If only one side has headlights, turn the top layer so that the headlights are in their correct spots.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="L' U R U' L U R' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If you're left-handed, hold the cube so that the headlights face left. Then, do a left niklas then a right sune.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="R U' L' U R' U' L L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If you're right-handed, hold the cube so that the headlights face right. Then, do a right niklas then a left sune.
+            </td>
+          </tr>
+        </table>
+
+        <p>If there are no headlights, hold the cube any way as long as yellow is facing up. Then, do a left niklas if you're left-handed or a right niklas if you're right-handed.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="L' U R U' L U R' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Here is a left-handed example.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="R U' L' U R' U' L L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Here is a right-handed example.
+            </td>
+          </tr>
+        </table>
+
+        <p>Then, you can find the headlights and solve the yellow corners like before.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="L' U R U' L U R' R U R' U R U2 R' U' y' L' U R U' L U R' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This is a full left-handed example.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="R U' L' U R' U' L L' U' L U' L' U2 L U' y' R U' L' U R' U' L L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              This is a full right-handed example.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>You might have noticed that the first turn of the sune undoes the last turn of the niklas. If we want, we can avoid doing these two turns. This is called a <strong>cancellation</strong>.</p>
+        <p><em>But</em>, I suggest practicing the algorithms <em>without</em> the cancellations at first. Doing cancellations can make it harder to keep track of what move you are on.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="L' U R U' L U2 R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>L' U R U' L U2 R' U R U2 R'</code> (left niklas + right sune, with cancellations)
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-stickering-mask-orbits="CORNERS:--------,EDGES:----OOOO----,CENTERS:------" experimental-setup-anchor="start" experimental-setup-alg="z2 F R U' R' U' R U R' F' R U R' U' R' F R F'" alg="R U' L' U R' U2' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              <code>R U' L' U R' U2 L U' L' U2 L</code> (right niklas + left sune, with cancellations)
+            </td>
+          </tr>
+        </table>
+      </div>
       
       <div>
         <p>You've now learned how to solve the yellow corners! You can go on to the last step.</p>
 
-        <p><strong>Next: 8 – Placing the Yellow Edges</strong></p>
+        <a href="../3x3x3/sarahs-beginner-method#section/step8" target="_self">Next: 8 – Placing the Yellow Edges</a>
       </div>
-
     </div>
-
   </div>
 
   <div class="step8 section">
     <h2 class="append-title">Placing the Yellow Edges</h2>
 
     <div class="slideshow-section">
-
       <div>
+        <h3>8 – Placing the Yellow Edges</h3>
+        
+        <br />
+
         <p>After we've moved the yellow corners to their correct spots, we can move the yellow edges to their correct spots.</p>
   
         <table style='border-collapse: collapse;' width='700px'>
@@ -1863,6 +2421,163 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
             </td>
             <td style='border: 1px solid #3c7139;'>
               The cube will be solved when the yellow edges are in their correct spots.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>We don't need any new algorithms to solve the last four pieces. We just need to take another close look at the sune.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 y'" alg="R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              We learned in the previous step that if we do the right sune, it twists three corners but doesn't actually move them around. We can also see here that it moves three edges.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="start" experimental-setup-alg="z2 y R U R' U R U2 R'" alg="y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              We can untwist the three corners using the left sune. 
+              <br /><br />
+              This lets us move the yellow edges without moving the pieces we've already solved.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 y'" alg=" L' U' L U' L' U2 L y' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              We can move the three yellow edges in the other direction by doing the left sune first and the right sune second.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>When we have one yellow edge solved and need to move the other three yellow edges, hold the cube so that the solved edge is at the back. These three edges go either clockwise or counterclockwise. To figure out which one it is, look for the sticker that belongs at the front.</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="-15" experimental-setup-anchor="end" experimental-setup-alg="z2 y'" alg="L' U' L U' L' U2 L y' R U R' U R U2 R'"  background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If the sticker that belongs on the front is on the left side, start with the left sune. 
+              <br /><br />
+              In this example, the front colour is green and the green sticker is on the left side (on the red face).
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="end" experimental-setup-alg="z2 y" alg="R U R' U R U2 R' y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              If the sticker that belongs on the front is on the right side, start with the right sune.
+              <br /><br />
+              In this example, the front colour is green and the green sticker is on the right side (on the orange face).
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>If none of the four edges are solved, we can move three edges at a time. Hold the cube from any angle (as long as yellow is on top). Do left sune if you are left-handed and do right sune if you're right-handed, then twist the corners using the other sune.</p>
+
+        <p>Examples for left-handed people</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 U2 M2 U M2 U M' U2 M2 U2 M'" alg="L' U' L U' L' U2 L y' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Left-handed example #1.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 M2 U M2 U2 M2 U M2" alg="L' U' L U' L' U2 L y' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Left-handed example #2.
+            </td>
+          </tr>
+        </table>
+
+        <p>Examples for right-handed people</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 M2 U M2 U M' U2 M2 U2 M' U2" alg="R U R' U R U2 R' y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Right-handed example #1.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 M2 U M2 U2 M2 U M2" alg="R U R' U R U2 R' y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Right-handed example #2.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <p>This will solve one edge and leave three edges unsolved. We can move them around just like before. Here are the full solutions to the previous examples.</p>
+
+        <p>Examples for left-handed people</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 U2 M2 U M2 U M' U2 M2 U2 M'" alg="L' U' L U' L' U2 L y' R U R' U R U2 R' L' U' L U' L' U2 L y' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Left-handed example #1.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 M2 U M2 U2 M2 U M2" alg="L' U' L U' L' U2 L y' R U R' U R U2 R' y2 L' U' L U' L' U2 L y' R U R' U R U2 R'" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Left-handed example #2.
+            </td>
+          </tr>
+        </table>
+
+        <p>Examples for right-handed people</p>
+
+        <table style='border-collapse: collapse;' width='700px'>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 U M2 U M2 U M' U2 M2 U2 M' U" alg="R U R' U R U2 R' y L' U' L U' L' U2 L R U R' U R U2 R' y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Right-handed example #1.
+            </td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid #3c7139; width: 256px'>
+              <twisty-player puzzle="3x3x3" camera-longitude="15" experimental-setup-anchor="start" experimental-setup-alg="z2 M2 U M2 U2 M2 U M2" alg="R U R' U R U2 R' y L' U' L U' L' U2 L y2 R U R' U R U2 R' y L' U' L U' L' U2 L" background="none" style='width: 256px; height: 192px; background-color: #eeeeee'></twisty-player>
+            </td>
+            <td style='border: 1px solid #3c7139;'>
+              Right-handed example #2.
             </td>
           </tr>
         </table>
@@ -1894,11 +2609,8 @@ title: 3x3x3 &mdash; Sarah's Beginner Method
       <div>
         <p>You've now learned how to solve the entire cube. Congratulations!</p>
 
-        <!-- <p>TODO: Feedback form</p> -->
+        <!-- <p>Feedback Form</p> -->
       </div>
-
     </div>
-
   </div>
-
 </div>
