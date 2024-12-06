@@ -32,6 +32,11 @@
   display: block;
 }
 
+.slideshow-section > div h3 {
+  display: inline-block;
+  margin: 0;
+}
+
 .slideshow-section .nav-button {
   position: absolute;
   top: 50%;
@@ -57,4 +62,11 @@
 
 .slideshow-section .next {
   right: -50px;
+}
+
+.page-counter {
+  float: right;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1.17em;
 }

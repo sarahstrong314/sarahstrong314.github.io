@@ -42,3 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+window.addEventListener('load', function() {
+  const sections = document.querySelectorAll('.slideshow-section');
+  sections.forEach(section => {
+    const slides = section.querySelectorAll('div');
+    const total = slides.length;
+    slides.forEach((slide, i) => {
+      const counter = document.createElement('div');
+      counter.className = 'page-counter';
+      counter.textContent = `Page ${i + 1} of ${total}`;
+      slide.prepend(counter);
+    });
+  });
+});
